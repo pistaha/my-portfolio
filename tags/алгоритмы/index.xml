@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>C-Sharp on Портфолио Pistaha</title>
-    <link>https://pistaha.github.io/my-portfolio/tags/c-sharp/</link>
-    <description>Recent content in C-Sharp on Портфолио Pistaha</description>
+    <title>Алгоритмы on Портфолио Pistaha</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B/</link>
+    <description>Recent content in Алгоритмы on Портфолио Pistaha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
     <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
     <copyright>© 2025 Pistaha</copyright>
-    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>C#-проект по обработке данных и работе со структурами</title>
@@ -18,16 +18,6 @@
       <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</guid>
       <description>Алгоритмы обработки данных и проектирование логики классов на C#.</description>
-      
-    </item>
-    
-    <item>
-      <title>Unity-мини-игра в жанре football game</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</link>
-      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</guid>
-      <description>Игровой проект на Unity с физикой движения персонажа и взаимодействием с мячом.</description>
       
     </item>
     

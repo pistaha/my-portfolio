@@ -3,6 +3,7 @@ baseURL = "https://pistaha.github.io/my-portfolio/"
 defaultContentLanguage = "ru"
 enableRobotsTXT = true
 summaryLength = 0
+buildFuture = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
