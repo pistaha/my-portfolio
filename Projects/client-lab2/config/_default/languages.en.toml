@@ -1,17 +1,17 @@
 disabled = false
-languageCode = "en"
-languageName = "English"
+languageCode = "ru"
+languageName = "Русский"
 weight = 1
-title = "Pistaha Portfolio"
+title = "Портфолио Pistaha"
 
 [params]
-  displayName = "EN"
-  isoCode = "en"
+  displayName = "RU"
+  isoCode = "ru"
   rtl = false
   dateFormat = "2 January 2006"
   # logo = "img/logo.png"
   # secondaryLogo = "img/secondary-logo.png"
-  description = "Portfolio of a student designer-developer exploring product, web, and visual systems."
+  description = "Портфолио студента-дизайнера и разработчика, который изучает продукт, веб и визуальные системы."
   copyright = "© 2025 Pistaha"
 
 # [params.author]
@@ -78,12 +78,9 @@ title = "Pistaha Portfolio"
 
 [params.author]
   name = "Pistaha"
-  email = "hello@example.com"
-  headline = "Student designer-developer crafting thoughtful digital experiences."
-  bio = "I focus on clean interfaces, resilient systems, and storytelling through design. Currently exploring product design, front-end development, and visual identity."
+  email = "kataracta.pq@gmail.com"
+  headline = "Студент-дизайнер и разработчик, создающий продуманные цифровые продукты."
+  bio = "Сфокусирован(а) на чистых интерфейсах, устойчивых системах и визуальном повествовании. Сейчас развиваю продуктовый дизайн, фронтенд и визуальную айдентику."
   links = [
     { github = "https://github.com/pistaha" },
-    { linkedin = "https://linkedin.com/in/your-handle" },
-    { dribbble = "https://dribbble.com/your-handle" },
-    { email = "mailto:hello@example.com" },
   ]

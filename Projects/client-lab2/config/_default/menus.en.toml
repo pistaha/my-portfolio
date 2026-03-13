@@ -1,21 +1,21 @@
 # -- Main Menu --
 [[main]]
-  name = "Home"
+  name = "Главная"
   pageRef = "/"
   weight = 1
 
 [[main]]
-  name = "About"
+  name = "Обо мне"
   pageRef = "about"
   weight = 10
 
 [[main]]
-  name = "Projects"
+  name = "Проекты"
   pageRef = "portfolio"
   weight = 20
 
 [[main]]
-  name = "Contact"
+  name = "Контакты"
   pageRef = "contact"
   weight = 30
 
@@ -24,8 +24,3 @@
   name = "GitHub"
   url = "https://github.com/pistaha"
   weight = 10
-
-[[footer]]
-  name = "LinkedIn"
-  url = "https://linkedin.com/in/your-handle"
-  weight = 20

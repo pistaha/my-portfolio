@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Pistaha Portfolio</title>
+    <title>Tags on Портфолио Pistaha</title>
     <link>https://pistaha.github.io/my-portfolio/tags/</link>
-    <description>Recent content in Tags on Pistaha Portfolio</description>
+    <description>Recent content in Tags on Портфолио Pistaha</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>hello@example.com (Pistaha)</managingEditor>
-    <webMaster>hello@example.com (Pistaha)</webMaster>
+    <language>ru</language>
+    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
+    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
     <copyright>© 2025 Pistaha</copyright>
     <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
       <title>Branding</title>
       <link>https://pistaha.github.io/my-portfolio/tags/branding/</link>
       <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/branding/</guid>
       <description></description>
       
@@ -25,7 +25,7 @@
       <title>Systems</title>
       <link>https://pistaha.github.io/my-portfolio/tags/systems/</link>
       <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/systems/</guid>
       <description></description>
       
@@ -35,7 +35,7 @@
       <title>Ux</title>
       <link>https://pistaha.github.io/my-portfolio/tags/ux/</link>
       <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/ux/</guid>
       <description></description>
       
@@ -45,7 +45,7 @@
       <title>Mobile</title>
       <link>https://pistaha.github.io/my-portfolio/tags/mobile/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/mobile/</guid>
       <description></description>
       
@@ -55,7 +55,7 @@
       <title>Product</title>
       <link>https://pistaha.github.io/my-portfolio/tags/product/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/product/</guid>
       <description></description>
       
@@ -65,7 +65,7 @@
       <title>Ui</title>
       <link>https://pistaha.github.io/my-portfolio/tags/ui/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/ui/</guid>
       <description></description>
       
@@ -75,7 +75,7 @@
       <title>Typography</title>
       <link>https://pistaha.github.io/my-portfolio/tags/typography/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/typography/</guid>
       <description></description>
       
@@ -85,7 +85,7 @@
       <title>Web</title>
       <link>https://pistaha.github.io/my-portfolio/tags/web/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/web/</guid>
       <description></description>
       
@@ -95,7 +95,7 @@
       <title>Print</title>
       <link>https://pistaha.github.io/my-portfolio/tags/print/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/print/</guid>
       <description></description>
       
@@ -105,7 +105,7 @@
       <title>Social</title>
       <link>https://pistaha.github.io/my-portfolio/tags/social/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/social/</guid>
       <description></description>
       
@@ -115,7 +115,7 @@
       <title>Visual</title>
       <link>https://pistaha.github.io/my-portfolio/tags/visual/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/visual/</guid>
       <description></description>
       

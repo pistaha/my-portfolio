@@ -1,8 +1,8 @@
 ---
-title: "Recipe App for Shared Kitchens"
+title: "Приложение рецептов для общих кухонь"
 date: 2024-08-05
-summary: "A mobile experience that simplifies meal planning and reduces food waste in shared housing."
+summary: "Мобильный опыт, который упрощает планирование питания и снижает пищевые отходы в совместном жилье."
 tags: ["product", "ui", "mobile"]
 ---
 
-Built a lightweight prototype with weekly planning, smart shopping lists, and recipe scaling. Tested with five students and iterated on onboarding and navigation.
+Собран легкий прототип с недельным планированием, умными списками покупок и масштабированием рецептов. Протестировал(а) на пяти студентах и доработал(а) онбординг и навигацию.

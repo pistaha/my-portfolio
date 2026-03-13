@@ -1,12 +1,11 @@
 ---
-title: "Contact"
-description: "Let’s collaborate or start a conversation."
+title: "Контакты"
+description: "Свяжемся и обсудим сотрудничество."
 ---
 
-I’m open to internships, freelance projects, and collaborations. The best way to reach me is email.
+Открыт(а) к стажировкам, фриланс-проектам и коллаборациям. Лучший способ связаться — по почте.
 
-- **Email:** [hello@example.com](mailto:hello@example.com)
-- **Location:** Available for remote and local opportunities
+**Email:** kataracta.pq@gmail.com
 
-## Contact form (optional)
-If you want to embed a form later, replace this section with a static-safe form provider embed (e.g., Formspree, Basin, or a CRM embed). No API keys are required in the site repository.
+## Форма обратной связи (опционально)
+Если позже понадобится форма, замените этот блок на статически безопасный embed (например, Formspree, Basin или CRM). API-ключи в репозиторий не добавляются.

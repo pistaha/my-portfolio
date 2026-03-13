@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Pistaha Portfolio</title>
+    <title>Проекты on Портфолио Pistaha</title>
     <link>https://pistaha.github.io/my-portfolio/portfolio/</link>
-    <description>Recent content in Projects on Pistaha Portfolio</description>
+    <description>Recent content in Проекты on Портфолио Pistaha</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>hello@example.com (Pistaha)</managingEditor>
-    <webMaster>hello@example.com (Pistaha)</webMaster>
+    <language>ru</language>
+    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
+    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
     <copyright>© 2025 Pistaha</copyright>
     <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Campus Wayfinding System</title>
+      <title>Навигация по кампусу</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</link>
       <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</guid>
-      <description>A modular signage and mapping system that helps first-year students navigate campus confidently.</description>
+      <description>Модульная система навигации и карт, помогающая первокурсникам уверенно ориентироваться в кампусе.</description>
       
     </item>
     
     <item>
-      <title>Recipe App for Shared Kitchens</title>
+      <title>Приложение рецептов для общих кухонь</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/recipe-app/</link>
       <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/recipe-app/</guid>
-      <description>A mobile experience that simplifies meal planning and reduces food waste in shared housing.</description>
+      <description>Мобильный опыт, который упрощает планирование питания и снижает пищевые отходы в совместном жилье.</description>
       
     </item>
     
     <item>
-      <title>Personal Portfolio Redesign</title>
+      <title>Редизайн личного портфолио</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</link>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</guid>
-      <description>A refreshed identity and site structure focused on clarity, rhythm, and fast performance.</description>
+      <description>Обновленная айдентика и структура сайта с упором на ясность, ритм и скорость.</description>
       
     </item>
     
     <item>
-      <title>Community Lab Visual Toolkit</title>
+      <title>Визуальный набор для Community Lab</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/community-lab/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <author>hello@example.com (Pistaha)</author>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/community-lab/</guid>
-      <description>A visual system for workshop flyers, social posts, and event signage.</description>
+      <description>Визуальная система для афиш мастерских, соцсетей и навигации на мероприятиях.</description>
       
     </item>
     

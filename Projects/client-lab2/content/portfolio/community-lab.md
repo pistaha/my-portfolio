@@ -1,8 +1,8 @@
 ---
-title: "Community Lab Visual Toolkit"
+title: "Визуальный набор для Community Lab"
 date: 2024-04-02
-summary: "A visual system for workshop flyers, social posts, and event signage."
+summary: "Визуальная система для афиш мастерских, соцсетей и навигации на мероприятиях."
 tags: ["visual", "print", "social"]
 ---
 
-Created a flexible grid, type scale, and color palette that adapts across print and digital formats. Delivered templates for volunteers to update easily.
+Создана гибкая сетка, типографическая шкала и палитра, адаптирующиеся под печать и цифру. Подготовлены шаблоны, которые волонтеры могут быстро обновлять.

@@ -1,8 +1,8 @@
 ---
-title: "Projects"
-description: "A selection of product, branding, and web experiments."
+title: "Проекты"
+description: "Подборка продуктовых, брендинговых и веб-экспериментов."
 showCards: true
 showSummary: true
 ---
 
-Each project below includes a short overview. Full case studies can be added later as the work evolves.
+Каждый проект ниже сопровождается кратким описанием. Полные кейсы можно добавить позже по мере развития работ.

@@ -1,17 +1,17 @@
 ---
-title: "Home"
-description: "Portfolio of a student designer-developer exploring product, web, and visual systems."
+title: "Главная"
+description: "Портфолио студента-дизайнера и разработчика, который изучает продукт, веб и визуальные системы."
 layout: "profile"
 ---
 
-Hi, I’m **Pistaha** — a student designer-developer who blends clean interfaces with practical engineering. I enjoy building calm, usable products and telling clear stories through layout, type, and motion.
+Привет! Я **Pistaha** — студент-дизайнер и разработчик, совмещающий чистые интерфейсы с практичной инженерией. Мне нравится создавать спокойные, понятные продукты и рассказывать истории через сетку, типографику и движение.
 
-## Selected focus
-- Product UI/UX and design systems
-- Front-end engineering (Hugo, React, and modern CSS)
-- Visual identity and brand clarity
+## Основные направления
+- Продуктовый UI/UX и дизайн-системы
+- Фронтенд-разработка (Hugo, React и современный CSS)
+- Визуальная айдентика и ясность бренда
 
-## Now
-I’m looking for internships and collaborations that balance craft and real-world impact. If you have a project in mind, I’d love to hear about it.
+## Сейчас
+Ищу стажировки и проекты, где важны качество исполнения и реальная польза. Если у вас есть задача — буду рад(а) обсудить.
 
-[View projects](/portfolio/)
+[Смотреть проекты](/portfolio/)

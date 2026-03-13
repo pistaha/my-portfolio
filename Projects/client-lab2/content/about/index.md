@@ -1,18 +1,18 @@
 ---
-title: "About"
-description: "Background, values, and the way I work."
+title: "Обо мне"
+description: "Бэкграунд, ценности и подход к работе."
 ---
 
-I’m a student designer-developer focused on building digital products that feel intentional, lightweight, and human. My workflow blends research, sketching, and rapid prototyping with practical front-end delivery.
+Я студент-дизайнер и разработчик, создающий цифровые продукты, которые ощущаются продуманными, легкими и человечными. В работе сочетаю исследование, быстрые эскизы и прототипирование с практичной фронтенд-реализацией.
 
-## What I value
-- **Clarity over noise**: simple interfaces that guide users without friction.
-- **Systems thinking**: reusable components and tidy design tokens.
-- **Careful craft**: typography, spacing, and motion that make products feel complete.
+## Что для меня важно
+- **Ясность вместо шума**: простые интерфейсы, которые направляют пользователя без лишнего трения.
+- **Системное мышление**: переиспользуемые компоненты и аккуратные дизайн-токены.
+- **Аккуратная работа с деталями**: типографика, ритм и движение, которые делают продукт цельным.
 
-## Tools & skills
-- Figma, Adobe Illustrator, and Procreate
-- HTML, CSS, JavaScript, and Hugo
-- Design systems, information architecture, and content strategy
+## Инструменты и навыки
+- Figma, Adobe Illustrator и Procreate
+- HTML, CSS, JavaScript и Hugo
+- Дизайн-системы, информационная архитектура и контент-стратегия
 
-If you’d like a short PDF or a deeper case study, reach out via the contact page.
+Если нужен короткий PDF или более глубокий кейс — пишите в разделе контактов.
