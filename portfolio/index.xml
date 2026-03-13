@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Pistaha Portfolio</title>
+    <link>https://pistaha.github.io/my-portfolio/portfolio/</link>
+    <description>Recent content in Projects on Pistaha Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>hello@example.com (Pistaha)</managingEditor>
+    <webMaster>hello@example.com (Pistaha)</webMaster>
+    <copyright>© 2025 Pistaha</copyright>
+    <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Campus Wayfinding System</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <author>hello@example.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</guid>
+      <description>A modular signage and mapping system that helps first-year students navigate campus confidently.</description>
+      
+    </item>
+    
+    <item>
+      <title>Recipe App for Shared Kitchens</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/recipe-app/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <author>hello@example.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/recipe-app/</guid>
+      <description>A mobile experience that simplifies meal planning and reduces food waste in shared housing.</description>
+      
+    </item>
+    
+    <item>
+      <title>Personal Portfolio Redesign</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <author>hello@example.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</guid>
+      <description>A refreshed identity and site structure focused on clarity, rhythm, and fast performance.</description>
+      
+    </item>
+    
+    <item>
+      <title>Community Lab Visual Toolkit</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/community-lab/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <author>hello@example.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/community-lab/</guid>
+      <description>A visual system for workshop flyers, social posts, and event signage.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

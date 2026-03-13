@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Branding on Pistaha Portfolio</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/branding/</link>
+    <description>Recent content in Branding on Pistaha Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>hello@example.com (Pistaha)</managingEditor>
+    <webMaster>hello@example.com (Pistaha)</webMaster>
+    <copyright>© 2025 Pistaha</copyright>
+    <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/branding/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Campus Wayfinding System</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <author>hello@example.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</guid>
+      <description>A modular signage and mapping system that helps first-year students navigate campus confidently.</description>
+      
+    </item>
+    
+    <item>
+      <title>Personal Portfolio Redesign</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <author>hello@example.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</guid>
+      <description>A refreshed identity and site structure focused on clarity, rhythm, and fast performance.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

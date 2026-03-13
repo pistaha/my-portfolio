@@ -14,4 +14,4 @@ Hi, I’m **Pistaha** — a student designer-developer who blends clean interfac
 ## Now
 I’m looking for internships and collaborations that balance craft and real-world impact. If you have a project in mind, I’d love to hear about it.
 
-[View projects](/projects/)
+[View projects](/portfolio/)

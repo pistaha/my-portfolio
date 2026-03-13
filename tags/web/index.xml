@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Pistaha Portfolio</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/web/</link>
+    <description>Recent content in Web on Pistaha Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>hello@example.com (Pistaha)</managingEditor>
+    <webMaster>hello@example.com (Pistaha)</webMaster>
+    <copyright>© 2025 Pistaha</copyright>
+    <lastBuildDate>Thu, 20 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Personal Portfolio Redesign</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</link>
+      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <author>hello@example.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</guid>
+      <description>A refreshed identity and site structure focused on clarity, rhythm, and fast performance.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
