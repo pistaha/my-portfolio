@@ -9,45 +9,95 @@
     <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
     <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
     <copyright>© 2025 Pistaha</copyright>
-    <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Навигация по кампусу</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</link>
-      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <title>SRS-спецификация для веб-сервиса «ЛС ГЭОТАР»</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/srs-geotar/</link>
+      <pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate>
       <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</guid>
-      <description>Модульная система навигации и карт, помогающая первокурсникам уверенно ориентироваться в кампусе.</description>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/srs-geotar/</guid>
+      <description>Проект по системному анализу и проектированию требований для медицинского веб-сервиса.</description>
       
     </item>
     
     <item>
-      <title>Приложение рецептов для общих кухонь</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/recipe-app/</link>
-      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <title>Портфолио-сайт на Hugo с темой Blowfish и публикацией через GitHub Pages</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/hugo-blowfish/</link>
+      <pubDate>Sun, 10 Nov 2024 00:00:00 +0000</pubDate>
       <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/recipe-app/</guid>
-      <description>Мобильный опыт, который упрощает планирование питания и снижает пищевые отходы в совместном жилье.</description>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/hugo-blowfish/</guid>
+      <description>Персональный сайт-портфолио на Hugo с настройкой структуры, контента и деплоя.</description>
       
     </item>
     
     <item>
-      <title>Редизайн личного портфолио</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</link>
-      <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
+      <title>Unity-мини-игра в жанре football game</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
       <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/portfolio-redesign/</guid>
-      <description>Обновленная айдентика и структура сайта с упором на ясность, ритм и скорость.</description>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</guid>
+      <description>Игровой проект на Unity с физикой движения персонажа и взаимодействием с мячом.</description>
       
     </item>
     
     <item>
-      <title>Визуальный набор для комьюнити-лаборатории</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/community-lab/</link>
-      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <title>Статический сайт и веб-проекты с адаптацией под дизайн-макеты</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/static-sites/</link>
+      <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
       <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/community-lab/</guid>
-      <description>Визуальная система для афиш мастерских, соцсетей и навигации на мероприятиях.</description>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/static-sites/</guid>
+      <description>Серия проектов по адаптации макетов и структурированию визуального контента.</description>
+      
+    </item>
+    
+    <item>
+      <title>Дизайн-концепции и визуальные проекты в Figma</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/figma-concepts/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/figma-concepts/</guid>
+      <description>Дизайн-проекты: портфолио, бренд-концепции, лендинги и промо-материалы.</description>
+      
+    </item>
+    
+    <item>
+      <title>Motion-дизайн и kinetic typography в After Effects</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/motion-typography/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/motion-typography/</guid>
+      <description>Серия проектов по анимации текста и визуальной подаче контента.</description>
+      
+    </item>
+    
+    <item>
+      <title>Python-проекты по численным методам, математической статистике и линейной алгебре</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/python-math/</link>
+      <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/python-math/</guid>
+      <description>Учебные проекты по реализации математических алгоритмов на Python.</description>
+      
+    </item>
+    
+    <item>
+      <title>C#-проект по обработке данных и работе со структурами</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</guid>
+      <description>Алгоритмы обработки данных и проектирование логики классов на C#.</description>
+      
+    </item>
+    
+    <item>
+      <title>Историко-биографические исследовательские материалы</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/research-texts/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/research-texts/</guid>
+      <description>Исследовательские тексты о деятелях русской эмиграции, архитектуры и культуры.</description>
       
     </item>
     

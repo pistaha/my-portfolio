@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Тексты on Портфолио Pistaha</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%8B/</link>
+    <description>Recent content in Тексты on Портфолио Pistaha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
+    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2025 Pistaha</copyright>
+    <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Историко-биографические исследовательские материалы</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/research-texts/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/research-texts/</guid>
+      <description>Исследовательские тексты о деятелях русской эмиграции, архитектуры и культуры.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
