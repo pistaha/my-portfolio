@@ -1,0 +1,24 @@
+[[main]]
+  name = "Главная"
+  pageRef = "/"
+  weight = 1
+
+[[main]]
+  name = "Обо мне"
+  pageRef = "about"
+  weight = 10
+
+[[main]]
+  name = "Проекты"
+  pageRef = "portfolio"
+  weight = 20
+
+[[main]]
+  name = "Контакты"
+  pageRef = "contact"
+  weight = 30
+
+[[footer]]
+  name = "Гитхаб"
+  url = "https://github.com/pistaha"
+  weight = 10

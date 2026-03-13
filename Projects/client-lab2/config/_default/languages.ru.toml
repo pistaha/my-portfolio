@@ -1,0 +1,22 @@
+disabled = false
+languageCode = "ru"
+languageName = "Русский"
+weight = 1
+title = "Портфолио Pistaha"
+
+[params]
+  displayName = "RU"
+  isoCode = "ru"
+  rtl = false
+  dateFormat = "02.01.2006"
+  description = "Портфолио студента-дизайнера и разработчика, который изучает продукт, веб и визуальные системы."
+  copyright = "© 2025 Pistaha"
+
+[params.author]
+  name = "Pistaha"
+  email = "kataracta.pq@gmail.com"
+  headline = "Студент-дизайнер и разработчик, создающий продуманные цифровые продукты."
+  bio = "Сфокусирован(а) на чистых интерфейсах, устойчивых системах и визуальном повествовании. Сейчас развиваю продуктовый дизайн, фронтенд и визуальную айдентику."
+  links = [
+    { github = "https://github.com/pistaha" },
+  ]

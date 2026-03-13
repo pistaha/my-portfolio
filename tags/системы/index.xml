@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Системы on Портфолио Pistaha</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B/</link>
+    <description>Recent content in Системы on Портфолио Pistaha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
+    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2025 Pistaha</copyright>
+    <lastBuildDate>Sat, 12 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Навигация по кампусу</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</link>
+      <pubDate>Sat, 12 Oct 2024 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/campus-wayfinding/</guid>
+      <description>Модульная система навигации и карт, помогающая первокурсникам уверенно ориентироваться в кампусе.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

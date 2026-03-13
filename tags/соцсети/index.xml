@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Соцсети on Портфолио Pistaha</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/%D1%81%D0%BE%D1%86%D1%81%D0%B5%D1%82%D0%B8/</link>
+    <description>Recent content in Соцсети on Портфолио Pistaha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
+    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2025 Pistaha</copyright>
+    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/%D1%81%D0%BE%D1%86%D1%81%D0%B5%D1%82%D0%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Визуальный набор для комьюнити-лаборатории</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/community-lab/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/community-lab/</guid>
+      <description>Визуальная система для афиш мастерских, соцсетей и навигации на мероприятиях.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

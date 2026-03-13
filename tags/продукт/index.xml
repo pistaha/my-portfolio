@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Продукт on Портфолио Pistaha</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82/</link>
+    <description>Recent content in Продукт on Портфолио Pistaha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
+    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2025 Pistaha</copyright>
+    <lastBuildDate>Mon, 05 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Приложение рецептов для общих кухонь</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/recipe-app/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/recipe-app/</guid>
+      <description>Мобильный опыт, который упрощает планирование питания и снижает пищевые отходы в совместном жилье.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
