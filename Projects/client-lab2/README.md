@@ -11,15 +11,15 @@ https://pistaha.github.io/my-portfolio/
 
 ## Local development
 ```bash
-hugo server
+hugo server -s Projects/client-lab2
 ```
 
 ## Build
 ```bash
-hugo
+hugo -s Projects/client-lab2
 ```
 
-The generated static site is output to `public/`.
+The generated static site is output to `Projects/client-lab2/public/`.
 
 ## Deployment
 This repository is intended for GitHub Pages project-site hosting. The `baseURL` is set to:
@@ -28,23 +28,23 @@ This repository is intended for GitHub Pages project-site hosting. The `baseURL`
 https://pistaha.github.io/my-portfolio/
 ```
 
-When deploying, ensure the output is published from the `gh-pages` branch under `Projects/client-lab2`.
+Deployment builds the Hugo source in `Projects/client-lab2` and publishes the generated output to the root of `gh-pages` so GitHub Pages serves it directly.
 
 ## Project structure
-- `config/_default/` — Hugo + Blowfish configuration
-- `content/` — Pages and project entries
-- `themes/blowfish/` — Blowfish theme submodule
-- `static/` — Static assets (empty placeholder)
+- `Projects/client-lab2/config/_default/` — Hugo + Blowfish configuration
+- `Projects/client-lab2/content/` — Pages and portfolio entries
+- `Projects/client-lab2/themes/blowfish/` — Blowfish theme submodule
+- `Projects/client-lab2/static/` — Static assets (empty placeholder)
 
 ## Editing content
-- Home: `content/_index.md`
-- About: `content/about/index.md`
-- Projects list: `content/projects/_index.md`
-- Project entries: `content/projects/*.md`
-- Contact: `content/contact/index.md`
+- Home: `Projects/client-lab2/content/_index.md`
+- About: `Projects/client-lab2/content/about/index.md`
+- Portfolio list: `Projects/client-lab2/content/portfolio/_index.md`
+- Portfolio entries: `Projects/client-lab2/content/portfolio/*.md`
+- Contact: `Projects/client-lab2/content/contact/index.md`
 
 ## Blowfish notes
-Theme defaults are copied into `config/_default/` so the site can be configured without editing the submodule. Adjust typography, colors, and layouts in `config/_default/params.toml`.
+Theme defaults are copied into `Projects/client-lab2/config/_default/` so the site can be configured without editing the submodule. Adjust typography, colors, and layouts in `Projects/client-lab2/config/_default/params.toml`.
 
 ## Contact/CRM-ready section
 The contact page is static-safe. Replace the placeholder section with an embed from a provider like Formspree, Basin, or your CRM as needed.
