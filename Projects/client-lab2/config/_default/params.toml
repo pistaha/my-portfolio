@@ -26,12 +26,12 @@ mainSections = ["portfolio"]
   cardViewScreenWidth = false
 
 [article]
-  showDate = true
+  showDate = false
   showAuthor = true
-  showReadingTime = true
+  showReadingTime = false
   showTableOfContents = false
   showTaxonomies = false
-  showWordCount = true
+  showWordCount = false
 
 [list]
   showSummary = false
