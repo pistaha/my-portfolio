@@ -9,25 +9,15 @@
     <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
     <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
     <copyright>© 2025 Pistaha</copyright>
-    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Unity-мини-игра в жанре football game</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
       <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</guid>
       <description>Игровой проект на Unity с физикой движения персонажа и взаимодействием с мячом.</description>
-      
-    </item>
-    
-    <item>
-      <title>C#-проект по обработке данных и работе со структурами</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</link>
-      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</guid>
-      <description>Алгоритмы обработки данных и проектирование логики классов на C#.</description>
       
     </item>
     

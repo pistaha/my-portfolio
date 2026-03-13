@@ -4,67 +4,61 @@
 
   <url>
     <loc>https://pistaha.github.io/my-portfolio/portfolio/srs-geotar/</loc>
-    <lastmod>2024-11-20T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pistaha.github.io/my-portfolio/</loc>
-    <lastmod>2024-11-20T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pistaha.github.io/my-portfolio/portfolio/</loc>
-    <lastmod>2024-11-20T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pistaha.github.io/my-portfolio/portfolio/hugo-blowfish/</loc>
-    <lastmod>2024-11-10T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pistaha.github.io/my-portfolio/portfolio/static-sites/</loc>
-    <lastmod>2024-09-05T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://pistaha.github.io/my-portfolio/portfolio/figma-concepts/</loc>
-    <lastmod>2024-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-12T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pistaha.github.io/my-portfolio/portfolio/motion-typography/</loc>
-    <lastmod>2024-07-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-02T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pistaha.github.io/my-portfolio/portfolio/python-math/</loc>
-    <lastmod>2024-06-12T00:00:00+00:00</lastmod>
+    <loc>https://pistaha.github.io/my-portfolio/portfolio/hugo-blowfish/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</loc>
-    <lastmod>2024-05-28T00:00:00+00:00</lastmod>
+    <loc>https://pistaha.github.io/my-portfolio/portfolio/static-sites/</loc>
+    <lastmod>2025-05-10T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://pistaha.github.io/my-portfolio/portfolio/research-texts/</loc>
-    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-02-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pistaha.github.io/my-portfolio/portfolio/figma-concepts/</loc>
+    <lastmod>2024-11-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pistaha.github.io/my-portfolio/portfolio/python-math/</loc>
+    <lastmod>2024-06-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</loc>
+    <lastmod>2024-03-18T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

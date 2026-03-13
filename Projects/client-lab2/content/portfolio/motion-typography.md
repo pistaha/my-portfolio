@@ -1,6 +1,6 @@
 ---
 title: "Motion-дизайн и kinetic typography в After Effects"
-date: 2024-07-22
+date: 2025-12-02
 summary: "Серия проектов по анимации текста и визуальной подаче контента."
 tags: ["motion", "after-effects", "типографика"]
 ---
