@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>Отчет по лабораторной работе «Протокол HTTP»</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/http-lab-report/</link>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/http-lab-report/</guid>
+      <description>Отчет по лабораторной работе о GET- и POST-запросах, cURL, OpenSSL и Postman.</description>
+      
+    </item>
+    
+    <item>
       <title>SRS-спецификация для веб-сервиса «ЛС ГЭОТАР»</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/srs-geotar/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
