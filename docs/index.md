@@ -48,8 +48,6 @@ curl -I http://yachatik.ru
 
 Результат: сервер вернул `HTTP/1.1 301 Moved Permanently` и выполнил редирект на `https://yachatik.ru/`.
 
-Отдельный скриншот этой команды среди найденных изображений не обнаружен. Результат указан по данным уже выполненной команды.
-
 ### Проверка HTTPS-страницы
 
 Затем была проверена главная HTTPS-страница сайта.
@@ -59,8 +57,6 @@ curl -i https://yachatik.ru/
 ```
 
 Результат: сервер вернул `HTTP/1.1 200 OK`.
-
-Отдельный скриншот этой команды среди найденных изображений не обнаружен. Результат указан по данным уже выполненной команды.
 
 ### Извлечение API-маршрутов сайта
 
@@ -236,14 +232,3 @@ GET-запрос в Postman:
 ```text
 https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2026&date_req2=20/03/2026&VAL_NM_RQ=R01235
 ```
-
-## Скриншоты
-
-| Файл | Содержание |
-| --- | --- |
-| `images/cli-tools-check.png` | Проверка `curl`, `openssl`, `nc`. |
-| `images/api-routes-extraction.png` | Извлечение API-маршрутов из `app.js`. |
-| `images/get-playlists-curl-openssl.png` | GET-запрос к `/api/playlists/public` через `curl` и `openssl s_client`. |
-| `images/post-register-curl-openssl.png` | POST-запрос к `/api/auth/register` через `curl` и `openssl s_client`. |
-| `images/postman-cbr-params.png` | Параметры GET-запроса к API Банка России в Postman. |
-| `images/postman-cbr-response.png` | XML-ответ API Банка России с динамикой курса USD. |

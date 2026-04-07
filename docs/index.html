@@ -158,13 +158,11 @@ nc -h</code></pre>
       <p>Сначала был проверен ответ сервера по HTTP.</p>
       <pre><code>curl -I http://yachatik.ru</code></pre>
       <p>Результат: сервер вернул <code>HTTP/1.1 301 Moved Permanently</code> и выполнил редирект на <code>https://yachatik.ru/</code>.</p>
-      <p>Отдельный скриншот этой команды среди найденных изображений не обнаружен. Результат указан по данным уже выполненной команды.</p>
 
       <h3>Проверка HTTPS-страницы</h3>
       <p>Затем была проверена главная HTTPS-страница сайта.</p>
       <pre><code>curl -i https://yachatik.ru/</code></pre>
       <p>Результат: сервер вернул <code>HTTP/1.1 200 OK</code>.</p>
-      <p>Отдельный скриншот этой команды среди найденных изображений не обнаружен. Результат указан по данным уже выполненной команды.</p>
 
       <h3>Извлечение API-маршрутов сайта</h3>
       <p>Из файла <code>app.js</code> сайта <code>yachatik.ru</code> были извлечены API-маршруты. На скриншоте зафиксирован список найденных маршрутов, включая:</p>
@@ -282,42 +280,6 @@ Connection: close
 
       <p>GET-запрос в Postman:</p>
       <pre><code>https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2026&amp;date_req2=20/03/2026&amp;VAL_NM_RQ=R01235</code></pre>
-
-      <h2>Скриншоты</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Файл</th>
-            <th>Содержание</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><code>images/cli-tools-check.png</code></td>
-            <td>Проверка <code>curl</code>, <code>openssl</code>, <code>nc</code>.</td>
-          </tr>
-          <tr>
-            <td><code>images/api-routes-extraction.png</code></td>
-            <td>Извлечение API-маршрутов из <code>app.js</code>.</td>
-          </tr>
-          <tr>
-            <td><code>images/get-playlists-curl-openssl.png</code></td>
-            <td>GET-запрос к <code>/api/playlists/public</code> через <code>curl</code> и <code>openssl s_client</code>.</td>
-          </tr>
-          <tr>
-            <td><code>images/post-register-curl-openssl.png</code></td>
-            <td>POST-запрос к <code>/api/auth/register</code> через <code>curl</code> и <code>openssl s_client</code>.</td>
-          </tr>
-          <tr>
-            <td><code>images/postman-cbr-params.png</code></td>
-            <td>Параметры GET-запроса к API Банка России в Postman.</td>
-          </tr>
-          <tr>
-            <td><code>images/postman-cbr-response.png</code></td>
-            <td>XML-ответ API Банка России с динамикой курса USD.</td>
-          </tr>
-        </tbody>
-      </table>
     </article>
   </main>
 </body>
