@@ -13,10 +13,10 @@
     
     <item>
       <title>Разбор Date.now() и IIFE в JavaScript</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/javascript-date-iife/</link>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</link>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
       <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/javascript-date-iife/</guid>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</guid>
       <description>Краткий разбор переменной x, Date.now(), IIFE и цикла ожидания в JavaScript.</description>
       
     </item>
