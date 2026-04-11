@@ -33,10 +33,10 @@
     
     <item>
       <title>Отчет по лабораторной работе «Протокол HTTP»</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/http-lab-report/</link>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/http-otchet/</link>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
       <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/http-lab-report/</guid>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/http-otchet/</guid>
       <description>Отчет по лабораторной работе о GET- и POST-запросах, cURL, OpenSSL и Postman.</description>
       
     </item>
