@@ -12,6 +12,16 @@
     <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Разбор Date.now() и IIFE в JavaScript</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/javascript-date-iife/</link>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/javascript-date-iife/</guid>
+      <description>Краткий разбор переменной x, Date.now(), IIFE и цикла ожидания в JavaScript.</description>
+      
+    </item>
+    
+    <item>
       <title>C#-проект по обработке данных и работе со структурами</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</link>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on Портфолио Pistaha</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/javascript/</link>
+    <description>Recent content in Javascript on Портфолио Pistaha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
+    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2025 Pistaha</copyright>
+    <lastBuildDate>Sat, 11 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Разбор Date.now() и IIFE в JavaScript</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/javascript-date-iife/</link>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/javascript-date-iife/</guid>
+      <description>Краткий разбор переменной x, Date.now(), IIFE и цикла ожидания в JavaScript.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
