@@ -230,7 +230,7 @@
     "keywords": ["веб","документация"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "10"
+    "wordCount": "682"
   }]
   </script>
 
@@ -705,7 +705,360 @@
         
 
         <div class="article-content max-w-prose mb-20">
-          <p>Отчет по лабораторной работе на тему «Протокол HTTP. Клиент-серверное взаимодействие».</p>
+          
+<h2 class="relative group">Тема
+    <div id="тема" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%82%d0%b5%d0%bc%d0%b0" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<p>Протокол HTTP. Клиент-серверное взаимодействие.</p>
+
+<h2 class="relative group">Цель работы
+    <div id="цель-работы" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%86%d0%b5%d0%bb%d1%8c-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<p>Изучить основы клиент-серверного взаимодействия по протоколу HTTP, выполнить GET- и POST-запросы разными способами, получить ответы сервера и зафиксировать результаты в форме страницы для публикации на GitHub Pages.</p>
+
+<h2 class="relative group">Используемые инструменты
+    <div id="используемые-инструменты" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d1%83%d0%b5%d0%bc%d1%8b%d0%b5-%d0%b8%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d1%8b" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<ul>
+<li>Терминал macOS.</li>
+<li><code>curl</code>.</li>
+<li><code>openssl s_client</code>.</li>
+<li><code>nc</code>.</li>
+<li>Postman.</li>
+<li>Собственный сервер <code>yachatik.ru</code>.</li>
+<li>API Банка России.</li>
+</ul>
+
+<h2 class="relative group">Ход выполнения работы
+    <div id="ход-выполнения-работы" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%85%d0%be%d0%b4-%d0%b2%d1%8b%d0%bf%d0%be%d0%bb%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<p>В ходе работы для CLI и cURL использовался собственный сервер <code>yachatik.ru</code>. Через Postman выполнялся GET-запрос к API Банка России, так как это предусмотрено заданием лабораторной работы.</p>
+
+<h2 class="relative group">Раздел 1. Проверка наличия CLI-инструментов
+    <div id="раздел-1-проверка-наличия-cli-инструментов" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb-1-%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d1%80%d0%ba%d0%b0-%d0%bd%d0%b0%d0%bb%d0%b8%d1%87%d0%b8%d1%8f-cli-%d0%b8%d0%bd%d1%81%d1%82%d1%80%d1%83%d0%bc%d0%b5%d0%bd%d1%82%d0%be%d0%b2" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<p>Перед отправкой HTTP-запросов была проверена доступность утилит командной строки.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl --version
+</span></span><span style="display:flex;"><span>openssl version
+</span></span><span style="display:flex;"><span>nc -h</span></span></code></pre></div></div>
+<p>Результат: утилита <code>curl</code> доступна, установлена версия <code>curl 8.7.1</code>; утилита <code>openssl</code> доступна, установлена версия <code>OpenSSL 3.6.1</code>; утилита <code>nc</code> доступна и выводит справку по использованию.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Проверка наличия curl, openssl и nc"
+    src="images/cli-tools-check.png"
+    ></figure>
+</p>
+
+<h2 class="relative group">Раздел 2. GET и POST запросы к веб-ресурсу через CLI
+    <div id="раздел-2-get-и-post-запросы-к-веб-ресурсу-через-cli" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb-2-get-%d0%b8-post-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81%d1%8b-%d0%ba-%d0%b2%d0%b5%d0%b1-%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d1%83-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-cli" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">Проверка HTTP-ответа сервера
+    <div id="проверка-http-ответа-сервера" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d1%80%d0%ba%d0%b0-http-%d0%be%d1%82%d0%b2%d0%b5%d1%82%d0%b0-%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80%d0%b0" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Сначала был проверен ответ сервера по HTTP.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -I http://yachatik.ru</span></span></code></pre></div></div>
+<p>Результат: сервер вернул <code>HTTP/1.1 301 Moved Permanently</code> и выполнил редирект на <code>https://yachatik.ru/</code>.</p>
+
+<h3 class="relative group">Проверка HTTPS-страницы
+    <div id="проверка-https-страницы" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%bf%d1%80%d0%be%d0%b2%d0%b5%d1%80%d0%ba%d0%b0-https-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Затем была проверена главная HTTPS-страница сайта.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -i https://yachatik.ru/</span></span></code></pre></div></div>
+<p>Результат: сервер вернул <code>HTTP/1.1 200 OK</code>.</p>
+
+<h3 class="relative group">Извлечение API-маршрутов сайта
+    <div id="извлечение-api-маршрутов-сайта" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%b8%d0%b7%d0%b2%d0%bb%d0%b5%d1%87%d0%b5%d0%bd%d0%b8%d0%b5-api-%d0%bc%d0%b0%d1%80%d1%88%d1%80%d1%83%d1%82%d0%be%d0%b2-%d1%81%d0%b0%d0%b9%d1%82%d0%b0" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Из файла <code>app.js</code> сайта <code>yachatik.ru</code> были извлечены API-маршруты. На скриншоте зафиксирован список найденных маршрутов, включая:</p>
+<ul>
+<li><code>/api/auth/login</code>;</li>
+<li><code>/api/auth/register</code>;</li>
+<li><code>/api/playlists</code>;</li>
+<li><code>/api/playlists/public</code>;</li>
+<li><code>/api/tracks</code>;</li>
+<li><code>/api/users/${userId}</code>.</li>
+</ul>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -s https://yachatik.ru/app.js | grep -o <span style="color:#e6db74">&#39;/api[^&#34;&#39;</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">&#39; ]*&#39;</span></span></span></code></pre></div></div>
+<p>Результат: в выводе терминала отображен список API-маршрутов, которые далее использовались для выполнения GET- и POST-запросов.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Извлечение API-маршрутов из app.js"
+    src="images/api-routes-extraction.png"
+    ></figure>
+</p>
+
+<h3 class="relative group">GET-запрос вручную через OpenSSL
+    <div id="get-запрос-вручную-через-openssl" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#get-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81-%d0%b2%d1%80%d1%83%d1%87%d0%bd%d1%83%d1%8e-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-openssl" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Для ручной отправки GET-запроса было установлено TLS-соединение с сервером через <code>openssl s_client</code>.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>openssl s_client -connect yachatik.ru:443 -quiet</span></span></code></pre></div></div>
+<p>После подключения был отправлен HTTP-запрос:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">GET</span> /api/playlists/public <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+</span></span><span style="display:flex;"><span>Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">yachatik.ru</span>
+</span></span><span style="display:flex;"><span>Accept<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+</span></span><span style="display:flex;"><span>Connection<span style="color:#f92672">:</span> <span style="color:#ae81ff">close</span></span></span></code></pre></div></div>
+<p>Результат: сервер вернул <code>HTTP/1.1 200 OK</code> и JSON-ответ со списком публичных плейлистов.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="GET-запрос к списку публичных плейлистов через cURL и OpenSSL"
+    src="images/get-playlists-curl-openssl.png"
+    ></figure>
+</p>
+
+<h3 class="relative group">POST-запрос вручную через OpenSSL
+    <div id="post-запрос-вручную-через-openssl" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#post-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81-%d0%b2%d1%80%d1%83%d1%87%d0%bd%d1%83%d1%8e-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-openssl" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Для ручной отправки POST-запроса было установлено TLS-соединение с сервером через <code>openssl s_client</code>.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>openssl s_client -connect yachatik.ru:443 -quiet</span></span></code></pre></div></div>
+<p>После подключения был отправлен HTTP-запрос:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">POST</span> /api/auth/register <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+</span></span><span style="display:flex;"><span>Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">yachatik.ru</span>
+</span></span><span style="display:flex;"><span>Accept<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+</span></span><span style="display:flex;"><span>Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+</span></span><span style="display:flex;"><span>Content-Length<span style="color:#f92672">:</span> <span style="color:#ae81ff">153</span>
+</span></span><span style="display:flex;"><span>Connection<span style="color:#f92672">:</span> <span style="color:#ae81ff">close</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;firstName&#34;</span>:<span style="color:#e6db74">&#34;Yarik&#34;</span>,<span style="color:#f92672">&#34;username&#34;</span>:<span style="color:#e6db74">&#34;yarik_http_test_02&#34;</span>,<span style="color:#f92672">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;yarik_http_test_02@example.com&#34;</span>,<span style="color:#f92672">&#34;password&#34;</span>:<span style="color:#e6db74">&#34;StrongPass1!&#34;</span>,<span style="color:#f92672">&#34;confirmPassword&#34;</span>:<span style="color:#e6db74">&#34;StrongPass1!&#34;</span>}</span></span></code></pre></div></div>
+<p>Результат: сервер вернул <code>HTTP/1.1 200 OK</code>. В JSON-ответе указано сообщение <code>Registration successful</code>, что подтверждает успешную регистрацию пользователя <code>yarik_http_test_02</code>.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="POST-запрос регистрации через cURL и OpenSSL"
+    src="images/post-register-curl-openssl.png"
+    ></figure>
+</p>
+
+<h2 class="relative group">Раздел 3. Те же запросы через cURL
+    <div id="раздел-3-те-же-запросы-через-curl" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb-3-%d1%82%d0%b5-%d0%b6%d0%b5-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81%d1%8b-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-curl" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">GET-запрос через cURL
+    <div id="get-запрос-через-curl" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#get-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-curl" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>GET-запрос к API собственного сервера был выполнен через <code>curl</code>.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -i https://yachatik.ru/api/playlists/public</span></span></code></pre></div></div>
+<p>Результат: сервер вернул <code>HTTP/1.1 200 OK</code> и JSON-ответ со списком публичных плейлистов. В ответе присутствует сообщение <code>Public playlists retrieved successfully</code>.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="GET-запрос через cURL"
+    src="images/get-playlists-curl-openssl.png"
+    ></figure>
+</p>
+
+<h3 class="relative group">POST-запрос через cURL
+    <div id="post-запрос-через-curl" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#post-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81-%d1%87%d0%b5%d1%80%d0%b5%d0%b7-curl" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>POST-запрос к API собственного сервера был выполнен через <code>curl</code> с передачей JSON-данных.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -i -X POST https://yachatik.ru/api/auth/register <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -d <span style="color:#e6db74">&#39;{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;firstName&#34;:&#34;Yarik&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;username&#34;:&#34;yarik_http_test_01&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;email&#34;:&#34;yarik_http_test_01@example.com&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;password&#34;:&#34;StrongPass1!&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;confirmPassword&#34;:&#34;StrongPass1!&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  }&#39;</span></span></span></code></pre></div></div>
+<p>Результат: сервер вернул <code>HTTP/1.1 200 OK</code>. В JSON-ответе указано сообщение <code>Registration successful</code>, что подтверждает успешную регистрацию пользователя <code>yarik_http_test_01</code>.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="POST-запрос через cURL"
+    src="images/post-register-curl-openssl.png"
+    ></figure>
+</p>
+
+<h2 class="relative group">Раздел 4. GET-запрос в Postman к API Банка России
+    <div id="раздел-4-get-запрос-в-postman-к-api-банка-россии" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb-4-get-%d0%b7%d0%b0%d0%bf%d1%80%d0%be%d1%81-%d0%b2-postman-%d0%ba-api-%d0%b1%d0%b0%d0%bd%d0%ba%d0%b0-%d1%80%d0%be%d1%81%d1%81%d0%b8%d0%b8" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<p>Для проверки работы с GUI-инструментом использовался Postman. В нем был выполнен GET-запрос к API Банка России для получения динамики курса доллара США за выбранный период.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2026&amp;date_req2=20/03/2026&amp;VAL_NM_RQ=R01235</span></span></code></pre></div></div>
+<p>Параметры запроса:</p>
+<ul>
+<li><code>date_req1 = 01/03/2026</code>;</li>
+<li><code>date_req2 = 20/03/2026</code>;</li>
+<li><code>VAL_NM_RQ = R01235</code>.</li>
+</ul>
+<p><code>VAL_NM_RQ = R01235</code> соответствует доллару США.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Параметры GET-запроса к API Банка России в Postman"
+    src="images/postman-cbr-params.png"
+    ></figure>
+</p>
+<p>Результат: API Банка России вернул XML-ответ с динамикой курса USD за период с <code>01.03.2026</code> по <code>20.03.2026</code>. На скриншоте ответа зафиксированы записи с датами, значениями <code>Value</code> и <code>VunitRate</code>, например для дат <code>03.03.2026</code>, <code>04.03.2026</code>, <code>05.03.2026</code>, <code>06.03.2026</code>, <code>07.03.2026</code>.</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="XML-ответ API Банка России в Postman"
+    src="images/postman-cbr-response.png"
+    ></figure>
+</p>
+
+<h2 class="relative group">Вывод
+    <div id="вывод" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%b2%d1%8b%d0%b2%d0%be%d0%b4" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<p>В ходе лабораторной работы были изучены основы клиент-серверного взаимодействия по протоколу HTTP. Были отправлены GET- и POST-запросы разными способами: через <code>curl</code> и вручную через <code>openssl s_client</code>. Был получен и проанализирован ответ сервера <code>yachatik.ru</code>, включая HTTP-статусы <code>301 Moved Permanently</code> и <code>200 OK</code>, а также JSON-ответы API. Для работы с внешним API был использован GUI-инструмент Postman; через него был выполнен GET-запрос к API Банка России и получен XML с курсом доллара США за выбранный период.</p>
+
+<h2 class="relative group">Список использованных команд
+    <div id="список-использованных-команд" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%81%d0%bf%d0%b8%d1%81%d0%be%d0%ba-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%bd%d1%8b%d1%85-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl --version
+</span></span><span style="display:flex;"><span>openssl version
+</span></span><span style="display:flex;"><span>nc -h
+</span></span><span style="display:flex;"><span>curl -I http://yachatik.ru
+</span></span><span style="display:flex;"><span>curl -i https://yachatik.ru/
+</span></span><span style="display:flex;"><span>curl -s https://yachatik.ru/app.js | grep -o <span style="color:#e6db74">&#39;/api[^&#34;&#39;</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">&#39; ]*&#39;</span>
+</span></span><span style="display:flex;"><span>curl -i https://yachatik.ru/api/playlists/public
+</span></span><span style="display:flex;"><span>openssl s_client -connect yachatik.ru:443 -quiet
+</span></span><span style="display:flex;"><span>curl -i -X POST https://yachatik.ru/api/auth/register <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -d <span style="color:#e6db74">&#39;{
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;firstName&#34;:&#34;Yarik&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;username&#34;:&#34;yarik_http_test_01&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;email&#34;:&#34;yarik_http_test_01@example.com&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;password&#34;:&#34;StrongPass1!&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;confirmPassword&#34;:&#34;StrongPass1!&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">  }&#39;</span></span></span></code></pre></div></div>
+<p>Ручной GET-запрос через <code>openssl s_client</code>:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">GET</span> /api/playlists/public <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+</span></span><span style="display:flex;"><span>Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">yachatik.ru</span>
+</span></span><span style="display:flex;"><span>Accept<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+</span></span><span style="display:flex;"><span>Connection<span style="color:#f92672">:</span> <span style="color:#ae81ff">close</span></span></span></code></pre></div></div>
+<p>Ручной POST-запрос через <code>openssl s_client</code>:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">POST</span> /api/auth/register <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
+</span></span><span style="display:flex;"><span>Host<span style="color:#f92672">:</span> <span style="color:#ae81ff">yachatik.ru</span>
+</span></span><span style="display:flex;"><span>Accept<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+</span></span><span style="display:flex;"><span>Content-Type<span style="color:#f92672">:</span> <span style="color:#ae81ff">application/json</span>
+</span></span><span style="display:flex;"><span>Content-Length<span style="color:#f92672">:</span> <span style="color:#ae81ff">153</span>
+</span></span><span style="display:flex;"><span>Connection<span style="color:#f92672">:</span> <span style="color:#ae81ff">close</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{<span style="color:#f92672">&#34;firstName&#34;</span>:<span style="color:#e6db74">&#34;Yarik&#34;</span>,<span style="color:#f92672">&#34;username&#34;</span>:<span style="color:#e6db74">&#34;yarik_http_test_02&#34;</span>,<span style="color:#f92672">&#34;email&#34;</span>:<span style="color:#e6db74">&#34;yarik_http_test_02@example.com&#34;</span>,<span style="color:#f92672">&#34;password&#34;</span>:<span style="color:#e6db74">&#34;StrongPass1!&#34;</span>,<span style="color:#f92672">&#34;confirmPassword&#34;</span>:<span style="color:#e6db74">&#34;StrongPass1!&#34;</span>}</span></span></code></pre></div></div>
+<p>GET-запрос в Postman:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://www.cbr.ru/scripts/XML_dynamic.asp?date_req1=01/03/2026&amp;date_req2=20/03/2026&amp;VAL_NM_RQ=R01235</span></span></code></pre></div></div>
 
           
           
