@@ -1,6 +1,7 @@
 ---
 title: "Создание проекта с использованием Webpack, Vite и Docker"
 date: 2026-04-24
+slug: "webpack"
 summary: "Отчет по лабораторной работе: webpack-сборка, Bootstrap CDN, Luxon, переход на Vite и запуск в Docker."
 tags: ["веб", "javascript", "webpack", "docker"]
 ---
