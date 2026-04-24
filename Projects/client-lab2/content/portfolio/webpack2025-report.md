@@ -166,7 +166,7 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED              S
 
 Скриншот запущенного контейнера:
 
-![Скриншот вывода docker ps с запущенным контейнером](images/docker-ps-output.png)
+![Скриншот вывода docker ps с запущенным контейнером](images/docker-ps-output-user.png)
 
 Скриншот запуска контейнера через `docker run`:
 
