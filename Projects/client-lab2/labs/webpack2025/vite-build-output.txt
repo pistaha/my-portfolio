@@ -1,0 +1,12 @@
+
+> webpack2025@1.0.0 build:vite
+> vite build
+
+vite v8.0.10 building client environment for production...
+[2Ktransforming...✓ 7 modules transformed.
+rendering chunks...
+computing gzip size...
+vite-dist/vite.html                 1.71 kB │ gzip:  0.94 kB
+vite-dist/assets/main-Clt1YauP.js  71.34 kB │ gzip: 22.50 kB
+
+✓ built in 33ms
