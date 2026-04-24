@@ -90,7 +90,7 @@ setInterval(() => {
 
 Скриншот внешнего вида страницы:
 
-![Страница с Bootstrap CDN и крупным выводом Luxon](images/page-webpack.png)
+![Страница с Bootstrap CDN и крупным выводом Luxon](images/page-webpack-v2.png)
 
 ## Переход на `vite`
 
@@ -170,7 +170,7 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED              S
 
 Скриншот страницы, запущенной из Docker-контейнера:
 
-![Страница приложения, открытая из Docker-контейнера](images/page-docker.png)
+![Страница приложения, открытая из Docker-контейнера](images/page-docker-v2.png)
 
 ## Последовательность действий для запуска
 
