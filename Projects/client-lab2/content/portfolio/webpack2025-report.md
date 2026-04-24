@@ -61,7 +61,7 @@ webpack 5.106.2 compiled successfully in 404 ms
 
 Скриншот вывода команды:
 
-![Скриншот результата команды npx webpack](images/webpack-build-output.png)
+![Скриншот результата команды npx webpack](images/webpack-build-output-user.png)
 
 ## Веб-страница с Bootstrap CDN и Luxon
 
