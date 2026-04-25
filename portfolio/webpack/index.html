@@ -234,7 +234,7 @@
     "keywords": ["веб","javascript","webpack","vite","bootstrap","luxon","docker"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "944"
+    "wordCount": "957"
   }]
   </script>
 
@@ -1008,7 +1008,7 @@
 <li>добавлена зависимость <code>bootstrap</code> в <code>package.json</code>;</li>
 <li>настроен запуск приложения через команду <code>npm run dev</code>;</li>
 <li>подготовлена Bootstrap-разметка страницы с колонками в соотношении <code>2-8-2</code>;</li>
-<li>в центральной колонке размещена большая красная кнопка <code>Показать время</code>;</li>
+<li>в центральной колонке размещена большая синяя кнопка <code>Показать время</code>;</li>
 <li>реализовано модальное окно Bootstrap;</li>
 <li>в заголовке модального окна выведена строка <code>Выполнил: Рыбаков Ярослав</code>;</li>
 <li>в теле модального окна через <code>Luxon</code> выводится текущая дата и время в формате <code>dd.MM.yyyy HH:mm:ss</code>;</li>
@@ -1054,6 +1054,16 @@
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm init -y
 </span></span><span style="display:flex;"><span>npm install luxon bootstrap
 </span></span><span style="display:flex;"><span>npm install -D vite webpack webpack-cli serve</span></span></code></pre></div></div>
+<p>Скриншот установки зависимостей:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Установка зависимостей для второго этапа"
+    src="images/npm-install-bootstrap-luxon.png"
+    ></figure>
+</p>
 
 <h2 class="relative group">Настройка <code>package.json</code>
     <div id="настройка-packagejson" class="anchor"></div>
@@ -1072,6 +1082,16 @@
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm run dev</span></span></code></pre></div></div>
 <p>После запуска приложение открывается по адресу:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>http://localhost:3000/vite.html</span></span></code></pre></div></div>
+<p>Скриншот запуска приложения через <code>npm run dev</code>:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Запуск Vite для второго этапа"
+    src="images/npm-run-dev.png"
+    ></figure>
+</p>
 
 <h2 class="relative group">Подключение <code>Luxon</code>
     <div id="подключение-luxon" class="anchor"></div>
@@ -1098,10 +1118,10 @@
 </h2>
 <p>Для оформления страницы использованы классы <code>Bootstrap 5</code>, а для открытия модального окна задействован компонент <code>Modal</code>.</p>
 <p>На странице реализована сетка с тремя колонками по схеме <code>2-8-2</code>. Центральная колонка является основной рабочей областью приложения.</p>
-<p>В ней размещена большая красная кнопка:</p>
+<p>В ней размещена большая синяя кнопка:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Показать время</span></span></code></pre></div></div>
 <p>Кнопка занимает всю ширину центральной колонки благодаря классам Bootstrap:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;showTimeButton&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-danger btn-lg w-100 py-3&#34;</span>&gt;
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;showTimeButton&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary btn-lg w-100 py-3&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>  Показать время
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">button</span>&gt;</span></span></code></pre></div></div>
 
@@ -1123,6 +1143,16 @@
 <li>крестиком в правом верхнем углу;</li>
 <li>кнопкой <code>Закрыть</code> в правом нижнем углу.</li>
 </ul>
+<p>Скриншот итогового интерфейса:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Страница второго этапа с открытым модальным окном"
+    src="images/bootstrap-luxon-modal.png"
+    ></figure>
+</p>
 
 <h2 class="relative group">Последовательность выполненных действий
     <div id="последовательность-выполненных-действий" class="anchor"></div>
@@ -1140,7 +1170,7 @@
 <li>Подключение <code>Luxon</code> для вывода текущей даты и времени.</li>
 <li>Подключение <code>Bootstrap 5</code> для сетки, кнопки и модального окна.</li>
 <li>Написание HTML-разметки страницы с колонками <code>2-8-2</code>.</li>
-<li>Настройка большой красной кнопки <code>Показать время</code>.</li>
+<li>Настройка большой синей кнопки <code>Показать время</code>.</li>
 <li>Реализация модального окна с именем исполнителя и временем.</li>
 <li>Запуск приложения через <code>npm run dev</code>.</li>
 <li>Проверка результата в браузере.</li>
