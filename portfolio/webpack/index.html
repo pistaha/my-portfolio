@@ -234,7 +234,7 @@
     "keywords": ["веб","javascript","webpack","vite","bootstrap","luxon","docker"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "923"
+    "wordCount": "944"
   }]
   </script>
 
@@ -795,6 +795,16 @@
 </span></span><span style="display:flex;"><span>orphan modules 256 KiB [orphan] 2 modules
 </span></span><span style="display:flex;"><span>./src/index.js + 2 modules 256 KiB [built] [code generated]
 </span></span><span style="display:flex;"><span>webpack 5.106.2 compiled successfully in 404 ms</span></span></code></pre></div></div>
+<p>Скриншот вывода команды:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Скриншот результата команды npx webpack"
+    src="images/webpack-build-output-user.png"
+    ></figure>
+</p>
 
 <h2 class="relative group">Веб-страница с Bootstrap CDN и Luxon
     <div id="веб-страница-с-bootstrap-cdn-и-luxon" class="anchor"></div>
@@ -820,6 +830,16 @@
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">setLocale</span>(<span style="color:#e6db74">&#34;ru&#34;</span>)
 </span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">toFormat</span>(<span style="color:#e6db74">&#34;dd.LL.y HH:mm:ss&#34;</span>);
 </span></span><span style="display:flex;"><span>}, <span style="color:#ae81ff">1000</span>);</span></span></code></pre></div></div>
+<p>Скриншот внешнего вида страницы:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Страница с Bootstrap CDN и крупным выводом Luxon"
+    src="images/page-webpack-v2.png"
+    ></figure>
+</p>
 
 <h2 class="relative group">Переход на <code>vite</code>
     <div id="переход-на-vite" class="anchor"></div>
@@ -886,6 +906,36 @@
 <p>Результат проверки:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>CONTAINER ID   IMAGE             COMMAND                  CREATED              STATUS              PORTS                                         NAMES
 </span></span><span style="display:flex;"><span>7dc727533edf   webpack2025-lab   &#34;docker-entrypoint.s…&#34;   About a minute ago   Up About a minute   0.0.0.0:3001-&gt;3000/tcp, [::]:3001-&gt;3000/tcp   webpack2025-lab-container</span></span></code></pre></div></div>
+<p>Скриншот запущенного контейнера:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Скриншот вывода docker ps с запущенным контейнером"
+    src="images/docker-ps-output-user.png"
+    ></figure>
+</p>
+<p>Скриншот запуска контейнера через <code>docker run</code>:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Скриншот терминала с запуском docker run"
+    src="images/docker-run-user.png"
+    ></figure>
+</p>
+<p>Скриншот страницы, запущенной из Docker-контейнера:</p>
+<p><figure><img
+    class="my-0 rounded-md"
+    loading="lazy"
+    decoding="async"
+    fetchpriority="low"
+    alt="Страница приложения, открытая из Docker-контейнера"
+    src="images/page-docker-v2.png"
+    ></figure>
+</p>
 
 <h2 class="relative group">Последовательность действий для запуска
     <div id="последовательность-действий-для-запуска" class="anchor"></div>

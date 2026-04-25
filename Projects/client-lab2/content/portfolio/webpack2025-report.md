@@ -61,6 +61,10 @@ orphan modules 256 KiB [orphan] 2 modules
 webpack 5.106.2 compiled successfully in 404 ms
 ```
 
+Скриншот вывода команды:
+
+![Скриншот результата команды npx webpack](images/webpack-build-output-user.png)
+
 ## Веб-страница с Bootstrap CDN и Luxon
 
 В `index.html` подключен Bootstrap через CDN:
@@ -85,6 +89,10 @@ setInterval(() => {
     .toFormat("dd.LL.y HH:mm:ss");
 }, 1000);
 ```
+
+Скриншот внешнего вида страницы:
+
+![Страница с Bootstrap CDN и крупным выводом Luxon](images/page-webpack-v2.png)
 
 ## Переход на `vite`
 
@@ -157,6 +165,18 @@ docker ps --filter name=webpack2025-lab-container
 CONTAINER ID   IMAGE             COMMAND                  CREATED              STATUS              PORTS                                         NAMES
 7dc727533edf   webpack2025-lab   "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3001->3000/tcp, [::]:3001->3000/tcp   webpack2025-lab-container
 ```
+
+Скриншот запущенного контейнера:
+
+![Скриншот вывода docker ps с запущенным контейнером](images/docker-ps-output-user.png)
+
+Скриншот запуска контейнера через `docker run`:
+
+![Скриншот терминала с запуском docker run](images/docker-run-user.png)
+
+Скриншот страницы, запущенной из Docker-контейнера:
+
+![Страница приложения, открытая из Docker-контейнера](images/page-docker-v2.png)
 
 ## Последовательность действий для запуска
 
