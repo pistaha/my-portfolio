@@ -458,7 +458,7 @@ https://github.com/pistaha/my-portfolio/tree/gh-pages/lab-submissions/bootstrap-
 Собранное приложение опубликовано на статическом сайте:
 
 ```text
-https://pistaha.github.io/my-portfolio/stage3-vite-bootstrap/
+https://pistaha.github.io/my-portfolio/stage3/
 ```
 
 Скриншот страницы, открытой из опубликованного портфолио:
