@@ -450,7 +450,7 @@ dist/assets/index-C0IWZC7y.js    93.95 kB │ gzip: 29.40 kB
 Исходные файлы проекта размещены в репозитории:
 
 ```text
-https://github.com/pistaha/my-portfolio
+https://github.com/pistaha/my-portfolio/tree/gh-pages/lab-submissions/bootstrap-luxon
 ```
 
 ## Ссылка на опубликованную страницу
@@ -460,6 +460,10 @@ https://github.com/pistaha/my-portfolio
 ```text
 https://pistaha.github.io/my-portfolio/stage3-vite-bootstrap/
 ```
+
+Скриншот страницы, открытой из опубликованного портфолио:
+
+![Страница третьего этапа, открытая из портфолио](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/stage3-portfolio-page.png)
 
 ## Последовательность выполненных действий
 
