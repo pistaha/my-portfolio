@@ -1,3 +1,1 @@
-import { startClock } from "./renderClock.js";
-
-startClock("hh");
+import "./index.js";
