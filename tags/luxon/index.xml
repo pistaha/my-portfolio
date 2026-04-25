@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on Портфолио Pistaha</title>
-    <link>https://pistaha.github.io/my-portfolio/tags/docker/</link>
-    <description>Recent content in Docker on Портфолио Pistaha</description>
+    <title>Luxon on Портфолио Pistaha</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/luxon/</link>
+    <description>Recent content in Luxon on Портфолио Pistaha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
     <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
     <copyright>© 2025 Pistaha</copyright>
-    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/luxon/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Создание проекта с использованием Webpack, Vite и Docker</title>
