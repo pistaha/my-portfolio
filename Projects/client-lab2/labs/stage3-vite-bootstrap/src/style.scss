@@ -1,0 +1,34 @@
+// Import only the Bootstrap pieces used by the page to keep the bundle compact.
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/utilities/api";
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef6ff 0%, #dfeefe 100%);
+}
+
+.button-wrap {
+  min-height: 220px;
+  display: flex;
+}
+
+.time-value {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
