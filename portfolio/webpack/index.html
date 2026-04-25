@@ -234,7 +234,7 @@
     "keywords": ["веб","javascript","webpack","vite","bootstrap","luxon","docker"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "878"
+    "wordCount": "898"
   }]
   </script>
 
@@ -872,7 +872,7 @@
     </span>
     
 </h2>
-<p>Использован рекомендованный образ <code>node:24-alpine</code>.</p>
+<p>Использован образ <code>node:24-alpine</code>, так как в задании рекомендовано применять alpine-версию образа.</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">node:24-alpine</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">WORKDIR</span> <span style="color:#e6db74">/app</span><span style="color:#960050;background-color:#1e0010">
@@ -1172,7 +1172,7 @@
     </span>
     
 </h2>
-<p>В результате на втором этапе приложение с <code>Luxon</code> было встроено в шаблон на <code>Bootstrap 5</code>. На странице реализованы три колонки <code>2-8-2</code>, большая красная кнопка <code>Показать время</code>, всплывающее окно с ФИО исполнителя и текущими датой и временем, а также два способа закрытия окна.</p>
+<p>Таким образом, была выполнена базовая сборка JavaScript-приложения через Webpack, проверен вывод времени с помощью библиотеки Luxon, добавлено оформление Bootstrap 5 через CDN, подготовлен альтернативный вариант сборки через Vite, а также выполнен запуск приложения в Docker-контейнере на базе alpine-образа. На втором этапе приложение было встроено в Bootstrap-шаблон с сеткой 2-8-2, большой красной кнопкой и модальным окном.</p>
 
           
           
