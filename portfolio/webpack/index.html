@@ -234,7 +234,7 @@
     "keywords": ["веб","javascript","webpack","vite","bootstrap","luxon","docker"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "869"
+    "wordCount": "868"
   }]
   </script>
 
@@ -1025,23 +1025,8 @@
 </h2>
 <p>Основные файлы второго этапа:</p>
 <ul>
-<li><code>labs/webpack2025/src/index.js</code></li>
-<li><code>labs/webpack2025/src/renderClock.js</code></li>
 <li><code>labs/webpack2025/index.html</code></li>
 </ul>
-
-<h2 class="relative group">Создание проекта и установка зависимостей
-    <div id="создание-проекта-и-установка-зависимостей" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%81%d0%be%d0%b7%d0%b4%d0%b0%d0%bd%d0%b8%d0%b5-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d0%b0-%d0%b8-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%b7%d0%b0%d0%b2%d0%b8%d1%81%d0%b8%d0%bc%d0%be%d1%81%d1%82%d0%b5%d0%b9" aria-label="Якорь">#</a>
-    </span>
-    
-</h2>
-<p>После перехода в каталог проекта использовались команды инициализации и установки зависимостей:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm init -y
-</span></span><span style="display:flex;"><span>npm install luxon bootstrap</span></span></code></pre></div></div>
 
 <h2 class="relative group">Подключение <code>Luxon</code>
     <div id="подключение-luxon" class="anchor"></div>
@@ -1052,8 +1037,8 @@
     </span>
     
 </h2>
-<p>Библиотека <code>Luxon</code> используется для получения текущей даты и времени. Формирование значения выполняется в формате:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">DateTime</span>.<span style="color:#a6e22e">local</span>().<span style="color:#a6e22e">setLocale</span>(<span style="color:#e6db74">&#34;ru&#34;</span>).<span style="color:#a6e22e">toFormat</span>(<span style="color:#e6db74">&#34;dd.MM.yyyy HH:mm:ss&#34;</span>);</span></span></code></pre></div></div>
+<p>Библиотека <code>Luxon</code> используется для получения текущей даты и времени. В коде страницы она подключается отдельно, а значение даты и времени формируется в формате:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">luxon</span>.<span style="color:#a6e22e">DateTime</span>.<span style="color:#a6e22e">local</span>().<span style="color:#a6e22e">setLocale</span>(<span style="color:#e6db74">&#34;ru&#34;</span>).<span style="color:#a6e22e">toFormat</span>(<span style="color:#e6db74">&#34;dd.LL.yyyy HH:mm:ss&#34;</span>);</span></span></code></pre></div></div>
 <p>Пример результата:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>25.10.2025 18:06:07</span></span></code></pre></div></div>
 
@@ -1066,7 +1051,7 @@
     </span>
     
 </h2>
-<p>Для оформления страницы использованы классы <code>Bootstrap 5</code>.</p>
+<p>Для оформления страницы использованы классы <code>Bootstrap 5</code>, а для всплывающего окна задействован стандартный компонент <code>Modal</code>.</p>
 <p>На странице реализована сетка с тремя колонками по схеме <code>2-8-2</code>. Центральная колонка является основной рабочей областью приложения.</p>
 <p>В ней размещена большая красная кнопка:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Показать время</span></span></code></pre></div></div>
@@ -1141,7 +1126,8 @@
 <li>Размещение трёх колонок по схеме <code>2-8-2</code>.</li>
 <li>Добавление большой красной кнопки <code>Показать время</code> в центральную колонку.</li>
 <li>Подключение <code>Luxon</code> для вывода текущей даты и времени.</li>
-<li>Реализация всплывающего окна Bootstrap с ФИО исполнителя.</li>
+<li>Подключение <code>Bootstrap 5</code> для сетки, кнопки и модального окна.</li>
+<li>Реализация всплывающего окна с ФИО исполнителя.</li>
 <li>Настройка закрытия окна крестиком и кнопкой <code>Закрыть</code>.</li>
 <li>Проверка итогового интерфейса в браузере.</li>
 <li>Подготовка скриншота с HTML-кодом и внешним видом приложения.</li>

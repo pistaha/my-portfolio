@@ -1,4 +1,0 @@
-asset main.js 69.1 KiB [emitted] [minimized] (name: main)
-orphan modules 256 KiB [orphan] 2 modules
-./src/index.js + 2 modules 256 KiB [built] [code generated]
-webpack 5.106.2 compiled successfully in 404 ms

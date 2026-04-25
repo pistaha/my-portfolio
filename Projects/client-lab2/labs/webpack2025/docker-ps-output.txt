@@ -1,2 +1,0 @@
-CONTAINER ID   IMAGE             COMMAND                  CREATED              STATUS              PORTS                                         NAMES
-7dc727533edf   webpack2025-lab   "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:3001->3000/tcp, [::]:3001->3000/tcp   webpack2025-lab-container
