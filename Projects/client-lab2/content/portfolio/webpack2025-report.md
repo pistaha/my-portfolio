@@ -375,6 +375,10 @@ npm run dev
 npm run build
 ```
 
+Скриншот установки зависимостей:
+
+![Установка зависимостей для третьего этапа](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/stage3-npm-install.png)
+
 Скрипты в `package.json`:
 
 ```json
@@ -425,13 +429,21 @@ dist/assets/index-WBhvOPX7.css  116.67 kB │ gzip: 16.86 kB
 dist/assets/index-C0IWZC7y.js    93.95 kB │ gzip: 29.40 kB
 ```
 
+Скриншот запуска сборки:
+
+![Запуск production-сборки для третьего этапа](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/stage3-build-output-1.png)
+
+Скриншот результата сборки с размерами файлов:
+
+![Результат production-сборки и размер бандла](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/stage3-build-output-2.png)
+
 Итоговый production-бандл состоит из CSS-файла размером `116.67 kB` и JavaScript-файла размером `93.95 kB`. В gzip-сжатии это `16.86 kB` для CSS и `29.40 kB` для JavaScript.
 
 ## Скриншот интерфейса
 
 Скриншот UI-страницы:
 
-![Скриншот интерфейса третьего этапа](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/bootstrap-luxon-modal.png)
+![Скриншот интерфейса третьего этапа](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/stage3-ui-page.png)
 
 ## Ссылка на репозиторий
 
