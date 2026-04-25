@@ -234,7 +234,7 @@
     "keywords": ["веб","javascript","webpack","vite","bootstrap","luxon","docker"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "914"
+    "wordCount": "869"
   }]
   </script>
 
@@ -1002,7 +1002,7 @@
     </span>
     
 </h2>
-<p>На втором этапе был доработан тот же проект <code>labs/webpack2025</code>. Приложение было встроено в шаблон на <code>Bootstrap 5</code> с использованием библиотеки <code>Luxon</code>.</p>
+<p>На втором этапе приложение с <code>Luxon</code> было встроено в шаблон на <code>Bootstrap 5</code>.</p>
 <p>В работе были выполнены следующие шаги:</p>
 <ul>
 <li>подготовлена Bootstrap-разметка страницы с колонками в соотношении <code>2-8-2</code>;</li>
@@ -1012,11 +1012,6 @@
 <li>в теле модального окна через <code>Luxon</code> выводится текущая дата и время в формате <code>dd.MM.yyyy HH:mm:ss</code>;</li>
 <li>добавлены два способа закрытия окна: крестик в заголовке и кнопка <code>Закрыть</code> внизу справа;</li>
 <li>подготовлен итоговый экран для скриншота с HTML-кодом и открытым модальным окном.</li>
-</ul>
-<p>Локальная среда:</p>
-<ul>
-<li><code>node v24.15.0</code></li>
-<li><code>npm 11.12.1</code></li>
 </ul>
 
 <h2 class="relative group">Структура проекта
@@ -1030,13 +1025,9 @@
 </h2>
 <p>Основные файлы второго этапа:</p>
 <ul>
-<li><code>labs/webpack2025/package.json</code></li>
 <li><code>labs/webpack2025/src/index.js</code></li>
-<li><code>labs/webpack2025/src/vite.js</code></li>
 <li><code>labs/webpack2025/src/renderClock.js</code></li>
 <li><code>labs/webpack2025/index.html</code></li>
-<li><code>labs/webpack2025/vite.html</code></li>
-<li><code>labs/webpack2025/vite.config.js</code></li>
 </ul>
 
 <h2 class="relative group">Создание проекта и установка зависимостей
@@ -1050,29 +1041,7 @@
 </h2>
 <p>После перехода в каталог проекта использовались команды инициализации и установки зависимостей:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm init -y
-</span></span><span style="display:flex;"><span>npm install luxon bootstrap
-</span></span><span style="display:flex;"><span>npm install -D vite webpack webpack-cli serve</span></span></code></pre></div></div>
-<p>Скриншот установки зависимостей:</p>
-<p><figure><img
-    class="my-0 rounded-md"
-    loading="lazy"
-    decoding="async"
-    fetchpriority="low"
-    alt="Установка зависимостей для второго этапа"
-    src="https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/npm-install-bootstrap-luxon.png"
-    ></figure>
-</p>
-<p>Для локальной проверки приложение запускалось в браузере, после чего подготавливался итоговый скриншот с открытым модальным окном.</p>
-<p>Скриншот запуска приложения:</p>
-<p><figure><img
-    class="my-0 rounded-md"
-    loading="lazy"
-    decoding="async"
-    fetchpriority="low"
-    alt="Запуск Vite для второго этапа"
-    src="https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/npm-run-dev.png"
-    ></figure>
-</p>
+</span></span><span style="display:flex;"><span>npm install luxon bootstrap</span></span></code></pre></div></div>
 
 <h2 class="relative group">Подключение <code>Luxon</code>
     <div id="подключение-luxon" class="anchor"></div>
@@ -1097,7 +1066,7 @@
     </span>
     
 </h2>
-<p>Для оформления страницы использованы классы <code>Bootstrap 5</code>, а для открытия модального окна задействован компонент <code>Modal</code>.</p>
+<p>Для оформления страницы использованы классы <code>Bootstrap 5</code>.</p>
 <p>На странице реализована сетка с тремя колонками по схеме <code>2-8-2</code>. Центральная колонка является основной рабочей областью приложения.</p>
 <p>В ней размещена большая красная кнопка:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Показать время</span></span></code></pre></div></div>
@@ -1115,7 +1084,7 @@
     </span>
     
 </h2>
-<p>После нажатия на кнопку открывается модальное окно Bootstrap с затемнением фона.</p>
+<p>После нажатия на кнопку открывается всплывающее окно Bootstrap.</p>
 <p>В заголовке указано имя исполнителя:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Выполнил: Рыбаков Ярослав</span></span></code></pre></div></div>
 <p>В теле модального окна крупным шрифтом выводится текущее время, полученное через <code>Luxon</code>.</p>
@@ -1124,7 +1093,17 @@
 <li>крестиком в правом верхнем углу;</li>
 <li>кнопкой <code>Закрыть</code> в правом нижнем углу.</li>
 </ul>
-<p>Скриншот итогового интерфейса:</p>
+
+<h2 class="relative group">Итоговый скриншот
+    <div id="итоговый-скриншот" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%b8%d1%82%d0%be%d0%b3%d0%be%d0%b2%d1%8b%d0%b9-%d1%81%d0%ba%d1%80%d0%b8%d0%bd%d1%88%d0%be%d1%82" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<p>В качестве ответа подготовлен итоговый скриншот, где показаны HTML-код страницы и внешний вид приложения с открытым модальным окном:</p>
 <p><figure><img
     class="my-0 rounded-md"
     loading="lazy"
@@ -1134,6 +1113,18 @@
     src="https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/bootstrap-luxon-modal.png"
     ></figure>
 </p>
+
+<h2 class="relative group">Ссылка на портфолио
+    <div id="ссылка-на-портфолио" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%81%d1%81%d1%8b%d0%bb%d0%ba%d0%b0-%d0%bd%d0%b0-%d0%bf%d0%be%d1%80%d1%82%d1%84%d0%be%d0%bb%d0%b8%d0%be" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<p>Страница проекта в портфолио:</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://pistaha.github.io/my-portfolio/portfolio/webpack/</span></span></code></pre></div></div>
 
 <h2 class="relative group">Последовательность выполненных действий
     <div id="последовательность-выполненных-действий" class="anchor"></div>
@@ -1146,15 +1137,14 @@
 </h2>
 <p>Последовательность работы над вторым этапом была следующей:</p>
 <ol>
-<li>Создание проекта как npm-приложения.</li>
-<li>Установка зависимостей <code>Luxon</code>, <code>Bootstrap 5</code> и <code>Vite</code>.</li>
+<li>Создание HTML-страницы с Bootstrap-разметкой.</li>
+<li>Размещение трёх колонок по схеме <code>2-8-2</code>.</li>
+<li>Добавление большой красной кнопки <code>Показать время</code> в центральную колонку.</li>
 <li>Подключение <code>Luxon</code> для вывода текущей даты и времени.</li>
-<li>Подключение <code>Bootstrap 5</code> для сетки, кнопки и модального окна.</li>
-<li>Написание HTML-разметки страницы с колонками <code>2-8-2</code>.</li>
-<li>Настройка большой красной кнопки <code>Показать время</code>.</li>
-<li>Реализация модального окна с именем исполнителя и временем.</li>
-<li>Проверка результата в браузере.</li>
-<li>Подготовка итогового скриншота с HTML-кодом и открытым модальным окном.</li>
+<li>Реализация всплывающего окна Bootstrap с ФИО исполнителя.</li>
+<li>Настройка закрытия окна крестиком и кнопкой <code>Закрыть</code>.</li>
+<li>Проверка итогового интерфейса в браузере.</li>
+<li>Подготовка скриншота с HTML-кодом и внешним видом приложения.</li>
 </ol>
 
 <h2 class="relative group">Вывод
@@ -1166,7 +1156,7 @@
     </span>
     
 </h2>
-<p>В результате на втором этапе приложение с <code>Luxon</code> было встроено в шаблон на <code>Bootstrap 5</code>. На странице реализована структура <code>2-8-2</code>, большая красная кнопка <code>Показать время</code>, модальное окно с ФИО исполнителя и текущими датой и временем, а также два способа закрытия окна. Проект оформлен как продолжение первого этапа лабораторной работы.</p>
+<p>В результате на втором этапе приложение с <code>Luxon</code> было встроено в шаблон на <code>Bootstrap 5</code>. На странице реализованы три колонки <code>2-8-2</code>, большая красная кнопка <code>Показать время</code>, всплывающее окно с ФИО исполнителя и текущими датой и временем, а также два способа закрытия окна.</p>
 
           
           

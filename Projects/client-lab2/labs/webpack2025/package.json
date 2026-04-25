@@ -1,14 +1,11 @@
 {
   "name": "webpack2025",
   "version": "1.0.0",
-  "description": "Учебный проект для лабораторной работы по Webpack и Vite.",
+  "description": "Учебный проект для лабораторной работы по Bootstrap 5 и Luxon.",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack",
-    "serve": "serve .",
-    "dev": "vite --host 0.0.0.0 --port 3000 --open /vite.html",
-    "dev:vite": "vite --host 0.0.0.0 --open /vite.html",
-    "build:vite": "vite build"
+    "dev": "vite --host 0.0.0.0 --port 3000 --open /",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +16,6 @@
     "luxon": "^3.7.2"
   },
   "devDependencies": {
-    "serve": "^14.2.6",
-    "vite": "^8.0.10",
-    "webpack": "^5.106.2",
-    "webpack-cli": "^7.0.2"
+    "vite": "^8.0.10"
   }
 }
