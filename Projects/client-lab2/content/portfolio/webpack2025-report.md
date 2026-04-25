@@ -310,17 +310,9 @@ luxon.DateTime.local().setLocale("ru").toFormat("dd.LL.yyyy HH:mm:ss");
 
 ## Итоговый скриншот
 
-В качестве ответа подготовлен итоговый скриншот, где показаны HTML-код страницы и внешний вид приложения с открытым модальным окном:
+Скриншот страницы:
 
 ![Страница второго этапа с открытым модальным окном](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/bootstrap-luxon-modal.png)
-
-## Ссылка на портфолио
-
-Страница проекта в портфолио:
-
-```text
-https://pistaha.github.io/my-portfolio/portfolio/webpack/
-```
 
 ## Последовательность выполненных действий
 
