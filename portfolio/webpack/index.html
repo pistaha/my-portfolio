@@ -234,7 +234,7 @@
     "keywords": ["веб","javascript","webpack","vite","bootstrap","luxon","docker"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "971"
+    "wordCount": "914"
   }]
   </script>
 
@@ -1002,18 +1002,16 @@
     </span>
     
 </h2>
-<p>На втором этапе был доработан тот же проект <code>labs/webpack2025</code>. Приложение было переработано под отдельный интерфейс на <code>Bootstrap 5</code> с модальным окном и запуском через <code>Vite</code>.</p>
+<p>На втором этапе был доработан тот же проект <code>labs/webpack2025</code>. Приложение было встроено в шаблон на <code>Bootstrap 5</code> с использованием библиотеки <code>Luxon</code>.</p>
 <p>В работе были выполнены следующие шаги:</p>
 <ul>
-<li>добавлена зависимость <code>bootstrap</code> в <code>package.json</code>;</li>
-<li>настроен запуск приложения через команду <code>npm run dev</code>;</li>
 <li>подготовлена Bootstrap-разметка страницы с колонками в соотношении <code>2-8-2</code>;</li>
-<li>в центральной колонке размещена большая синяя кнопка <code>Показать время</code>;</li>
+<li>в центральной колонке размещена большая красная кнопка <code>Показать время</code>;</li>
 <li>реализовано модальное окно Bootstrap;</li>
 <li>в заголовке модального окна выведена строка <code>Выполнил: Рыбаков Ярослав</code>;</li>
 <li>в теле модального окна через <code>Luxon</code> выводится текущая дата и время в формате <code>dd.MM.yyyy HH:mm:ss</code>;</li>
 <li>добавлены два способа закрытия окна: крестик в заголовке и кнопка <code>Закрыть</code> внизу справа;</li>
-<li>выполнен запуск приложения через <code>Vite</code> и проверка результата в браузере.</li>
+<li>подготовлен итоговый экран для скриншота с HTML-кодом и открытым модальным окном.</li>
 </ul>
 <p>Локальная среда:</p>
 <ul>
@@ -1064,25 +1062,8 @@
     src="https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/npm-install-bootstrap-luxon.png"
     ></figure>
 </p>
-
-<h2 class="relative group">Настройка <code>package.json</code>
-    <div id="настройка-packagejson" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%bd%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b0-packagejson" aria-label="Якорь">#</a>
-    </span>
-    
-</h2>
-<p>Для запуска приложения в режиме разработки в <code>package.json</code> добавлен npm-скрипт:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;scripts&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;dev&#34;</span>: <span style="color:#e6db74">&#34;vite --host 0.0.0.0 --port 3000 --open /vite.html&#34;</span>
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></div>
-<p>Это позволяет запускать приложение командой:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm run dev</span></span></code></pre></div></div>
-<p>После запуска приложение открывается по адресу:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>http://localhost:3000/vite.html</span></span></code></pre></div></div>
-<p>Скриншот запуска приложения через <code>npm run dev</code>:</p>
+<p>Для локальной проверки приложение запускалось в браузере, после чего подготавливался итоговый скриншот с открытым модальным окном.</p>
+<p>Скриншот запуска приложения:</p>
 <p><figure><img
     class="my-0 rounded-md"
     loading="lazy"
@@ -1118,11 +1099,10 @@
 </h2>
 <p>Для оформления страницы использованы классы <code>Bootstrap 5</code>, а для открытия модального окна задействован компонент <code>Modal</code>.</p>
 <p>На странице реализована сетка с тремя колонками по схеме <code>2-8-2</code>. Центральная колонка является основной рабочей областью приложения.</p>
-<p>В ней размещена большая синяя кнопка:</p>
+<p>В ней размещена большая красная кнопка:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Показать время</span></span></code></pre></div></div>
-<p>первый этап у меня голубой, и кнопку во втором этапе я захотел сделать синей.</p>
 <p>Кнопка занимает всю ширину центральной колонки благодаря классам Bootstrap:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;showTimeButton&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-primary btn-lg w-100 py-3&#34;</span>&gt;
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;showTimeButton&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;button&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;btn btn-danger btn-lg w-100 h-100 py-3&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>  Показать время
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">button</span>&gt;</span></span></code></pre></div></div>
 
@@ -1171,10 +1151,10 @@
 <li>Подключение <code>Luxon</code> для вывода текущей даты и времени.</li>
 <li>Подключение <code>Bootstrap 5</code> для сетки, кнопки и модального окна.</li>
 <li>Написание HTML-разметки страницы с колонками <code>2-8-2</code>.</li>
-<li>Настройка большой синей кнопки <code>Показать время</code>.</li>
+<li>Настройка большой красной кнопки <code>Показать время</code>.</li>
 <li>Реализация модального окна с именем исполнителя и временем.</li>
-<li>Запуск приложения через <code>npm run dev</code>.</li>
 <li>Проверка результата в браузере.</li>
+<li>Подготовка итогового скриншота с HTML-кодом и открытым модальным окном.</li>
 </ol>
 
 <h2 class="relative group">Вывод
@@ -1186,7 +1166,7 @@
     </span>
     
 </h2>
-<p>В результате на втором этапе было создано клиентское приложение с использованием <code>Vite</code>, <code>Luxon</code> и <code>Bootstrap 5</code>. На странице реализована адаптивная структура с центральной кнопкой и модальным окном, в котором отображаются имя исполнителя и актуальная дата со временем в требуемом формате. Проект запускается через <code>npm run dev</code> и является продолжением первого этапа лабораторной работы.</p>
+<p>В результате на втором этапе приложение с <code>Luxon</code> было встроено в шаблон на <code>Bootstrap 5</code>. На странице реализована структура <code>2-8-2</code>, большая красная кнопка <code>Показать время</code>, модальное окно с ФИО исполнителя и текущими датой и временем, а также два способа закрытия окна. Проект оформлен как продолжение первого этапа лабораторной работы.</p>
 
           
           
