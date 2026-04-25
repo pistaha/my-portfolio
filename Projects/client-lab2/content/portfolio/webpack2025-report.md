@@ -63,7 +63,7 @@ webpack 5.106.2 compiled successfully in 404 ms
 
 Скриншот вывода команды:
 
-![Скриншот результата команды npx webpack](images/webpack-build-output-user.png)
+![Скриншот результата команды npx webpack](https://pistaha.github.io/my-portfolio/portfolio/webpack/images/webpack-build-output-user.png)
 
 ## Веб-страница с Bootstrap CDN и Luxon
 
@@ -92,7 +92,7 @@ setInterval(() => {
 
 Скриншот внешнего вида страницы:
 
-![Страница с Bootstrap CDN и крупным выводом Luxon](images/page-webpack-v2.png)
+![Страница с Bootstrap CDN и крупным выводом Luxon](https://pistaha.github.io/my-portfolio/portfolio/webpack/images/page-webpack-v2.png)
 
 ## Переход на `vite`
 
@@ -168,15 +168,15 @@ CONTAINER ID   IMAGE             COMMAND                  CREATED              S
 
 Скриншот запущенного контейнера:
 
-![Скриншот вывода docker ps с запущенным контейнером](images/docker-ps-output-user.png)
+![Скриншот вывода docker ps с запущенным контейнером](https://pistaha.github.io/my-portfolio/portfolio/webpack/images/docker-ps-output-user.png)
 
 Скриншот запуска контейнера через `docker run`:
 
-![Скриншот терминала с запуском docker run](images/docker-run-user.png)
+![Скриншот терминала с запуском docker run](https://pistaha.github.io/my-portfolio/portfolio/webpack/images/docker-run-user.png)
 
 Скриншот страницы, запущенной из Docker-контейнера:
 
-![Страница приложения, открытая из Docker-контейнера](images/page-docker-v2.png)
+![Страница приложения, открытая из Docker-контейнера](https://pistaha.github.io/my-portfolio/portfolio/webpack/images/page-docker-v2.png)
 
 ## Последовательность действий для запуска
 
@@ -266,7 +266,7 @@ npm install -D vite webpack webpack-cli serve
 
 Скриншот установки зависимостей:
 
-![Установка зависимостей для второго этапа](images/npm-install-bootstrap-luxon.png)
+![Установка зависимостей для второго этапа](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/npm-install-bootstrap-luxon.png)
 
 ## Настройка `package.json`
 
@@ -292,7 +292,7 @@ http://localhost:3000/vite.html
 
 Скриншот запуска приложения через `npm run dev`:
 
-![Запуск Vite для второго этапа](images/npm-run-dev.png)
+![Запуск Vite для второго этапа](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/npm-run-dev.png)
 
 ## Подключение `Luxon`
 
@@ -347,7 +347,7 @@ DateTime.local().setLocale("ru").toFormat("dd.MM.yyyy HH:mm:ss");
 
 Скриншот итогового интерфейса:
 
-![Страница второго этапа с открытым модальным окном](images/bootstrap-luxon-modal.png)
+![Страница второго этапа с открытым модальным окном](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/bootstrap-luxon-modal.png)
 
 ## Последовательность выполненных действий
 
