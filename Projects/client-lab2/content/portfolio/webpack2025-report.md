@@ -241,6 +241,14 @@ http://localhost:3001/
 
 - `labs/webpack2025/index.html`
 
+## Подключение библиотек
+
+Для выполнения второго этапа были подключены `Bootstrap 5` и `Luxon`.
+
+Скриншот подключения и установки библиотек:
+
+![Подключение Bootstrap 5 и Luxon для второго этапа](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/npm-install-bootstrap-luxon.png)
+
 ## Подключение `Luxon`
 
 Библиотека `Luxon` используется для получения текущей даты и времени. В коде страницы она подключается отдельно, а значение даты и времени формируется в формате:
@@ -291,6 +299,14 @@ luxon.DateTime.local().setLocale("ru").toFormat("dd.LL.yyyy HH:mm:ss");
 
 - крестиком в правом верхнем углу;
 - кнопкой `Закрыть` в правом нижнем углу.
+
+## Проверка результата
+
+После подготовки страницы была выполнена проверка результата в браузере.
+
+Скриншот запуска и проверки страницы:
+
+![Проверка страницы второго этапа](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/npm-run-dev.png)
 
 ## Итоговый скриншот
 
