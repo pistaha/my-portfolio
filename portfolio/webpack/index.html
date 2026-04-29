@@ -15,13 +15,13 @@
 
   
   
-    <title>Создание проекта с использованием Webpack, Vite и Docker &middot; Портфолио Pistaha</title>
-    <meta name="title" content="Создание проекта с использованием Webpack, Vite и Docker &middot; Портфолио Pistaha">
+    <title>Создание проекта с использованием Webpack и Docker &middot; Портфолио Pistaha</title>
+    <meta name="title" content="Создание проекта с использованием Webpack и Docker &middot; Портфолио Pistaha">
   
 
   
   
-    <meta name="description" content="Продолжение отчета по лабораторной работе: этап 1 с webpack, vite и Docker, затем этап 2 с Bootstrap 5 и Luxon.">
+    <meta name="description" content="Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite.">
   
   
     <meta name="keywords" content="веб,javascript,webpack,vite,bootstrap,luxon,docker,">
@@ -48,8 +48,8 @@
   
   <meta property="og:url" content="https://pistaha.github.io/my-portfolio/portfolio/webpack/">
   <meta property="og:site_name" content="Портфолио Pistaha">
-  <meta property="og:title" content="Создание проекта с использованием Webpack, Vite и Docker">
-  <meta property="og:description" content="Продолжение отчета по лабораторной работе: этап 1 с webpack, vite и Docker, затем этап 2 с Bootstrap 5 и Luxon.">
+  <meta property="og:title" content="Создание проекта с использованием Webpack и Docker">
+  <meta property="og:description" content="Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite.">
   <meta property="og:locale" content="ru">
   <meta property="og:type" content="article">
     <meta property="article:section" content="portfolio">
@@ -64,8 +64,8 @@
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Создание проекта с использованием Webpack, Vite и Docker">
-  <meta name="twitter:description" content="Продолжение отчета по лабораторной работе: этап 1 с webpack, vite и Docker, затем этап 2 с Bootstrap 5 и Luxon.">
+  <meta name="twitter:title" content="Создание проекта с использованием Webpack и Docker">
+  <meta name="twitter:description" content="Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite.">
 
   
   
@@ -216,8 +216,8 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Проекты",
-    "name": "Создание проекта с использованием Webpack, Vite и Docker",
-    "headline": "Создание проекта с использованием Webpack, Vite и Docker",
+    "name": "Создание проекта с использованием Webpack и Docker",
+    "headline": "Создание проекта с использованием Webpack и Docker",
     
     "inLanguage": "ru",
     "url" : "https://pistaha.github.io/my-portfolio/portfolio/webpack/",
@@ -234,7 +234,7 @@
     "keywords": ["веб","javascript","webpack","vite","bootstrap","luxon","docker"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1344"
+    "wordCount": "1285"
   }]
   </script>
 
@@ -571,7 +571,7 @@
     <header id="single_header" class="mt-5 max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        Создание проекта с использованием Webpack, Vite и Docker
+        Создание проекта с использованием Webpack и Docker
       </h1>
       <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -744,7 +744,7 @@
     </span>
     
 </h2>
-<p>Создание проекта с использованием <code>webpack</code>, <code>vite</code>, <code>luxon</code>, Bootstrap CDN и Docker.</p>
+<p>Создание проекта с использованием <code>webpack</code>, <code>luxon</code>, Bootstrap CDN и Docker.</p>
 
 <h2 class="relative group">Что было сделано
     <div id="что-было-сделано" class="anchor"></div>
@@ -758,9 +758,8 @@
 <p>В рамках задания был подготовлен отдельный проект <code>labs/webpack2025</code> внутри репозитория с такими шагами:</p>
 <ul>
 <li>инициализирован npm-проект;</li>
-<li>установлены <code>luxon</code>, <code>webpack</code>, <code>webpack-cli</code>, <code>serve</code> и <code>vite</code>;</li>
+<li>установлены <code>luxon</code>, <code>webpack</code>, <code>webpack-cli</code> и <code>serve</code>;</li>
 <li>создан исходный файл <code>src/index.js</code> для сборки через <code>webpack</code>;</li>
-<li>создан отдельный вход <code>src/vite.js</code> и страница <code>vite.html</code> для варианта на <code>vite</code>;</li>
 <li>добавлена веб-страница <code>index.html</code> с подключением Bootstrap по CDN;</li>
 <li>реализован крупный вывод даты и времени через <code>luxon</code>;</li>
 <li>создан <code>Dockerfile</code> на базе <code>node:24-alpine</code>;</li>
@@ -785,12 +784,9 @@
 <p>Основные файлы лабораторной:</p>
 <ul>
 <li><code>labs/webpack2025/src/index.js</code></li>
-<li><code>labs/webpack2025/src/vite.js</code></li>
 <li><code>labs/webpack2025/src/renderClock.js</code></li>
 <li><code>labs/webpack2025/index.html</code></li>
-<li><code>labs/webpack2025/vite.html</code></li>
 <li><code>labs/webpack2025/webpack.config.js</code></li>
-<li><code>labs/webpack2025/vite.config.js</code></li>
 <li><code>labs/webpack2025/Dockerfile</code></li>
 </ul>
 
@@ -855,28 +851,6 @@
     src="https://pistaha.github.io/my-portfolio/portfolio/webpack/images/page-webpack-v2.png"
     ></figure>
 </p>
-
-<h2 class="relative group">Переход на <code>vite</code>
-    <div id="переход-на-vite" class="anchor"></div>
-    
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4-%d0%bd%d0%b0-vite" aria-label="Якорь">#</a>
-    </span>
-    
-</h2>
-<p>Дополнительно был создан вариант проекта на <code>vite</code>.</p>
-<p>Команда сборки:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm run build:vite</span></span></code></pre></div></div>
-<p>Результат:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>vite v8.0.10 building client environment for production...
-</span></span><span style="display:flex;"><span>transforming...✓ 7 modules transformed.
-</span></span><span style="display:flex;"><span>rendering chunks...
-</span></span><span style="display:flex;"><span>computing gzip size...
-</span></span><span style="display:flex;"><span>vite-dist/vite.html                 1.71 kB | gzip:  0.94 kB
-</span></span><span style="display:flex;"><span>vite-dist/assets/main-Clt1YauP.js  71.34 kB | gzip: 22.50 kB
-</span></span><span style="display:flex;"><span>✓ built in 33ms</span></span></code></pre></div></div>
-<p>Для этого был добавлен файл <code>vite.config.js</code>, чтобы сборка шла от <code>vite.html</code> в каталог <code>vite-dist</code>.</p>
 
 <h2 class="relative group">Содержимое <code>Dockerfile</code>
     <div id="содержимое-dockerfile" class="anchor"></div>
@@ -984,7 +958,7 @@
     </span>
     
 </h2>
-<p>Был создан рабочий проект с базовой сборкой через <code>webpack</code>, отображением времени через <code>luxon</code>, адаптивной страницей на Bootstrap CDN, а также с альтернативной сборкой через <code>vite</code>. Дополнительно проект был упакован в Docker-контейнер на базе <code>node:24-alpine</code> и успешно запущен локально.</p>
+<p>Был создан рабочий проект с базовой сборкой через <code>webpack</code>, отображением времени через <code>luxon</code>, адаптивной страницей на Bootstrap CDN и запуском в Docker-контейнере на базе <code>node:24-alpine</code>. Вся часть, связанная с <code>Vite</code>, вынесена в отдельный третий этап.</p>
 <hr>
 
 <h2 class="relative group">Этап 2
@@ -1327,7 +1301,7 @@
 <p>Результат команды <code>npm run build</code>:</p>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>dist/index.html                   2.02 kB │ gzip:  0.79 kB
 </span></span><span style="display:flex;"><span>dist/assets/index-WBhvOPX7.css  116.67 kB │ gzip: 16.86 kB
-</span></span><span style="display:flex;"><span>dist/assets/index-C0IWZC7y.js    93.95 kB │ gzip: 29.40 kB</span></span></code></pre></div></div>
+</span></span><span style="display:flex;"><span>dist/assets/index-CW1BmQW8.js    94.15 kB │ gzip: 29.47 kB</span></span></code></pre></div></div>
 <p>Скриншот запуска сборки:</p>
 <p><figure><img
     class="my-0 rounded-md"
@@ -1348,7 +1322,7 @@
     src="https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/stage3-build-output-2.png"
     ></figure>
 </p>
-<p>Итоговый production-бандл состоит из CSS-файла размером <code>116.67 kB</code> и JavaScript-файла размером <code>93.95 kB</code>. В gzip-сжатии это <code>16.86 kB</code> для CSS и <code>29.40 kB</code> для JavaScript.</p>
+<p>Итоговый production-бандл состоит из CSS-файла размером <code>116.67 kB</code> и JavaScript-файла размером <code>94.15 kB</code>. Общий размер основных файлов сборки без gzip: <code>116.67 kB + 94.15 kB = 210.82 kB</code>. Общий размер в gzip: <code>16.86 kB + 29.47 kB = 46.33 kB</code>.</p>
 
 <h2 class="relative group">Скриншот интерфейса
     <div id="скриншот-интерфейса" class="anchor"></div>
@@ -1380,7 +1354,7 @@
     
 </h2>
 <p>Исходные файлы проекта размещены в репозитории:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://github.com/pistaha/my-portfolio/tree/gh-pages/lab-submissions/bootstrap-luxon</span></span></code></pre></div></div>
+<p><a href="https://github.com/pistaha/my-portfolio/tree/gh-pages/lab-submissions/bootstrap-luxon"  target="_blank" rel="noreferrer">Репозиторий с исходными файлами этапов 2 и 3</a></p>
 
 <h2 class="relative group">Ссылка на опубликованную страницу
     <div id="ссылка-на-опубликованную-страницу" class="anchor"></div>
@@ -1392,7 +1366,7 @@
     
 </h2>
 <p>Собранное приложение опубликовано на статическом сайте:</p>
-<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>https://pistaha.github.io/my-portfolio/stage3/</span></span></code></pre></div></div>
+<p><a href="https://pistaha.github.io/my-portfolio/stage3/"  target="_blank" rel="noreferrer">Опубликованное приложение этапа 3</a></p>
 <p>Скриншот страницы, открытой из опубликованного портфолио:</p>
 <p><figure><img
     class="my-0 rounded-md"

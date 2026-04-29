@@ -1,8 +1,8 @@
 ---
-title: "Создание проекта с использованием Webpack, Vite и Docker"
+title: "Создание проекта с использованием Webpack и Docker"
 date: 2026-04-24
 slug: "webpack"
-summary: "Продолжение отчета по лабораторной работе: этап 1 с webpack, vite и Docker, затем этап 2 с Bootstrap 5 и Luxon."
+summary: "Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite."
 tags: ["веб", "javascript", "webpack", "vite", "bootstrap", "luxon", "docker"]
 ---
 
@@ -16,16 +16,15 @@ tags: ["веб", "javascript", "webpack", "vite", "bootstrap", "luxon", "docker"
 
 ## Тема
 
-Создание проекта с использованием `webpack`, `vite`, `luxon`, Bootstrap CDN и Docker.
+Создание проекта с использованием `webpack`, `luxon`, Bootstrap CDN и Docker.
 
 ## Что было сделано
 
 В рамках задания был подготовлен отдельный проект `labs/webpack2025` внутри репозитория с такими шагами:
 
 - инициализирован npm-проект;
-- установлены `luxon`, `webpack`, `webpack-cli`, `serve` и `vite`;
+- установлены `luxon`, `webpack`, `webpack-cli` и `serve`;
 - создан исходный файл `src/index.js` для сборки через `webpack`;
-- создан отдельный вход `src/vite.js` и страница `vite.html` для варианта на `vite`;
 - добавлена веб-страница `index.html` с подключением Bootstrap по CDN;
 - реализован крупный вывод даты и времени через `luxon`;
 - создан `Dockerfile` на базе `node:24-alpine`;
@@ -42,12 +41,9 @@ tags: ["веб", "javascript", "webpack", "vite", "bootstrap", "luxon", "docker"
 Основные файлы лабораторной:
 
 - `labs/webpack2025/src/index.js`
-- `labs/webpack2025/src/vite.js`
 - `labs/webpack2025/src/renderClock.js`
 - `labs/webpack2025/index.html`
-- `labs/webpack2025/vite.html`
 - `labs/webpack2025/webpack.config.js`
-- `labs/webpack2025/vite.config.js`
 - `labs/webpack2025/Dockerfile`
 
 ## Результат команды `npx webpack`
@@ -99,30 +95,6 @@ setInterval(() => {
 Скриншот внешнего вида страницы:
 
 ![Страница с Bootstrap CDN и крупным выводом Luxon](https://pistaha.github.io/my-portfolio/portfolio/webpack/images/page-webpack-v2.png)
-
-## Переход на `vite`
-
-Дополнительно был создан вариант проекта на `vite`.
-
-Команда сборки:
-
-```bash
-npm run build:vite
-```
-
-Результат:
-
-```text
-vite v8.0.10 building client environment for production...
-transforming...✓ 7 modules transformed.
-rendering chunks...
-computing gzip size...
-vite-dist/vite.html                 1.71 kB | gzip:  0.94 kB
-vite-dist/assets/main-Clt1YauP.js  71.34 kB | gzip: 22.50 kB
-✓ built in 33ms
-```
-
-Для этого был добавлен файл `vite.config.js`, чтобы сборка шла от `vite.html` в каталог `vite-dist`.
 
 ## Содержимое `Dockerfile`
 
@@ -217,7 +189,7 @@ http://localhost:3001/
 
 ## Вывод
 
-Был создан рабочий проект с базовой сборкой через `webpack`, отображением времени через `luxon`, адаптивной страницей на Bootstrap CDN, а также с альтернативной сборкой через `vite`. Дополнительно проект был упакован в Docker-контейнер на базе `node:24-alpine` и успешно запущен локально.
+Был создан рабочий проект с базовой сборкой через `webpack`, отображением времени через `luxon`, адаптивной страницей на Bootstrap CDN и запуском в Docker-контейнере на базе `node:24-alpine`. Вся часть, связанная с `Vite`, вынесена в отдельный третий этап.
 
 ---
 
@@ -432,7 +404,7 @@ import Modal from "bootstrap/js/dist/modal";
 ```text
 dist/index.html                   2.02 kB │ gzip:  0.79 kB
 dist/assets/index-WBhvOPX7.css  116.67 kB │ gzip: 16.86 kB
-dist/assets/index-C0IWZC7y.js    93.95 kB │ gzip: 29.40 kB
+dist/assets/index-CW1BmQW8.js    94.15 kB │ gzip: 29.47 kB
 ```
 
 Скриншот запуска сборки:
@@ -443,7 +415,7 @@ dist/assets/index-C0IWZC7y.js    93.95 kB │ gzip: 29.40 kB
 
 ![Результат production-сборки и размер бандла](https://pistaha.github.io/my-portfolio/portfolio/webpack2025-report/images/stage3-build-output-2.png)
 
-Итоговый production-бандл состоит из CSS-файла размером `116.67 kB` и JavaScript-файла размером `93.95 kB`. В gzip-сжатии это `16.86 kB` для CSS и `29.40 kB` для JavaScript.
+Итоговый production-бандл состоит из CSS-файла размером `116.67 kB` и JavaScript-файла размером `94.15 kB`. Общий размер основных файлов сборки без gzip: `116.67 kB + 94.15 kB = 210.82 kB`. Общий размер в gzip: `16.86 kB + 29.47 kB = 46.33 kB`.
 
 ## Скриншот интерфейса
 
@@ -455,17 +427,13 @@ dist/assets/index-C0IWZC7y.js    93.95 kB │ gzip: 29.40 kB
 
 Исходные файлы проекта размещены в репозитории:
 
-```text
-https://github.com/pistaha/my-portfolio/tree/gh-pages/lab-submissions/bootstrap-luxon
-```
+[Репозиторий с исходными файлами этапов 2 и 3](https://github.com/pistaha/my-portfolio/tree/gh-pages/lab-submissions/bootstrap-luxon)
 
 ## Ссылка на опубликованную страницу
 
 Собранное приложение опубликовано на статическом сайте:
 
-```text
-https://pistaha.github.io/my-portfolio/stage3/
-```
+[Опубликованное приложение этапа 3](https://pistaha.github.io/my-portfolio/stage3/)
 
 Скриншот страницы, открытой из опубликованного портфолио:
 

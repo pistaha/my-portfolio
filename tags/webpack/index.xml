@@ -12,12 +12,12 @@
     <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Создание проекта с использованием Webpack, Vite и Docker</title>
+      <title>Создание проекта с использованием Webpack и Docker</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/webpack/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
       <author>kataracta.pq@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/webpack/</guid>
-      <description>Продолжение отчета по лабораторной работе: этап 1 с webpack, vite и Docker, затем этап 2 с Bootstrap 5 и Luxon.</description>
+      <description>Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite.</description>
       
     </item>
     
