@@ -11,12 +11,29 @@ if (!showTimeButton || !timeValue || !timeModalElement) {
 }
 
 const timeModal = new Modal(timeModalElement);
+let timerId = null;
 
 function getCurrentDateTime() {
   return DateTime.local().setLocale("ru").toFormat("dd.MM.yyyy HH:mm:ss");
 }
 
-showTimeButton.addEventListener("click", () => {
+function renderTime() {
   timeValue.textContent = getCurrentDateTime();
+}
+
+showTimeButton.addEventListener("click", () => {
+  renderTime();
   timeModal.show();
+});
+
+timeModalElement.addEventListener("shown.bs.modal", () => {
+  renderTime();
+  timerId = window.setInterval(renderTime, 1000);
+});
+
+timeModalElement.addEventListener("hidden.bs.modal", () => {
+  if (timerId !== null) {
+    window.clearInterval(timerId);
+    timerId = null;
+  }
 });
