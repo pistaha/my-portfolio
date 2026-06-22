@@ -6,16 +6,66 @@
     <description>Recent content in Проекты on Портфолио Pistaha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
-    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
-    <copyright>© 2025 Pistaha</copyright>
-    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ElectoLibrary — полнофункциональная электронная библиотека</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/electolibrary/</link>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/electolibrary/</guid>
+      <description>Vue 3 SPA + FastAPI + SQLite: каталог, CRUD, избранное, бронирование, подборки, загрузка обложек, тесты и Docker.</description>
+      
+    </item>
+    
+    <item>
+      <title>Spotifaychik — музыкальная платформа и production-инфраструктура</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/spotifaychik/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/spotifaychik/</guid>
+      <description>Большая музыкальная backend-платформа: каталог, пользователи, плейлисты, поиск, безопасность, PostgreSQL, тесты и production-контур с балансировкой и наблюдаемостью.</description>
+      
+    </item>
+    
+    <item>
+      <title>GitHub — полный реестр 30 репозиториев</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/github-catalog/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/github-catalog/</guid>
+      <description>Карта GitHub-профиля: два флагманских продукта, остальные направления, статусы и ссылки на все 30 репозиториев.</description>
+      
+    </item>
+    
+    <item>
+      <title>Интерактивные проекты в Figma</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/figma-prototypes/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/figma-prototypes/</guid>
+      <description>Семь визуальных проектов: от швейцарской типографики и авторского шрифта до редакционных лонгридов и музыкального интернет-магазина — с живыми прототипами и анимацией.</description>
+      
+    </item>
+    
+    <item>
+      <title>SRS-спецификация для веб-сервиса «ЛС ГЭОТАР»</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/srs-geotar/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/srs-geotar/</guid>
+      <description>Системный анализ медицинского веб-сервиса: 22 требования, 5 use cases, 10 критериев приёмки, карта рисков и оценка 19,5 человеко-месяца.</description>
+      
+    </item>
     
     <item>
       <title>Разбор Date.now() и IIFE в JavaScript</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</link>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</guid>
       <description>Краткий разбор переменной x, Date.now(), IIFE и цикла ожидания в JavaScript.</description>
       
@@ -25,19 +75,9 @@
       <title>Создание проекта с использованием Webpack и Docker</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/webpack/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/webpack/</guid>
       <description>Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite.</description>
-      
-    </item>
-    
-    <item>
-      <title>C#-проект по обработке данных и работе со структурами</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</link>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</guid>
-      <description>Алгоритмы обработки данных и проектирование логики классов на C#.</description>
       
     </item>
     
@@ -45,89 +85,9 @@
       <title>Отчет по лабораторной работе «Протокол HTTP»</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/http-otchet/</link>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/http-otchet/</guid>
       <description>Отчет по лабораторной работе о GET- и POST-запросах, cURL, OpenSSL и Postman.</description>
-      
-    </item>
-    
-    <item>
-      <title>SRS-спецификация для веб-сервиса «ЛС ГЭОТАР»</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/srs-geotar/</link>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/srs-geotar/</guid>
-      <description>Проект по системному анализу и проектированию требований для медицинского веб-сервиса.</description>
-      
-    </item>
-    
-    <item>
-      <title>Motion-дизайн и kinetic typography в After Effects</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/motion-typography/</link>
-      <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/motion-typography/</guid>
-      <description>Серия проектов по анимации текста и визуальной подаче контента.</description>
-      
-    </item>
-    
-    <item>
-      <title>Портфолио-сайт на Hugo с темой Blowfish и публикацией через GitHub Pages</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/hugo-blowfish/</link>
-      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/hugo-blowfish/</guid>
-      <description>Персональный сайт-портфолио на Hugo с настройкой структуры, контента и деплоя.</description>
-      
-    </item>
-    
-    <item>
-      <title>Статический сайт и веб-проекты с адаптацией под дизайн-макеты</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/static-sites/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/static-sites/</guid>
-      <description>Серия проектов по адаптации макетов и структурированию визуального контента.</description>
-      
-    </item>
-    
-    <item>
-      <title>Историко-биографические исследовательские материалы</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/research-texts/</link>
-      <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/research-texts/</guid>
-      <description>Исследовательские тексты о деятелях русской эмиграции, архитектуры и культуры.</description>
-      
-    </item>
-    
-    <item>
-      <title>Дизайн-концепции и визуальные проекты в Figma</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/figma-concepts/</link>
-      <pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/figma-concepts/</guid>
-      <description>Дизайн-проекты: портфолио, бренд-концепции, лендинги и промо-материалы.</description>
-      
-    </item>
-    
-    <item>
-      <title>Python-проекты по численным методам, математической статистике и линейной алгебре</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/python-math/</link>
-      <pubDate>Sat, 22 Jun 2024 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/python-math/</guid>
-      <description>Учебные проекты по реализации математических алгоритмов на Python.</description>
-      
-    </item>
-    
-    <item>
-      <title>Unity-мини-игра в жанре football game</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</link>
-      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</guid>
-      <description>Игровой проект на Unity с физикой движения персонажа и взаимодействием с мячом.</description>
       
     </item>
     

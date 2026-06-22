@@ -6,16 +6,36 @@
     <description>Recent content in Docker on Портфолио Pistaha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
-    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
-    <copyright>© 2025 Pistaha</copyright>
-    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ElectoLibrary — полнофункциональная электронная библиотека</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/electolibrary/</link>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/electolibrary/</guid>
+      <description>Vue 3 SPA + FastAPI + SQLite: каталог, CRUD, избранное, бронирование, подборки, загрузка обложек, тесты и Docker.</description>
+      
+    </item>
+    
+    <item>
+      <title>Spotifaychik — музыкальная платформа и production-инфраструктура</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/spotifaychik/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/spotifaychik/</guid>
+      <description>Большая музыкальная backend-платформа: каталог, пользователи, плейлисты, поиск, безопасность, PostgreSQL, тесты и production-контур с балансировкой и наблюдаемостью.</description>
+      
+    </item>
     
     <item>
       <title>Создание проекта с использованием Webpack и Docker</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/webpack/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/webpack/</guid>
       <description>Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite.</description>
       

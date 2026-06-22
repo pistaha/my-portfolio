@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ci-Cd on Портфолио Pistaha</title>
+    <link>https://pistaha.github.io/my-portfolio/tags/ci-cd/</link>
+    <description>Recent content in Ci-Cd on Портфолио Pistaha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/ci-cd/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spotifaychik — музыкальная платформа и production-инфраструктура</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/spotifaychik/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/spotifaychik/</guid>
+      <description>Большая музыкальная backend-платформа: каталог, пользователи, плейлисты, поиск, безопасность, PostgreSQL, тесты и production-контур с балансировкой и наблюдаемостью.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

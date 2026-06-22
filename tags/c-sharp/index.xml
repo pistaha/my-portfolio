@@ -6,28 +6,18 @@
     <description>Recent content in C-Sharp on Портфолио Pistaha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
-    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
-    <copyright>© 2025 Pistaha</copyright>
-    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>C#-проект по обработке данных и работе со структурами</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</link>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/csharp-data/</guid>
-      <description>Алгоритмы обработки данных и проектирование логики классов на C#.</description>
-      
-    </item>
-    
-    <item>
-      <title>Unity-мини-игра в жанре football game</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</link>
-      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/unity-football/</guid>
-      <description>Игровой проект на Unity с физикой движения персонажа и взаимодействием с мячом.</description>
+      <title>Spotifaychik — музыкальная платформа и production-инфраструктура</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/spotifaychik/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/spotifaychik/</guid>
+      <description>Большая музыкальная backend-платформа: каталог, пользователи, плейлисты, поиск, безопасность, PostgreSQL, тесты и production-контур с балансировкой и наблюдаемостью.</description>
       
     </item>
     

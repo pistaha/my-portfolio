@@ -6,16 +6,16 @@
     <description>Recent content in Веб on Портфолио Pistaha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
-    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
-    <copyright>© 2025 Pistaha</copyright>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
     <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/%D0%B2%D0%B5%D0%B1/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Разбор Date.now() и IIFE в JavaScript</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</link>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</guid>
       <description>Краткий разбор переменной x, Date.now(), IIFE и цикла ожидания в JavaScript.</description>
       
@@ -25,7 +25,7 @@
       <title>Создание проекта с использованием Webpack и Docker</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/webpack/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/webpack/</guid>
       <description>Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite.</description>
       
@@ -35,29 +35,9 @@
       <title>Отчет по лабораторной работе «Протокол HTTP»</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/http-otchet/</link>
       <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/http-otchet/</guid>
       <description>Отчет по лабораторной работе о GET- и POST-запросах, cURL, OpenSSL и Postman.</description>
-      
-    </item>
-    
-    <item>
-      <title>Портфолио-сайт на Hugo с темой Blowfish и публикацией через GitHub Pages</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/hugo-blowfish/</link>
-      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/hugo-blowfish/</guid>
-      <description>Персональный сайт-портфолио на Hugo с настройкой структуры, контента и деплоя.</description>
-      
-    </item>
-    
-    <item>
-      <title>Статический сайт и веб-проекты с адаптацией под дизайн-макеты</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/static-sites/</link>
-      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/static-sites/</guid>
-      <description>Серия проектов по адаптации макетов и структурированию визуального контента.</description>
       
     </item>
     

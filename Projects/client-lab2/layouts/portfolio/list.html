@@ -1,0 +1,256 @@
+{{ define "main" }}
+  {{ $projects := .Pages.ByWeight }}
+
+  <section class="portfolio-hero">
+    <div class="portfolio-hero__eyebrow">ПОРТФОЛИО · {{ now.Year }}</div>
+    <div class="portfolio-hero__heading">
+      <h1>{{ .Title }}</h1>
+      <span class="portfolio-hero__count">{{ len $projects | printf "%02d" }}</span>
+    </div>
+    <p class="portfolio-hero__lead">
+      Продуктовые приложения, backend-системы, визуальные исследования и проекты, доведённые до работающего результата.
+    </p>
+  </section>
+
+  <section class="portfolio-intro prose dark:prose-invert">
+    {{ .Content }}
+  </section>
+
+  <section class="project-grid" aria-label="Список проектов">
+    {{ range $index, $project := $projects }}
+      <article class="project-card" style="--project-index: {{ $index }}">
+        <div class="project-card__topline">
+          <span class="project-card__number">{{ add $index 1 | printf "%02d" }}</span>
+          <span class="project-card__kind">Проект</span>
+        </div>
+
+        <header class="project-card__header">
+          <h2>
+            <a href="{{ $project.RelPermalink }}">{{ $project.Title | emojify }}</a>
+          </h2>
+        </header>
+
+        <div class="project-card__summary">
+          <span class="project-card__summary-label">О проекте</span>
+          <p>{{ $project.Summary | plainify }}</p>
+        </div>
+
+        {{ with $project.Params.tags }}
+          <div class="project-card__tags" aria-label="Технологии и направления">
+            {{ range first 4 . }}
+              <span>{{ . }}</span>
+            {{ end }}
+          </div>
+        {{ end }}
+
+        <footer class="project-card__footer">
+          <span>Смотреть кейс</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h13M13 6l6 6-6 6" />
+          </svg>
+        </footer>
+      </article>
+    {{ end }}
+  </section>
+
+  <style>
+    .portfolio-hero {
+      position: relative;
+      overflow: clip;
+      max-width: 72rem;
+      margin: 1.5rem auto 0;
+      padding: 2.25rem 0 1.75rem;
+      border-bottom: 1px solid rgba(115, 115, 115, .22);
+    }
+    .portfolio-hero__eyebrow {
+      position: relative;
+      margin-bottom: .75rem;
+      color: rgb(113 113 122);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+    }
+    .portfolio-hero__heading {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .portfolio-hero h1 {
+      margin: 0;
+      color: inherit;
+      font-size: clamp(2.75rem, 7vw, 5rem);
+      font-weight: 780;
+      letter-spacing: -.05em;
+      line-height: .95;
+    }
+    .portfolio-hero__count {
+      display: grid;
+      width: 2.5rem;
+      height: 2.5rem;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgb(161 161 170 / .45);
+      color: rgb(113 113 122);
+      font-size: .72rem;
+      font-weight: 700;
+    }
+    .portfolio-hero__lead {
+      position: relative;
+      max-width: 48rem;
+      margin: 1.25rem 0 0;
+      color: rgb(82 82 91);
+      font-size: clamp(1rem, 1.6vw, 1.15rem);
+      line-height: 1.6;
+    }
+    .dark .portfolio-hero__lead { color: rgb(161 161 170); }
+
+    .portfolio-intro {
+      max-width: 58rem;
+      margin: 1.5rem 0 2.75rem;
+      font-size: .9rem;
+    }
+    .portfolio-intro p { margin: 0 0 .8rem; }
+    .portfolio-intro a {
+      display: inline-flex;
+      margin: .35rem .45rem .1rem 0;
+      padding: .55rem .7rem;
+      border: 1px solid rgb(161 161 170 / .45);
+      color: inherit;
+      font-size: .74rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+    .dark .portfolio-intro a { color: inherit; }
+    .portfolio-intro a:hover { background: rgb(113 113 122 / .08); }
+
+    .project-grid {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.1rem;
+      padding-bottom: 3rem;
+    }
+    .project-card {
+      position: relative;
+      display: flex;
+      min-height: 20.5rem;
+      flex-direction: column;
+      overflow: hidden;
+      padding: clamp(1.2rem, 2.2vw, 1.55rem);
+      border: 1px solid rgb(212 212 216);
+      border-radius: .5rem;
+      background: rgb(255 255 255 / .42);
+      box-shadow: none;
+      isolation: isolate;
+      transition: border-color .2s ease, background-color .2s ease;
+    }
+    .dark .project-card {
+      border-color: rgb(63 63 70);
+      background: rgb(24 24 27 / .32);
+    }
+    .project-card:hover {
+      border-color: rgb(113 113 122 / .75);
+      background: rgb(113 113 122 / .055);
+    }
+    .project-card__topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.4rem;
+      color: rgb(113 113 122);
+      font-size: .64rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .project-card__number { color: rgb(113 113 122); }
+    .project-card__header h2 {
+      max-width: 32rem;
+      margin: 0;
+      color: rgb(24 24 27);
+      font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+      font-weight: 740;
+      letter-spacing: -.025em;
+      line-height: 1.16;
+    }
+    .dark .project-card__header h2 { color: rgb(244 244 245); }
+    .project-card__header a { color: inherit; text-decoration: none; }
+    .project-card__header a::after { position: absolute; content: ""; inset: 0; }
+    .project-card__summary {
+      display: grid;
+      grid-template-columns: 4.75rem minmax(0, 1fr);
+      gap: .85rem;
+      margin-top: 1.1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgb(212 212 216);
+    }
+    .dark .project-card__summary { border-color: rgb(63 63 70); }
+    .project-card__summary-label {
+      padding-top: .15rem;
+      color: rgb(113 113 122);
+      font-size: .61rem;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+    .project-card__summary p {
+      margin: 0;
+      color: rgb(82 82 91);
+      font-size: .84rem;
+      line-height: 1.55;
+    }
+    .dark .project-card__summary p { color: rgb(161 161 170); }
+    .project-card__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .35rem;
+      margin-top: 1rem;
+    }
+    .project-card__tags span {
+      padding: .28rem .45rem;
+      border: 1px solid rgb(212 212 216);
+      color: rgb(82 82 91);
+      font-size: .62rem;
+      font-weight: 600;
+      line-height: 1;
+    }
+    .dark .project-card__tags span { border-color: rgb(63 63 70); color: rgb(161 161 170); }
+    .project-card__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 1.15rem;
+      color: rgb(39 39 42);
+      font-size: .73rem;
+      font-weight: 700;
+    }
+    .dark .project-card__footer { color: rgb(228 228 231); }
+    .project-card__footer svg {
+      width: 1.2rem;
+      height: 1.2rem;
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.8;
+      transition: transform .25s ease;
+    }
+    .project-card:hover .project-card__footer svg { transform: translateX(.3rem); }
+
+    @media (max-width: 760px) {
+      .portfolio-hero { margin-top: .5rem; padding-top: 1.5rem; }
+      .portfolio-hero__count { width: 2.25rem; height: 2.25rem; }
+      .project-grid { grid-template-columns: 1fr; }
+      .project-card { min-height: 19rem; }
+    }
+    @media (max-width: 420px) {
+      .project-card__summary { grid-template-columns: 1fr; gap: .5rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .project-card, .project-card__footer svg { transition: none; }
+    }
+  </style>
+{{ end }}

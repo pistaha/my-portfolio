@@ -27,14 +27,14 @@ mainSections = ["portfolio"]
 
 [article]
   showDate = false
-  showAuthor = true
+  showAuthor = false
   showReadingTime = false
   showTableOfContents = false
   showTaxonomies = false
   showWordCount = false
 
 [list]
-  showSummary = false
+  showSummary = true
   showTableOfContents = false
   showCards = false
   groupByYear = true

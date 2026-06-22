@@ -6,16 +6,16 @@
     <description>Recent content in Javascript on Портфолио Pistaha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <managingEditor>kataracta.pq@gmail.com (Pistaha)</managingEditor>
-    <webMaster>kataracta.pq@gmail.com (Pistaha)</webMaster>
-    <copyright>© 2025 Pistaha</copyright>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
     <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Разбор Date.now() и IIFE в JavaScript</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</link>
       <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</guid>
       <description>Краткий разбор переменной x, Date.now(), IIFE и цикла ожидания в JavaScript.</description>
       
@@ -25,7 +25,7 @@
       <title>Создание проекта с использованием Webpack и Docker</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/webpack/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <author>kataracta.pq@gmail.com (Pistaha)</author>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/webpack/</guid>
       <description>Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite.</description>
       

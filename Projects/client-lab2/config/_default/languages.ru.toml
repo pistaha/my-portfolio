@@ -9,14 +9,15 @@ title = "Портфолио Pistaha"
   isoCode = "ru"
   rtl = false
   dateFormat = "02.01.2006"
-  description = "Портфолио студента-дизайнера и разработчика, который изучает продукт, веб и визуальные системы."
-  copyright = "© 2025 Pistaha"
+  description = "Портфолио full-stack и backend-разработчика: Vue, FastAPI, ASP.NET Core, PostgreSQL и Docker."
+  copyright = "© 2026 Pistaha"
 
 [params.author]
   name = "Pistaha"
-  email = "kataracta.pq@gmail.com"
-  headline = "Студент-дизайнер и разработчик, создающий продуманные цифровые продукты."
-  bio = "Сфокусирован на чистых интерфейсах, устойчивых системах и визуальном повествовании. Сейчас развиваю продуктовый дизайн, фронтенд и визуальную айдентику."
+  email = "rybakovpista@gmail.com"
+  headline = "Full-stack и backend-разработчик: от интерфейса и API до базы данных и инфраструктуры."
+  bio = "Разрабатываю веб-приложения на Vue, FastAPI и ASP.NET Core; работаю с PostgreSQL, Docker, тестами, CI/CD и наблюдаемостью."
   links = [
     { github = "https://github.com/pistaha" },
+    { telegram = "https://t.me/pistaha" },
   ]
