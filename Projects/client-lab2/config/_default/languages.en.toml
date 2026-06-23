@@ -1,0 +1,23 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 2
+title = "Pistaha Portfolio"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "January 2, 2006"
+  description = "Portfolio of a full-stack and backend developer: Vue, FastAPI, ASP.NET Core, PostgreSQL and Docker."
+  copyright = "© 2026 Pistaha"
+
+[params.author]
+  name = "Pistaha"
+  email = "rybakovpista@gmail.com"
+  headline = "Full-stack and backend developer: from UI and API to databases and infrastructure."
+  bio = "I build web applications with Vue, FastAPI and ASP.NET Core, and work with PostgreSQL, Docker, tests, CI/CD and observability."
+  links = [
+    { github = "https://github.com/pistaha" },
+    { telegram = "https://t.me/pistaha" },
+  ]

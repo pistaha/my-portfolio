@@ -1,0 +1,23 @@
+disabled = false
+languageCode = "zh-CN"
+languageName = "中文"
+weight = 3
+title = "Pistaha 作品集"
+
+[params]
+  displayName = "中文"
+  isoCode = "zh-CN"
+  rtl = false
+  dateFormat = "2006-01-02"
+  description = "全栈与后端开发作品集：Vue、FastAPI、ASP.NET Core、PostgreSQL 和 Docker。"
+  copyright = "© 2026 Pistaha"
+
+[params.author]
+  name = "Pistaha"
+  email = "rybakovpista@gmail.com"
+  headline = "全栈与后端开发者：从界面和 API 到数据库与基础设施。"
+  bio = "我使用 Vue、FastAPI 和 ASP.NET Core 构建 Web 应用，并实践 PostgreSQL、Docker、测试、CI/CD 与可观测性。"
+  links = [
+    { github = "https://github.com/pistaha" },
+    { telegram = "https://t.me/pistaha" },
+  ]

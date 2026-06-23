@@ -1,6 +1,13 @@
 {{- $fileKey := "R1bwbjOo5jSadLVDZjphFw" -}}
 {{- $fileName := "Untitled" -}}
-{{- $projects := slice
+{{- $lang := .Page.Site.Language.Lang -}}
+{{- $labels := dict
+  "ru" (dict "aria" "Интерактивные Figma-проекты" "launch" "Запустить прототип" "open" "Открыть в Figma" "close" "Закрыть прототип" "loading" "Загружаем интерактивный прототип" "frame" "Интерактивный Figma-прототип" "framePrefix" "Интерактивный прототип")
+  "en" (dict "aria" "Interactive Figma projects" "launch" "Launch prototype" "open" "Open in Figma" "close" "Close prototype" "loading" "Loading interactive prototype" "frame" "Interactive Figma prototype" "framePrefix" "Interactive prototype")
+  "zh" (dict "aria" "交互式 Figma 项目" "launch" "启动原型" "open" "在 Figma 中打开" "close" "关闭原型" "loading" "正在加载交互式原型" "frame" "交互式 Figma 原型" "framePrefix" "交互式原型")
+-}}
+{{- $l := index $labels $lang | default (index $labels "ru") -}}
+{{- $projectsRu := slice
   (dict "id" "4-3261" "node" "4%3A3261" "title" "Швейцарский стиль" "type" "Презентация" "image" "flow-5.png" "description" "Презентация о швейцарском стиле, оформленная по его принципам: строгая модульная сетка, геометрия, контраст и функциональная типографика.")
   (dict "id" "249-26" "node" "249%3A26" "title" "Твой след" "type" "Социальный плакат" "image" "flow-6.png" "description" "Серия социальных плакатов о загрязнении планеты. Визуальная метафора следа показывает личную ответственность каждого за окружающую среду.")
   (dict "id" "544-24" "node" "544%3A24" "title" "Выборг: круг времени" "type" "Городской визуальный проект" "image" "flow-7.png" "description" "Одно длинное информационное полотно и четыре плаката о Выборге, раскрывающие архитектуру, историю и характер города.")
@@ -9,8 +16,27 @@
   (dict "id" "4-317" "node" "4%3A317" "title" "Авторская кириллица" "type" "Шрифтовой проект" "image" "flow-3.png" "description" "Разработка собственного кириллического шрифта: конструкция букв, система знаков, цифры и проверка гарнитуры в наборе.")
   (dict "id" "4-2814" "node" "4%3A2814" "title" "Velvet Music" "type" "Веб-дизайн" "image" "flow-5-alt.png" "description" "Дизайн музыкального интернет-магазина, созданный на основе сетки референсного сайта и адаптированный под собственный визуальный стиль.")
 -}}
+{{- $projectsEn := slice
+  (dict "id" "4-3261" "node" "4%3A3261" "title" "Swiss Style" "type" "Presentation" "image" "flow-5.png" "description" "A presentation about Swiss graphic design, built with its own principles: modular grid, geometry, contrast and functional typography.")
+  (dict "id" "249-26" "node" "249%3A26" "title" "Your Trace" "type" "Social poster" "image" "flow-6.png" "description" "A series of social posters about pollution. The visual metaphor of a trace shows personal responsibility for the planet.")
+  (dict "id" "544-24" "node" "544%3A24" "title" "Vyborg: Circle of Time" "type" "Urban visual project" "image" "flow-7.png" "description" "One long information canvas and four posters about Vyborg, revealing the city through architecture, history and atmosphere.")
+  (dict "id" "4-37" "node" "4%3A37" "title" "Malevich Suprematism" "type" "Typography study" "image" "flow-1.png" "description" "A study of type selection for photography and work with black-and-white images, graphics and high-contrast composition.")
+  (dict "id" "4-661" "node" "4%3A661" "title" "The Selena Gomez" "type" "Editorial design" "image" "flow-2.png" "description" "Four pages in different visual styles connected by one story. The key focus is expressive typography.")
+  (dict "id" "4-317" "node" "4%3A317" "title" "Custom Cyrillic" "type" "Type design" "image" "flow-3.png" "description" "A custom Cyrillic typeface: letter construction, character system, numerals and testing the typeface in layout.")
+  (dict "id" "4-2814" "node" "4%3A2814" "title" "Velvet Music" "type" "Web design" "image" "flow-5-alt.png" "description" "A music store interface designed from another website’s grid and adapted into an original visual direction.")
+-}}
+{{- $projectsZh := slice
+  (dict "id" "4-3261" "node" "4%3A3261" "title" "瑞士风格" "type" "演示文稿" "image" "flow-5.png" "description" "一份关于瑞士平面设计风格的演示，使用模块网格、几何关系、对比和功能性字体排版。")
+  (dict "id" "249-26" "node" "249%3A26" "title" "你的足迹" "type" "社会海报" "image" "flow-6.png" "description" "关于地球污染的社会海报系列，用“足迹”这一视觉隐喻表达每个人对环境的责任。")
+  (dict "id" "544-24" "node" "544%3A24" "title" "维堡：时间之环" "type" "城市视觉项目" "image" "flow-7.png" "description" "一张长幅信息画面和四张城市海报，通过建筑、历史和城市气质呈现维堡。")
+  (dict "id" "4-37" "node" "4%3A37" "title" "马列维奇至上主义" "type" "字体研究" "image" "flow-1.png" "description" "围绕照片选择合适字体，并练习黑白照片、图形与高对比构图的视觉研究。")
+  (dict "id" "4-661" "node" "4%3A661" "title" "The Selena Gomez" "type" "编辑设计" "image" "flow-2.png" "description" "四个风格不同但主题统一的页面，重点训练字体表达和版面节奏。")
+  (dict "id" "4-317" "node" "4%3A317" "title" "原创西里尔字体" "type" "字体设计" "image" "flow-3.png" "description" "设计自己的西里尔字体：字形结构、符号系统、数字，并在排版中验证可用性。")
+  (dict "id" "4-2814" "node" "4%3A2814" "title" "Velvet Music" "type" "网页设计" "image" "flow-5-alt.png" "description" "基于参考网站网格制作的音乐商店界面，并发展出自己的视觉风格。")
+-}}
+{{- $projects := cond (eq $lang "en") $projectsEn (cond (eq $lang "zh") $projectsZh $projectsRu) -}}
 
-<section class="figma-showcase" aria-label="Интерактивные Figma-проекты">
+<section class="figma-showcase" aria-label="{{ index $l "aria" }}">
   <div class="figma-showcase__grid">
     {{- range $index, $project := $projects -}}
       {{- $protoURL := printf "https://www.figma.com/proto/%s/%s?node-id=%s&scaling=contain&content-scaling=fixed&starting-point-node-id=%s&show-proto-sidebar=0" $fileKey $fileName $project.node $project.node -}}
@@ -23,12 +49,12 @@
           data-title="{{ $project.title }}"
           data-embed="{{ $embedURL }}"
           data-external="{{ $protoURL }}"
-          aria-label="Запустить прототип: {{ $project.title }}"
+          aria-label="{{ index $l "launch" }}: {{ $project.title }}"
         >
           <span class="figma-card__visual">
             <img
               src="{{ printf "portfolio/figma-prototypes/images/%s" $project.image | relURL }}"
-              alt="Обложка проекта «{{ $project.title }}»"
+              alt="{{ $project.title }}"
               loading="lazy"
               decoding="async"
             >
@@ -36,7 +62,7 @@
               <span class="figma-card__play">
                 <svg viewBox="0 0 24 24" role="img" aria-label="Воспроизвести"><path d="M8 5.5v13l10-6.5z"/></svg>
               </span>
-              <span class="figma-card__action">Запустить прототип</span>
+              <span class="figma-card__action">{{ index $l "launch" }}</span>
             </span>
           </span>
           <span class="figma-card__content">
@@ -46,7 +72,7 @@
           </span>
         </button>
         <a class="figma-card__external" href="{{ $protoURL }}" target="_blank" rel="noopener noreferrer">
-          Открыть в Figma
+          {{ index $l "open" }}
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
         </a>
       </article>
@@ -62,8 +88,8 @@
         <h2 class="figma-modal__title" id="figma-modal-title" data-figma-title>Figma</h2>
       </div>
       <div class="figma-modal__actions">
-        <a class="figma-modal__figma-link" data-figma-external href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Открыть в Figma</a>
-        <button class="figma-modal__close" type="button" data-figma-close aria-label="Закрыть прототип">
+        <a class="figma-modal__figma-link" data-figma-external href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">{{ index $l "open" }}</a>
+        <button class="figma-modal__close" type="button" data-figma-close aria-label="{{ index $l "close" }}">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
       </div>
@@ -71,11 +97,11 @@
     <div class="figma-modal__stage">
       <div class="figma-modal__loader" data-figma-loader>
         <span></span><span></span><span></span>
-        <strong>Загружаем интерактивный прототип</strong>
+        <strong>{{ index $l "loading" }}</strong>
       </div>
       <iframe
         data-figma-frame
-        title="Интерактивный Figma-прототип"
+        title="{{ index $l "frame" }}"
         allowfullscreen
         allow="fullscreen"
         loading="lazy"
@@ -163,6 +189,7 @@
     const external = modal.querySelector('[data-figma-external]');
     const loader = modal.querySelector('[data-figma-loader]');
     const closeButton = modal.querySelector('.figma-modal__close');
+    const framePrefix = {{ index $l "framePrefix" | jsonify }};
     let opener = null;
 
     const close = () => {
@@ -182,7 +209,7 @@
         external.href = button.dataset.external;
         modal.hidden = false;
         document.body.classList.add('figma-modal-open');
-        frame.title = `Интерактивный прототип «${button.dataset.title}»`;
+        frame.title = `${framePrefix}: ${button.dataset.title}`;
         frame.src = button.dataset.embed;
         closeButton.focus();
       });

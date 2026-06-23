@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Luxon on Pistaha Portfolio</title>
+    <link>https://pistaha.github.io/my-portfolio/en/tags/luxon/</link>
+    <description>Recent content in Luxon on Pistaha Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/en/tags/luxon/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Project with Webpack, Docker, Bootstrap and Vite</title>
+      <link>https://pistaha.github.io/my-portfolio/en/portfolio/webpack/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/portfolio/webpack/</guid>
+      <description>A laboratory report: stage 1 with Webpack and Docker, stage 2 with Bootstrap 5 and Luxon, stage 3 with Vite.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

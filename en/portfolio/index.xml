@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Pistaha Portfolio</title>
+    <link>https://pistaha.github.io/my-portfolio/en/portfolio/</link>
+    <description>Recent content in Projects on Pistaha Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/en/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ElectoLibrary — full-featured digital library</title>
+      <link>https://pistaha.github.io/my-portfolio/en/portfolio/electolibrary/</link>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/portfolio/electolibrary/</guid>
+      <description>Vue 3 SPA + FastAPI + SQLite: catalog, CRUD, favorites, reservations, collections, cover uploads, tests and Docker.</description>
+      
+    </item>
+    
+    <item>
+      <title>Spotifaychik — music platform and production infrastructure</title>
+      <link>https://pistaha.github.io/my-portfolio/en/portfolio/spotifaychik/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/portfolio/spotifaychik/</guid>
+      <description>A large ASP.NET Core music backend: catalog, users, playlists, search, security, PostgreSQL, tests and production infrastructure with load balancing and observability.</description>
+      
+    </item>
+    
+    <item>
+      <title>Interactive Figma projects</title>
+      <link>https://pistaha.github.io/my-portfolio/en/portfolio/figma-prototypes/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/portfolio/figma-prototypes/</guid>
+      <description>Seven visual projects: from Swiss typography and a custom typeface to editorial longreads and a music store, with live prototypes and animation.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

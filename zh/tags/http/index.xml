@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Http on Pistaha 作品集</title>
+    <link>https://pistaha.github.io/my-portfolio/zh/tags/http/</link>
+    <description>Recent content in Http on Pistaha 作品集</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/zh/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HTTP API 与请求分析报告</title>
+      <link>https://pistaha.github.io/my-portfolio/zh/portfolio/http-otchet/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/zh/portfolio/http-otchet/</guid>
+      <description>关于 HTTP 请求、API 路由、curl/Postman 检查和可复现截图的实践报告。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

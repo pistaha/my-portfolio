@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Http on Pistaha Portfolio</title>
+    <link>https://pistaha.github.io/my-portfolio/en/tags/http/</link>
+    <description>Recent content in Http on Pistaha Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/en/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>HTTP API and request analysis report</title>
+      <link>https://pistaha.github.io/my-portfolio/en/portfolio/http-otchet/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/portfolio/http-otchet/</guid>
+      <description>A practical report on HTTP requests, API routes, curl/Postman checks and reproducible screenshots.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

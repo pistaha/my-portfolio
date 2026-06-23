@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Design on Pistaha 作品集</title>
+    <link>https://pistaha.github.io/my-portfolio/zh/tags/visual-design/</link>
+    <description>Recent content in Visual Design on Pistaha 作品集</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/zh/tags/visual-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Figma 交互项目</title>
+      <link>https://pistaha.github.io/my-portfolio/zh/portfolio/figma-prototypes/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/zh/portfolio/figma-prototypes/</guid>
+      <description>七个视觉项目：从瑞士字体排版和原创字体，到编辑式长页面和音乐商店，包含实时原型和动画。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

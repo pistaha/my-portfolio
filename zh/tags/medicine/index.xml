@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Medicine on Pistaha 作品集</title>
+    <link>https://pistaha.github.io/my-portfolio/zh/tags/medicine/</link>
+    <description>Recent content in Medicine on Pistaha 作品集</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/zh/tags/medicine/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>“LS GEOTAR” Web 服务 SRS 规格说明</title>
+      <link>https://pistaha.github.io/my-portfolio/zh/portfolio/srs-geotar/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/zh/portfolio/srs-geotar/</guid>
+      <description>医疗 Web 服务系统分析：22 个需求、5 个用例、10 个验收标准、风险图，以及 19.5 人月估算。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

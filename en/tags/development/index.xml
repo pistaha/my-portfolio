@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development on Pistaha Portfolio</title>
+    <link>https://pistaha.github.io/my-portfolio/en/tags/development/</link>
+    <description>Recent content in Development on Pistaha Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/en/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GitHub — full registry of 30 repositories</title>
+      <link>https://pistaha.github.io/my-portfolio/en/portfolio/github-catalog/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/portfolio/github-catalog/</guid>
+      <description>A map of the GitHub profile: two flagship products, additional directions, statuses and links to all 30 repositories.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

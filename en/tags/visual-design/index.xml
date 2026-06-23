@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Design on Pistaha Portfolio</title>
+    <link>https://pistaha.github.io/my-portfolio/en/tags/visual-design/</link>
+    <description>Recent content in Visual Design on Pistaha Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/en/tags/visual-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Interactive Figma projects</title>
+      <link>https://pistaha.github.io/my-portfolio/en/portfolio/figma-prototypes/</link>
+      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/portfolio/figma-prototypes/</guid>
+      <description>Seven visual projects: from Swiss typography and a custom typeface to editorial longreads and a music store, with live prototypes and animation.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

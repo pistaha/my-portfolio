@@ -1,14 +1,21 @@
 {{ define "main" }}
   {{ $projects := .Pages.ByWeight }}
+  {{ $lang := .Site.Language.Lang }}
+  {{ $copy := dict
+    "ru" (dict "eyebrow" "ПОРТФОЛИО" "lead" "Продуктовые приложения, backend-системы, визуальные исследования и проекты, доведённые до работающего результата." "aria" "Список проектов" "kind" "Проект" "summary" "О проекте" "cta" "Смотреть кейс")
+    "en" (dict "eyebrow" "PORTFOLIO" "lead" "Product applications, backend systems, visual studies and projects brought to a working result." "aria" "Project list" "kind" "Project" "summary" "About" "cta" "View case study")
+    "zh" (dict "eyebrow" "作品集" "lead" "产品应用、后端系统、视觉研究，以及真正完成并可验证的项目。" "aria" "项目列表" "kind" "项目" "summary" "简介" "cta" "查看案例")
+  }}
+  {{ $t := index $copy $lang | default (index $copy "ru") }}
 
   <section class="portfolio-hero">
-    <div class="portfolio-hero__eyebrow">ПОРТФОЛИО · {{ now.Year }}</div>
+    <div class="portfolio-hero__eyebrow">{{ index $t "eyebrow" }} · {{ now.Year }}</div>
     <div class="portfolio-hero__heading">
       <h1>{{ .Title }}</h1>
       <span class="portfolio-hero__count">{{ len $projects | printf "%02d" }}</span>
     </div>
     <p class="portfolio-hero__lead">
-      Продуктовые приложения, backend-системы, визуальные исследования и проекты, доведённые до работающего результата.
+      {{ index $t "lead" }}
     </p>
   </section>
 
@@ -16,12 +23,12 @@
     {{ .Content }}
   </section>
 
-  <section class="project-grid" aria-label="Список проектов">
+  <section class="project-grid" aria-label="{{ index $t "aria" }}">
     {{ range $index, $project := $projects }}
       <article class="project-card" style="--project-index: {{ $index }}">
         <div class="project-card__topline">
           <span class="project-card__number">{{ add $index 1 | printf "%02d" }}</span>
-          <span class="project-card__kind">Проект</span>
+          <span class="project-card__kind">{{ index $t "kind" }}</span>
         </div>
 
         <header class="project-card__header">
@@ -31,7 +38,7 @@
         </header>
 
         <div class="project-card__summary">
-          <span class="project-card__summary-label">О проекте</span>
+          <span class="project-card__summary-label">{{ index $t "summary" }}</span>
           <p>{{ $project.Summary | plainify }}</p>
         </div>
 
@@ -44,7 +51,7 @@
         {{ end }}
 
         <footer class="project-card__footer">
-          <span>Смотреть кейс</span>
+          <span>{{ index $t "cta" }}</span>
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M5 12h13M13 6l6 6-6 6" />
           </svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C-Sharp on Pistaha 作品集</title>
+    <link>https://pistaha.github.io/my-portfolio/zh/tags/c-sharp/</link>
+    <description>Recent content in C-Sharp on Pistaha 作品集</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/zh/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spotifaychik — 音乐平台与生产级基础设施</title>
+      <link>https://pistaha.github.io/my-portfolio/zh/portfolio/spotifaychik/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/zh/portfolio/spotifaychik/</guid>
+      <description>大型 ASP.NET Core 音乐后端：目录、用户、播放列表、搜索、安全、PostgreSQL、测试，以及带负载均衡和可观测性的生产环境。</description>
+      
+    </item>
+    
+  </channel>
+</rss>

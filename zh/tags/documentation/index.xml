@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Pistaha 作品集</title>
+    <link>https://pistaha.github.io/my-portfolio/zh/tags/documentation/</link>
+    <description>Recent content in Documentation on Pistaha 作品集</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
+    <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
+    <copyright>© 2026 Pistaha</copyright>
+    <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/zh/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>“LS GEOTAR” Web 服务 SRS 规格说明</title>
+      <link>https://pistaha.github.io/my-portfolio/zh/portfolio/srs-geotar/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/zh/portfolio/srs-geotar/</guid>
+      <description>医疗 Web 服务系统分析：22 个需求、5 个用例、10 个验收标准、风险图，以及 19.5 人月估算。</description>
+      
+    </item>
+    
+    <item>
+      <title>HTTP API 与请求分析报告</title>
+      <link>https://pistaha.github.io/my-portfolio/zh/portfolio/http-otchet/</link>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/zh/portfolio/http-otchet/</guid>
+      <description>关于 HTTP 请求、API 路由、curl/Postman 检查和可复现截图的实践报告。</description>
+      
+    </item>
+    
+    <item>
+      <title>JavaScript 中的 Date.now() 与 IIFE</title>
+      <link>https://pistaha.github.io/my-portfolio/zh/portfolio/test-razbor/</link>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/zh/portfolio/test-razbor/</guid>
+      <description>简短说明 JavaScript 中的变量 x、Date.now()、IIFE 和等待循环。</description>
+      
+    </item>
+    
+  </channel>
+</rss>
