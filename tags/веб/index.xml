@@ -12,32 +12,12 @@
     <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/%D0%B2%D0%B5%D0%B1/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Разбор Date.now() и IIFE в JavaScript</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</link>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <author>rybakovpista@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/test-razbor/</guid>
-      <description>Краткий разбор переменной x, Date.now(), IIFE и цикла ожидания в JavaScript.</description>
-      
-    </item>
-    
-    <item>
       <title>Создание проекта с использованием Webpack и Docker</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/webpack/</link>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
       <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/webpack/</guid>
       <description>Продолжение отчета по лабораторной работе: этап 1 с webpack и Docker, этап 2 с Bootstrap 5 и Luxon, этап 3 с Vite.</description>
-      
-    </item>
-    
-    <item>
-      <title>Отчет по лабораторной работе «Протокол HTTP»</title>
-      <link>https://pistaha.github.io/my-portfolio/portfolio/http-otchet/</link>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <author>rybakovpista@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/portfolio/http-otchet/</guid>
-      <description>Отчет по лабораторной работе о GET- и POST-запросах, cURL, OpenSSL и Postman.</description>
       
     </item>
     

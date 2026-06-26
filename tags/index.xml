@@ -52,46 +52,6 @@
     </item>
     
     <item>
-      <title>Github</title>
-      <link>https://pistaha.github.io/my-portfolio/tags/github/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <author>rybakovpista@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/tags/github/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Open-Source</title>
-      <link>https://pistaha.github.io/my-portfolio/tags/open-source/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <author>rybakovpista@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/tags/open-source/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Портфолио</title>
-      <link>https://pistaha.github.io/my-portfolio/tags/%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <author>rybakovpista@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/tags/%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Разработка</title>
-      <link>https://pistaha.github.io/my-portfolio/tags/%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <author>rybakovpista@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/tags/%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Figma</title>
       <link>https://pistaha.github.io/my-portfolio/tags/figma/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
@@ -312,16 +272,6 @@
     </item>
     
     <item>
-      <title>Документация</title>
-      <link>https://pistaha.github.io/my-portfolio/tags/%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/</link>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <author>rybakovpista@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/tags/%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Srs</title>
       <link>https://pistaha.github.io/my-portfolio/tags/srs/</link>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
@@ -337,6 +287,16 @@
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
       <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/tags/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Документация</title>
+      <link>https://pistaha.github.io/my-portfolio/tags/%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/</link>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/tags/%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/</guid>
       <description></description>
       
     </item>
