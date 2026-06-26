@@ -21,7 +21,7 @@
 
   
   
-    <meta name="description" content="C#/.NET console projects: custom ADTs, lists, stack, queue, map, dictionary, hashing, topological sorting and multilist.">
+    <meta name="description" content="A C#/.NET algorithms and data structures repository covering List, Stack, Queue, Map, Dictionary, hashing, topological sorting and multilist.">
   
   
     <meta name="keywords" content="c-sharp,dotnet,algorithms,data-structures,">
@@ -55,7 +55,7 @@
   <meta property="og:url" content="https://pistaha.github.io/my-portfolio/en/portfolio/algorithms-data-structures-labs/">
   <meta property="og:site_name" content="Pistaha Portfolio">
   <meta property="og:title" content="Algorithms & Data Structures Labs — data structure coursework">
-  <meta property="og:description" content="C#/.NET console projects: custom ADTs, lists, stack, queue, map, dictionary, hashing, topological sorting and multilist.">
+  <meta property="og:description" content="A C#/.NET algorithms and data structures repository covering List, Stack, Queue, Map, Dictionary, hashing, topological sorting and multilist.">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="portfolio">
@@ -69,7 +69,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Algorithms & Data Structures Labs — data structure coursework">
-  <meta name="twitter:description" content="C#/.NET console projects: custom ADTs, lists, stack, queue, map, dictionary, hashing, topological sorting and multilist.">
+  <meta name="twitter:description" content="A C#/.NET algorithms and data structures repository covering List, Stack, Queue, Map, Dictionary, hashing, topological sorting and multilist.">
 
   
   
@@ -240,7 +240,7 @@
     "keywords": ["c-sharp","dotnet","algorithms","data-structures"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "184"
+    "wordCount": "703"
   }]
   </script>
 
@@ -756,36 +756,180 @@
     </span>
     
 </h2>
-<p><strong>Algorithms &amp; Data Structures Labs</strong> is a dedicated repository for algorithms and data structures coursework. The code is organized by branches: each branch contains an independent C# project, a README and the original assignment.</p>
-<p><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/main"  target="_blank" rel="noreferrer">Source code on GitHub</a></p>
+<p><strong>Algorithms &amp; Data Structures Labs</strong> is a public repository with algorithms and data structures coursework. It is not a single small exercise: it is a set of independent C#/.NET console projects where foundational ADTs are implemented manually, without <code>List&lt;T&gt;</code>, <code>Dictionary&lt;TKey,TValue&gt;</code>, <code>Stack&lt;T&gt;</code>, <code>Queue&lt;T&gt;</code> or other built-in collections.</p>
+<p><strong>Repository:</strong> <a href="https://github.com/pistaha/algorithms-data-structures-labs"  target="_blank" rel="noreferrer">github.com/pistaha/algorithms-data-structures-labs</a></p>
+<p>The <code>main</code> branch works as a navigation page, while individual labs live in separate branches. Each lab has its own project, README, source code and <code>docs/task.txt</code> with the original assignment.</p>
 
-<h2 class="relative group">Contents
-    <div id="contents" class="anchor"></div>
+<h2 class="relative group">What it demonstrates
+    <div id="what-it-demonstrates" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#contents" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#what-it-demonstrates" aria-label="Anchor">#</a>
     </span>
     
 </h2>
 <ul>
-<li><code>lab1</code>: List ADT, doubly linked list, cursor-based list and duplicate removal;</li>
-<li><code>lab2</code>: Stack, Queue and Map ADTs with array-backed and linked implementations;</li>
-<li><code>lab3</code>: Dictionary ADT, open hashing, closed hashing and linear probing;</li>
-<li><code>lab4</code>: topological sorting, partial order validation and cycle detection;</li>
-<li><code>lab5</code>: multilist for many-to-many relationships using hashing and two-ring linked structure.</li>
+<li>ADT design through a public interface and multiple internal representations;</li>
+<li>array storage, linked structures, cursor positions and manual relation management;</li>
+<li>manual implementations of stacks, queues, lists, map/dictionary and hash tables;</li>
+<li>collision handling through separate chaining, closed hashing and linear probing;</li>
+<li>topological sorting with impossible-order detection;</li>
+<li>many-to-many modeling through a multilist and two linked rings;</li>
+<li>deterministic console demos for checking algorithm behavior locally.</li>
 </ul>
 
-<h2 class="relative group">Technical focus
-    <div id="technical-focus" class="anchor"></div>
+<h2 class="relative group">Labs
+    <div id="labs" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#technical-focus" aria-label="Anchor">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#labs" aria-label="Anchor">#</a>
     </span>
     
 </h2>
-<p>The project demonstrates manual implementations of classic data structures without relying on built-in collections. The labs cover array storage, linked structures, cursor positions, collisions, hash tables, relation traversal and deterministic console output for behavior checks.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Branch</th>
+          <th>Topic</th>
+          <th>Implementation</th>
+          <th>Link</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>lab1</code></td>
+          <td>List ADT</td>
+          <td>Doubly linked list, cursor-based list, duplicate removal for address book records</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab1"  target="_blank" rel="noreferrer">Open branch</a></td>
+      </tr>
+      <tr>
+          <td><code>lab2</code></td>
+          <td>Stack / Queue / Map ADT</td>
+          <td>Array stack, linked stack, list-backed stack, array and circular queues, linked-list map</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab2"  target="_blank" rel="noreferrer">Open branch</a></td>
+      </tr>
+      <tr>
+          <td><code>lab3</code></td>
+          <td>Dictionary ADT</td>
+          <td>Open hashing, closed hashing and linear probing</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab3"  target="_blank" rel="noreferrer">Open branch</a></td>
+      </tr>
+      <tr>
+          <td><code>lab4</code></td>
+          <td>Partial Order / Topological Sort</td>
+          <td>Dependency storage, topological sorting and impossible ordering detection</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab4"  target="_blank" rel="noreferrer">Open branch</a></td>
+      </tr>
+      <tr>
+          <td><code>lab5</code></td>
+          <td>Student-Course Multilist</td>
+          <td>Student/course hash tables and bidirectional many-to-many registration nodes</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab5"  target="_blank" rel="noreferrer">Open branch</a></td>
+      </tr>
+  </tbody>
+</table>
+
+<h2 class="relative group">Branch breakdown
+    <div id="branch-breakdown" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#branch-breakdown" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group"><code>lab1</code>: List ADT
+    <div id="lab1-list-adt" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab1-list-adt" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>The first lab compares two implementations of the same abstract list: a doubly linked list and a cursor model over an array. The demo removes duplicate address book entries, while records store fields as fixed-size <code>char[]</code> values.</p>
+<p>Key files:</p>
+<ul>
+<li><code>algo 1/dvus.cs</code>;</li>
+<li><code>algo 1/curs.cs</code>;</li>
+<li><code>algo 1/AddressBookEntry.cs</code>;</li>
+<li><code>algo 1/Program.cs</code>.</li>
+</ul>
+
+<h3 class="relative group"><code>lab2</code>: Stack, Queue, List and Map
+    <div id="lab2-stack-queue-list-and-map" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab2-stack-queue-list-and-map" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>The second lab expands the ADT set and shows the same behavior through different storage strategies. The stack is implemented through an array, linked nodes and a custom list. The queue is implemented through an array, a circular linked structure and a list. The branch also includes a linked-list map with assignment, lookup and printing.</p>
+
+<h3 class="relative group"><code>lab3</code>: Dictionary ADT and hashing
+    <div id="lab3-dictionary-adt-and-hashing" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab3-dictionary-adt-and-hashing" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>The third lab focuses on dictionary/set behavior through hash tables. It includes open hashing with collision chains and closed hashing with linear probing. The demo uses two sets, <code>goodguys</code> and <code>badguys</code>, with commands that update and check the status of a name.</p>
+<p>Demo commands:</p>
+<ul>
+<li><code>F name</code> moves a name to the positive set;</li>
+<li><code>U name</code> moves a name to the negative set;</li>
+<li><code>? name</code> checks status;</li>
+<li><code>P</code> prints both sets;</li>
+<li><code>E</code> exits.</li>
+</ul>
+
+<h3 class="relative group"><code>lab4</code>: partial order and topological sorting
+    <div id="lab4-partial-order-and-topological-sorting" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab4-partial-order-and-topological-sorting" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>The fourth lab converts a partially ordered set into a linear order when possible. Constraints like <code>x &lt; y</code> are stored as integer pairs and then transformed into an internal dependency structure. The algorithm selects valid next elements and detects cases where no linear order can be produced.</p>
+
+<h3 class="relative group"><code>lab5</code>: student-course multilist
+    <div id="lab5-student-course-multilist" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab5-student-course-multilist" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>The fifth lab models a many-to-many relationship without a database or collection framework. Students and courses are stored in separate closed-hashing tables, while each registration is a node that belongs to two rings at once: courses of a student and students of a course.</p>
+<p>Supported operations:</p>
+<ul>
+<li>add a student to a course;</li>
+<li>remove a student from a specific course;</li>
+<li>remove a student from all courses;</li>
+<li>remove all students from a course;</li>
+<li>print all students of a course;</li>
+<li>print all courses of a student.</li>
+</ul>
+
+<h2 class="relative group">Engineering notes
+    <div id="engineering-notes" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#engineering-notes" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>The main value of the repository is that the data structures are implemented at a low level. The code makes array bounds, <code>Full</code> / <code>Empty</code> states, node deletion, pointer-like traversal, collision handling and bidirectional multilist consistency explicit. It complements the portfolio&rsquo;s full-stack and backend projects by showing the algorithmic foundation underneath.</p>
 
 <h2 class="relative group">Stack
     <div id="stack" class="anchor"></div>
@@ -800,6 +944,7 @@
 <li>C#;</li>
 <li>.NET 8 / .NET 10;</li>
 <li>console applications;</li>
+<li>manual ADTs without built-in collections;</li>
 <li>Git branches as separate lab snapshots.</li>
 </ul>
 
@@ -814,8 +959,15 @@
 </h2>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/pistaha/algorithms-data-structures-labs.git
 </span></span><span style="display:flex;"><span>cd algorithms-data-structures-labs
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git switch lab1
+</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo 1/algo 1.csproj&#34;</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git switch lab3
-</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo3/algo3.csproj&#34;</span></span></span></code></pre></div></div>
+</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo3/algo3.csproj&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git switch lab5
+</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo 5/algo 5.csproj&#34;</span></span></span></code></pre></div></div>
 
 <h2 class="relative group">Result
     <div id="result" class="anchor"></div>
@@ -826,7 +978,7 @@
     </span>
     
 </h2>
-<p>The repository adds a separate fundamentals track to the portfolio: from linear ADTs to hashing, graph dependencies and multi-linked relations.</p>
+<p>The repository adds a dedicated algorithms and data structures track to the portfolio. It shows competence beyond application development: ADTs, hashing, graph-like dependencies and manual in-memory relationship modeling.</p>
 
           
           

@@ -21,7 +21,7 @@
 
   
   
-    <meta name="description" content="C#/.NET 控制台项目：自定义 ADT、列表、栈、队列、Map、字典、哈希、拓扑排序和 multilist。">
+    <meta name="description" content="C#/.NET 算法与数据结构仓库：List、Stack、Queue、Map、Dictionary、哈希、拓扑排序和 multilist。">
   
   
     <meta name="keywords" content="c-sharp,dotnet,algorithms,data-structures,">
@@ -55,7 +55,7 @@
   <meta property="og:url" content="https://pistaha.github.io/my-portfolio/zh/portfolio/algorithms-data-structures-labs/">
   <meta property="og:site_name" content="Pistaha 作品集">
   <meta property="og:title" content="Algorithms & Data Structures Labs — 数据结构课程实验">
-  <meta property="og:description" content="C#/.NET 控制台项目：自定义 ADT、列表、栈、队列、Map、字典、哈希、拓扑排序和 multilist。">
+  <meta property="og:description" content="C#/.NET 算法与数据结构仓库：List、Stack、Queue、Map、Dictionary、哈希、拓扑排序和 multilist。">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:type" content="article">
     <meta property="article:section" content="portfolio">
@@ -69,7 +69,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Algorithms & Data Structures Labs — 数据结构课程实验">
-  <meta name="twitter:description" content="C#/.NET 控制台项目：自定义 ADT、列表、栈、队列、Map、字典、哈希、拓扑排序和 multilist。">
+  <meta name="twitter:description" content="C#/.NET 算法与数据结构仓库：List、Stack、Queue、Map、Dictionary、哈希、拓扑排序和 multilist。">
 
   
   
@@ -240,7 +240,7 @@
     "keywords": ["c-sharp","dotnet","algorithms","data-structures"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "62"
+    "wordCount": "203"
   }]
   </script>
 
@@ -756,36 +756,180 @@
     </span>
     
 </h2>
-<p><strong>Algorithms &amp; Data Structures Labs</strong> 是一个独立的算法与数据结构实验仓库。代码按 Git 分支组织：每个分支都包含一个独立的 C# 项目、README 和原始任务说明。</p>
-<p><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/main"  target="_blank" rel="noreferrer">GitHub 源代码</a></p>
+<p><strong>Algorithms &amp; Data Structures Labs</strong> 是一个公开的算法与数据结构实验仓库。它不是一个小练习，而是一组独立的 C#/.NET 控制台项目。项目中的基础 ADT 都是手动实现的，不依赖 <code>List&lt;T&gt;</code>、<code>Dictionary&lt;TKey,TValue&gt;</code>、<code>Stack&lt;T&gt;</code>、<code>Queue&lt;T&gt;</code> 或其他内置集合。</p>
+<p><strong>具体仓库：</strong> <a href="https://github.com/pistaha/algorithms-data-structures-labs"  target="_blank" rel="noreferrer">github.com/pistaha/algorithms-data-structures-labs</a></p>
+<p><code>main</code> 分支作为导航页使用，每个实验保存在独立分支中。每个实验都有自己的项目、README、源代码和包含原始任务的 <code>docs/task.txt</code>。</p>
 
-<h2 class="relative group">内容
-    <div id="内容" class="anchor"></div>
+<h2 class="relative group">项目展示的能力
+    <div id="项目展示的能力" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%86%85%e5%ae%b9" aria-label="锚点">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e9%a1%b9%e7%9b%ae%e5%b1%95%e7%a4%ba%e7%9a%84%e8%83%bd%e5%8a%9b" aria-label="锚点">#</a>
     </span>
     
 </h2>
 <ul>
-<li><code>lab1</code>：List ADT、双向链表、基于游标的列表和重复项删除；</li>
-<li><code>lab2</code>：Stack、Queue 和 Map ADT，包括数组实现和链式实现；</li>
-<li><code>lab3</code>：Dictionary ADT、开放哈希、闭合哈希和线性探测；</li>
-<li><code>lab4</code>：拓扑排序、偏序关系校验和环检测；</li>
-<li><code>lab5</code>：使用哈希和双环链式结构建模多对多关系的 multilist。</li>
+<li>通过公共接口和不同内部表示设计 ADT；</li>
+<li>数组存储、链式结构、游标位置和手动关系管理；</li>
+<li>手动实现栈、队列、列表、map/dictionary 和哈希表；</li>
+<li>使用 separate chaining、closed hashing 和 linear probing 处理冲突；</li>
+<li>带有失败情况检测的拓扑排序；</li>
+<li>使用 multilist 和两个环形链表建模多对多关系；</li>
+<li>通过确定性的控制台演示在本地验证算法行为。</li>
 </ul>
 
-<h2 class="relative group">技术重点
-    <div id="技术重点" class="anchor"></div>
+<h2 class="relative group">实验列表
+    <div id="实验列表" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e6%8a%80%e6%9c%af%e9%87%8d%e7%82%b9" aria-label="锚点">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%ae%9e%e9%aa%8c%e5%88%97%e8%a1%a8" aria-label="锚点">#</a>
     </span>
     
 </h2>
-<p>项目展示了不依赖内置集合的经典数据结构手动实现。实验覆盖数组存储、链式结构、游标位置、冲突处理、哈希表、关系遍历，以及用于验证行为的确定性控制台输出。</p>
+<table>
+  <thead>
+      <tr>
+          <th>分支</th>
+          <th>主题</th>
+          <th>实现内容</th>
+          <th>链接</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>lab1</code></td>
+          <td>List ADT</td>
+          <td>双向链表、基于游标的列表、通讯录记录去重</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab1"  target="_blank" rel="noreferrer">打开分支</a></td>
+      </tr>
+      <tr>
+          <td><code>lab2</code></td>
+          <td>Stack / Queue / Map ADT</td>
+          <td>数组栈、链式栈、基于列表的栈、数组队列、环形队列、linked-list map</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab2"  target="_blank" rel="noreferrer">打开分支</a></td>
+      </tr>
+      <tr>
+          <td><code>lab3</code></td>
+          <td>Dictionary ADT</td>
+          <td>开放哈希、闭合哈希和线性探测</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab3"  target="_blank" rel="noreferrer">打开分支</a></td>
+      </tr>
+      <tr>
+          <td><code>lab4</code></td>
+          <td>Partial Order / Topological Sort</td>
+          <td>依赖关系存储、拓扑排序和无法排序情况检测</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab4"  target="_blank" rel="noreferrer">打开分支</a></td>
+      </tr>
+      <tr>
+          <td><code>lab5</code></td>
+          <td>Student-Course Multilist</td>
+          <td>学生/课程哈希表，以及双向多对多注册节点</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab5"  target="_blank" rel="noreferrer">打开分支</a></td>
+      </tr>
+  </tbody>
+</table>
+
+<h2 class="relative group">分支说明
+    <div id="分支说明" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%88%86%e6%94%af%e8%af%b4%e6%98%8e" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group"><code>lab1</code>：List ADT
+    <div id="lab1list-adt" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab1list-adt" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>第一个实验比较同一个抽象列表的两种实现：双向链表和基于数组的游标模型。演示任务用于删除通讯录中的重复记录，记录字段以固定长度 <code>char[]</code> 保存。</p>
+<p>关键文件：</p>
+<ul>
+<li><code>algo 1/dvus.cs</code>；</li>
+<li><code>algo 1/curs.cs</code>；</li>
+<li><code>algo 1/AddressBookEntry.cs</code>；</li>
+<li><code>algo 1/Program.cs</code>。</li>
+</ul>
+
+<h3 class="relative group"><code>lab2</code>：Stack、Queue、List 和 Map
+    <div id="lab2stackqueuelist-和-map" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab2stackqueuelist-%e5%92%8c-map" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>第二个实验扩展了 ADT 集合，并用不同存储策略实现相同行为。栈通过数组、链式节点和自定义列表实现；队列通过数组、环形链式结构和列表实现；同时还包含支持赋值、查找和打印的 linked-list map。</p>
+
+<h3 class="relative group"><code>lab3</code>：Dictionary ADT 和哈希
+    <div id="lab3dictionary-adt-和哈希" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab3dictionary-adt-%e5%92%8c%e5%93%88%e5%b8%8c" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>第三个实验关注基于哈希表的 dictionary/set 行为。项目包含带冲突链的开放哈希，以及带线性探测的闭合哈希。演示使用 <code>goodguys</code> 和 <code>badguys</code> 两个集合，通过命令修改和查询姓名状态。</p>
+<p>演示命令：</p>
+<ul>
+<li><code>F name</code>：把姓名移动到正向集合；</li>
+<li><code>U name</code>：把姓名移动到负向集合；</li>
+<li><code>? name</code>：查询状态；</li>
+<li><code>P</code>：打印两个集合；</li>
+<li><code>E</code>：退出。</li>
+</ul>
+
+<h3 class="relative group"><code>lab4</code>：偏序关系和拓扑排序
+    <div id="lab4偏序关系和拓扑排序" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab4%e5%81%8f%e5%ba%8f%e5%85%b3%e7%b3%bb%e5%92%8c%e6%8b%93%e6%89%91%e6%8e%92%e5%ba%8f" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>第四个实验在可能的情况下把偏序集合转换成线性顺序。<code>x &lt; y</code> 这样的约束以整数对保存，然后转换成内部依赖结构。算法逐步选择可以放入结果的元素，并检测无法构造线性顺序的情况。</p>
+
+<h3 class="relative group"><code>lab5</code>：学生-课程 multilist
+    <div id="lab5学生-课程-multilist" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab5%e5%ad%a6%e7%94%9f-%e8%af%be%e7%a8%8b-multilist" aria-label="锚点">#</a>
+    </span>
+    
+</h3>
+<p>第五个实验在没有数据库和集合框架的情况下建模多对多关系。学生和课程分别存储在闭合哈希表中，每个注册记录都是一个节点，同时存在于两个环中：某个学生的课程环，以及某门课程的学生环。</p>
+<p>支持的操作：</p>
+<ul>
+<li>添加学生到课程；</li>
+<li>从某门课程移除学生；</li>
+<li>从所有课程移除学生；</li>
+<li>从课程中移除所有学生；</li>
+<li>输出某门课程的所有学生；</li>
+<li>输出某个学生的所有课程。</li>
+</ul>
+
+<h2 class="relative group">工程细节
+    <div id="工程细节" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%e5%b7%a5%e7%a8%8b%e7%bb%86%e8%8a%82" aria-label="锚点">#</a>
+    </span>
+    
+</h2>
+<p>这个仓库的价值在于数据结构是低层级手动实现的。代码中可以直接看到数组边界、<code>Full</code> / <code>Empty</code> 状态、节点删除、类似指针的遍历、冲突处理，以及 multilist 中两个方向关系的一致性维护。它补充了作品集中 full-stack 和 backend 项目之外的算法基础。</p>
 
 <h2 class="relative group">技术栈
     <div id="技术栈" class="anchor"></div>
@@ -800,7 +944,8 @@
 <li>C#；</li>
 <li>.NET 8 / .NET 10；</li>
 <li>控制台应用；</li>
-<li>使用 Git 分支保存不同实验项目的快照。</li>
+<li>不使用内置集合的手动 ADT；</li>
+<li>使用 Git 分支保存不同实验项目。</li>
 </ul>
 
 <h2 class="relative group">运行
@@ -814,8 +959,15 @@
 </h2>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/pistaha/algorithms-data-structures-labs.git
 </span></span><span style="display:flex;"><span>cd algorithms-data-structures-labs
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git switch lab1
+</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo 1/algo 1.csproj&#34;</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git switch lab3
-</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo3/algo3.csproj&#34;</span></span></span></code></pre></div></div>
+</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo3/algo3.csproj&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git switch lab5
+</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo 5/algo 5.csproj&#34;</span></span></span></code></pre></div></div>
 
 <h2 class="relative group">结果
     <div id="结果" class="anchor"></div>
@@ -826,7 +978,7 @@
     </span>
     
 </h2>
-<p>该仓库为作品集增加了一个独立的基础能力方向：从线性 ADT 到哈希、图依赖关系和多重链式关系建模。</p>
+<p>该仓库为作品集增加了独立的算法与数据结构方向。它展示的不只是应用开发能力，还包括 ADT、哈希、图式依赖关系，以及内存中关系建模的基础能力。</p>
 
           
           

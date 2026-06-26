@@ -21,7 +21,7 @@
 
   
   
-    <meta name="description" content="C#/.NET консольные проекты: собственные ADT, списки, стек, очередь, map, словарь, хеширование, топологическая сортировка и multilist.">
+    <meta name="description" content="Большой C#/.NET репозиторий по алгоритмам и структурам данных: List, Stack, Queue, Map, Dictionary, хеширование, топологическая сортировка и multilist.">
   
   
     <meta name="keywords" content="c-sharp,dotnet,algorithms,data-structures,">
@@ -55,7 +55,7 @@
   <meta property="og:url" content="https://pistaha.github.io/my-portfolio/portfolio/algorithms-data-structures-labs/">
   <meta property="og:site_name" content="Портфолио Pistaha">
   <meta property="og:title" content="Algorithms & Data Structures Labs — лабораторные по структурам данных">
-  <meta property="og:description" content="C#/.NET консольные проекты: собственные ADT, списки, стек, очередь, map, словарь, хеширование, топологическая сортировка и multilist.">
+  <meta property="og:description" content="Большой C#/.NET репозиторий по алгоритмам и структурам данных: List, Stack, Queue, Map, Dictionary, хеширование, топологическая сортировка и multilist.">
   <meta property="og:locale" content="ru">
   <meta property="og:type" content="article">
     <meta property="article:section" content="portfolio">
@@ -69,7 +69,7 @@
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Algorithms & Data Structures Labs — лабораторные по структурам данных">
-  <meta name="twitter:description" content="C#/.NET консольные проекты: собственные ADT, списки, стек, очередь, map, словарь, хеширование, топологическая сортировка и multilist.">
+  <meta name="twitter:description" content="Большой C#/.NET репозиторий по алгоритмам и структурам данных: List, Stack, Queue, Map, Dictionary, хеширование, топологическая сортировка и multilist.">
 
   
   
@@ -240,7 +240,7 @@
     "keywords": ["c-sharp","dotnet","algorithms","data-structures"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "177"
+    "wordCount": "764"
   }]
   </script>
 
@@ -756,36 +756,213 @@
     </span>
     
 </h2>
-<p><strong>Algorithms &amp; Data Structures Labs</strong> — отдельный репозиторий с лабораторными работами по алгоритмам и структурам данных. Код организован по веткам: каждая ветка хранит самостоятельный C#-проект, README и исходное задание.</p>
-<p><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/main"  target="_blank" rel="noreferrer">Исходный код на GitHub</a></p>
+<p><strong>Algorithms &amp; Data Structures Labs</strong> — отдельный публичный репозиторий с лабораторными работами по алгоритмам и структурам данных. Это не одна маленькая задача, а серия самостоятельных C#/.NET консольных проектов, где базовые ADT реализованы вручную: без <code>List&lt;T&gt;</code>, <code>Dictionary&lt;TKey,TValue&gt;</code>, <code>Stack&lt;T&gt;</code>, <code>Queue&lt;T&gt;</code> и других готовых коллекций.</p>
+<p><strong>Конкретный репозиторий:</strong> <a href="https://github.com/pistaha/algorithms-data-structures-labs"  target="_blank" rel="noreferrer">github.com/pistaha/algorithms-data-structures-labs</a></p>
+<p>Главная ветка используется как навигационная страница, а лабораторные разнесены по отдельным веткам. Такой формат оставляет каждую работу самостоятельной: у неё есть свой проект, README, исходный код и файл <code>docs/task.txt</code> с текстом задания.</p>
 
-<h2 class="relative group">Что внутри
-    <div id="что-внутри" class="anchor"></div>
+<h2 class="relative group">Что показывает проект
+    <div id="что-показывает-проект" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%87%d1%82%d0%be-%d0%b2%d0%bd%d1%83%d1%82%d1%80%d0%b8" aria-label="Якорь">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%87%d1%82%d0%be-%d0%bf%d0%be%d0%ba%d0%b0%d0%b7%d1%8b%d0%b2%d0%b0%d0%b5%d1%82-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82" aria-label="Якорь">#</a>
     </span>
     
 </h2>
 <ul>
-<li><code>lab1</code>: List ADT, двусвязный список, cursor-based list и удаление дубликатов;</li>
-<li><code>lab2</code>: Stack, Queue и Map ADT с массивной и связной реализацией;</li>
-<li><code>lab3</code>: Dictionary ADT, открытое и закрытое хеширование, linear probing;</li>
-<li><code>lab4</code>: топологическая сортировка, проверка частичного порядка и поиск циклов;</li>
-<li><code>lab5</code>: multilist для моделирования связи многие-ко-многим через хеширование и кольцевые списки.</li>
+<li>умение проектировать абстрактные типы данных через публичный интерфейс и несколько внутренних представлений;</li>
+<li>понимание массивного хранения, ссылочных структур, курсорных позиций и ручного управления связями;</li>
+<li>реализацию стеков, очередей, списков, map/dictionary и hash table без стандартных коллекций;</li>
+<li>работу с коллизиями через separate chaining, closed hashing и linear probing;</li>
+<li>топологическую сортировку с проверкой невозможных порядков;</li>
+<li>моделирование связи многие-ко-многим через multilist и два кольцевых списка;</li>
+<li>аккуратную структуру консольных демо, чтобы поведение алгоритмов можно было проверить локально.</li>
 </ul>
 
-<h2 class="relative group">Технический фокус
-    <div id="технический-фокус" class="anchor"></div>
+<h2 class="relative group">Лабораторные
+    <div id="лабораторные" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d1%84%d0%be%d0%ba%d1%83%d1%81" aria-label="Якорь">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%bb%d0%b0%d0%b1%d0%be%d1%80%d0%b0%d1%82%d0%be%d1%80%d0%bd%d1%8b%d0%b5" aria-label="Якорь">#</a>
     </span>
     
 </h2>
-<p>Проект показывает ручную реализацию классических структур данных без опоры на готовые коллекции. В работах явно разобраны хранение в массивах, ссылочные структуры, позиции, коллизии, хеш-таблицы, обход связей и детерминированный консольный вывод для проверки поведения.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Ветка</th>
+          <th>Тема</th>
+          <th>Что реализовано</th>
+          <th>Ссылка</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>lab1</code></td>
+          <td>List ADT</td>
+          <td>Двусвязный список, cursor-based list, удаление дубликатов записей адресной книги</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab1"  target="_blank" rel="noreferrer">Открыть ветку</a></td>
+      </tr>
+      <tr>
+          <td><code>lab2</code></td>
+          <td>Stack / Queue / Map ADT</td>
+          <td>Стек на массиве, связный стек, стек через список, очереди на массиве и кольцевой структуре, linked-list map</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab2"  target="_blank" rel="noreferrer">Открыть ветку</a></td>
+      </tr>
+      <tr>
+          <td><code>lab3</code></td>
+          <td>Dictionary ADT</td>
+          <td>Словарь через открытое хеширование, закрытое хеширование и linear probing</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab3"  target="_blank" rel="noreferrer">Открыть ветку</a></td>
+      </tr>
+      <tr>
+          <td><code>lab4</code></td>
+          <td>Partial Order / Topological Sort</td>
+          <td>Хранение частичного порядка, построение зависимостей, топологическая сортировка и обнаружение невозможного порядка</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab4"  target="_blank" rel="noreferrer">Открыть ветку</a></td>
+      </tr>
+      <tr>
+          <td><code>lab5</code></td>
+          <td>Student-Course Multilist</td>
+          <td>Hash tables для студентов и курсов, регистрационные узлы, связь многие-ко-многим в двух направлениях</td>
+          <td><a href="https://github.com/pistaha/algorithms-data-structures-labs/tree/lab5"  target="_blank" rel="noreferrer">Открыть ветку</a></td>
+      </tr>
+  </tbody>
+</table>
+
+<h2 class="relative group">Разбор по веткам
+    <div id="разбор-по-веткам" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d1%80%d0%b0%d0%b7%d0%b1%d0%be%d1%80-%d0%bf%d0%be-%d0%b2%d0%b5%d1%82%d0%ba%d0%b0%d0%bc" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group"><code>lab1</code>: List ADT
+    <div id="lab1-list-adt" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab1-list-adt" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Первая лабораторная сравнивает две реализации одного абстрактного списка: двусвязный список и курсорную модель поверх массива. Демо-задача удаляет дубликаты записей адресной книги, а сами записи хранят поля как фиксированные <code>char[]</code>.</p>
+<p>Ключевые файлы:</p>
+<ul>
+<li><code>algo 1/dvus.cs</code> — двусвязный список;</li>
+<li><code>algo 1/curs.cs</code> — cursor-based list;</li>
+<li><code>algo 1/AddressBookEntry.cs</code> — запись адресной книги;</li>
+<li><code>algo 1/Program.cs</code> — демонстрация удаления дубликатов.</li>
+</ul>
+
+<h3 class="relative group"><code>lab2</code>: Stack, Queue, List и Map
+    <div id="lab2-stack-queue-list-и-map" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab2-stack-queue-list-%d0%b8-map" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Вторая лабораторная расширяет набор ADT и показывает одну и ту же идею через разные стратегии хранения. Стек реализован через массив, связные узлы и собственный список. Очередь реализована через массив, кольцевую связную структуру и список. Дополнительно есть linked-list map с присваиванием, поиском и печатью пар ключ-значение.</p>
+<p>Ключевые файлы:</p>
+<ul>
+<li><code>algo2/Stack/ArrayStack/Stack.cs</code>;</li>
+<li><code>algo2/Stack/LinkedStack/Stack.cs</code>;</li>
+<li><code>algo2/Stack/ListStack/Stack.cs</code>;</li>
+<li><code>algo2/Queue/ArrayQueue/Queue.cs</code>;</li>
+<li><code>algo2/Queue/CircularQueue/Queue.cs</code>;</li>
+<li><code>algo2/Queue/ListQueue/Queue.cs</code>;</li>
+<li><code>algo2/Map/Map.cs</code>.</li>
+</ul>
+
+<h3 class="relative group"><code>lab3</code>: Dictionary ADT и хеширование
+    <div id="lab3-dictionary-adt-и-хеширование" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab3-dictionary-adt-%d0%b8-%d1%85%d0%b5%d1%88%d0%b8%d1%80%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Третья лабораторная посвящена словарю/множеству на хеш-таблицах. В проекте есть две реализации: open hashing с цепочками коллизий и closed hashing с линейным пробированием. Демо использует два множества <code>goodguys</code> и <code>badguys</code>, а команды меняют и проверяют статус имени.</p>
+<p>Поддерживаемые команды демо:</p>
+<ul>
+<li><code>F name</code> — перенести имя в положительное множество;</li>
+<li><code>U name</code> — перенести имя в отрицательное множество;</li>
+<li><code>? name</code> — проверить статус;</li>
+<li><code>P</code> — напечатать оба множества;</li>
+<li><code>E</code> — выйти.</li>
+</ul>
+<p>Ключевые файлы:</p>
+<ul>
+<li><code>algo3/Open/Dict.cs</code>;</li>
+<li><code>algo3/Closed/Dict.cs</code>;</li>
+<li><code>algo3/DictUtils.cs</code>;</li>
+<li><code>algo3/Program.cs</code>.</li>
+</ul>
+
+<h3 class="relative group"><code>lab4</code>: частичный порядок и топологическая сортировка
+    <div id="lab4-частичный-порядок-и-топологическая-сортировка" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab4-%d1%87%d0%b0%d1%81%d1%82%d0%b8%d1%87%d0%bd%d1%8b%d0%b9-%d0%bf%d0%be%d1%80%d1%8f%d0%b4%d0%be%d0%ba-%d0%b8-%d1%82%d0%be%d0%bf%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b0%d1%8f-%d1%81%d0%be%d1%80%d1%82%d0%b8%d1%80%d0%be%d0%b2%d0%ba%d0%b0" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Четвёртая лабораторная превращает частично упорядоченное множество в линейный порядок, если это возможно. Ограничения вида <code>x &lt; y</code> хранятся как пары чисел, затем из них строится внутренняя структура зависимостей. Алгоритм выбирает элементы, которые можно поставить следующими, и отдельно обрабатывает случаи, где порядок построить нельзя.</p>
+<p>Ключевые файлы:</p>
+<ul>
+<li><code>algo4/PartialOrderSet.cs</code> — хранение исходных пар;</li>
+<li><code>algo4/TopologicalSorter.cs</code> — построение зависимостей и сортировка;</li>
+<li><code>algo4/Program.cs</code> — демонстрационные сценарии.</li>
+</ul>
+
+<h3 class="relative group"><code>lab5</code>: multilist для студентов и курсов
+    <div id="lab5-multilist-для-студентов-и-курсов" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#lab5-multilist-%d0%b4%d0%bb%d1%8f-%d1%81%d1%82%d1%83%d0%b4%d0%b5%d0%bd%d1%82%d0%be%d0%b2-%d0%b8-%d0%ba%d1%83%d1%80%d1%81%d0%be%d0%b2" aria-label="Якорь">#</a>
+    </span>
+    
+</h3>
+<p>Пятая лабораторная моделирует связь многие-ко-многим без базы данных и без коллекций. Студенты и курсы лежат в отдельных закрытых хеш-таблицах, а регистрация на курс представлена отдельным узлом. Один узел одновременно входит в два кольца: список курсов конкретного студента и список студентов конкретного курса.</p>
+<p>Поддерживаемые операции:</p>
+<ul>
+<li>добавить студента на курс;</li>
+<li>удалить студента с конкретного курса;</li>
+<li>удалить студента со всех курсов;</li>
+<li>удалить всех студентов с курса;</li>
+<li>вывести всех студентов курса;</li>
+<li>вывести все курсы студента.</li>
+</ul>
+<p>Ключевые файлы:</p>
+<ul>
+<li><code>algo 5/StudentHashTable.cs</code>;</li>
+<li><code>algo 5/CourseHashTable.cs</code>;</li>
+<li><code>algo 5/StudentRecord.cs</code>;</li>
+<li><code>algo 5/CourseRecord.cs</code>;</li>
+<li><code>algo 5/RegistrationRecord.cs</code>;</li>
+<li><code>algo 5/CourseRegistrationMultiList.cs</code>;</li>
+<li><code>algo 5/NameTools.cs</code>.</li>
+</ul>
+
+<h2 class="relative group">Инженерные детали
+    <div id="инженерные-детали" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%b8%d0%bd%d0%b6%d0%b5%d0%bd%d0%b5%d1%80%d0%bd%d1%8b%d0%b5-%d0%b4%d0%b5%d1%82%d0%b0%d0%bb%d0%b8" aria-label="Якорь">#</a>
+    </span>
+    
+</h2>
+<p>Главная ценность репозитория в том, что структуры данных реализованы на низком уровне. В коде явно видны границы массивов, состояние <code>Full</code> / <code>Empty</code>, удаление узлов, переходы по ссылкам, обработка коллизий и поддержание согласованности двух связанных направлений в multilist. Это хороший контраст к проектам портфолио, где основной фокус на backend, frontend и инфраструктуре: здесь показана фундаментальная алгоритмическая база.</p>
 
 <h2 class="relative group">Стек
     <div id="стек" class="anchor"></div>
@@ -800,22 +977,30 @@
 <li>C#;</li>
 <li>.NET 8 / .NET 10;</li>
 <li>консольные приложения;</li>
+<li>ручные ADT без стандартных коллекций;</li>
 <li>Git-ветки как отдельные снимки лабораторных проектов.</li>
 </ul>
 
-<h2 class="relative group">Запуск
-    <div id="запуск" class="anchor"></div>
+<h2 class="relative group">Как запустить
+    <div id="как-запустить" class="anchor"></div>
     
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
-        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d0%ba" aria-label="Якорь">#</a>
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#%d0%ba%d0%b0%d0%ba-%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d1%82%d1%8c" aria-label="Якорь">#</a>
     </span>
     
 </h2>
 <div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/pistaha/algorithms-data-structures-labs.git
 </span></span><span style="display:flex;"><span>cd algorithms-data-structures-labs
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git switch lab1
+</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo 1/algo 1.csproj&#34;</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git switch lab3
-</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo3/algo3.csproj&#34;</span></span></span></code></pre></div></div>
+</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo3/algo3.csproj&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git switch lab5
+</span></span><span style="display:flex;"><span>dotnet run --project <span style="color:#e6db74">&#34;algo 5/algo 5.csproj&#34;</span></span></span></code></pre></div></div>
 
 <h2 class="relative group">Результат
     <div id="результат" class="anchor"></div>
@@ -826,7 +1011,7 @@
     </span>
     
 </h2>
-<p>Репозиторий дополняет портфолио отдельным направлением по фундаментальным структурам данных: от линейных ADT до хеширования, графовых зависимостей и многосвязных отношений.</p>
+<p>Репозиторий добавляет в портфолио отдельное направление по алгоритмам и структурам данных. Он показывает, что кроме прикладных full-stack и backend-проектов есть уверенная база по ADT, хешированию, графовым зависимостям и ручному моделированию связей в памяти.</p>
 
           
           
