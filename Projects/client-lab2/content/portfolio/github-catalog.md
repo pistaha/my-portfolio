@@ -1,20 +1,20 @@
 ---
-title: "GitHub — полный реестр 30 репозиториев"
-date: 2026-06-22
+title: "GitHub — полный реестр 31 репозитория"
+date: 2026-06-26
 weight: -400
-summary: "Карта GitHub-профиля: два флагманских продукта, остальные направления, статусы и ссылки на все 30 репозиториев."
+summary: "Карта GitHub-профиля: два флагманских продукта, отдельный проект по структурам данных, остальные направления, статусы и ссылки на все 31 репозиторий."
 tags: ["github", "портфолио", "разработка", "open-source"]
 ---
 
 ## Срез профиля
 
-Этот реестр собран по состоянию на **22 июня 2026 года** непосредственно из аккаунта [github.com/pistaha](https://github.com/pistaha). Связанные репозитории представлены как этапы развития одного продукта, поэтому главная картина не дробится на повторяющиеся карточки.
+Этот реестр собран по состоянию на **26 июня 2026 года** непосредственно из аккаунта [github.com/pistaha](https://github.com/pistaha). Связанные репозитории представлены как этапы развития одного продукта, поэтому главная картина не дробится на повторяющиеся карточки.
 
 | Показатель | Значение |
 | --- | ---: |
-| Всего репозиториев | **30** |
-| Публичных | **8** |
-| Приватных | **22** |
+| Всего репозиториев | **31** |
+| Публичных | **10** |
+| Приватных | **21** |
 | Основные языки | C#, Python, Vue, HTML |
 | Основные области | Full-stack, backend, DevOps, data/math, Unity, документация |
 
@@ -46,6 +46,8 @@ tags: ["github", "портфолио", "разработка", "open-source"]
 | **Spotifaychik:** [основной репозиторий](https://github.com/pistaha/spotifaychik), [серверный этап](https://github.com/pistaha/musicserverlab2-course), [базовый этап](https://github.com/pistaha/musicserver-course) | Музыкальная платформа: доменная модель, безопасность, файлы, PostgreSQL, тесты и production-инфраструктура | C#, ASP.NET Core, PostgreSQL, Docker | Флагман, активный |
 | [my-portfolio](https://github.com/pistaha/my-portfolio) | Этот сайт: Hugo, Blowfish, Markdown и GitHub Pages | HTML, Hugo, SCSS | Активный |
 | [game-engines-projects](https://github.com/pistaha/game-engines-projects) | Unity-проекты из веток `dvizki-2` и `dvizki-3`, включая VR-сцену и data-driven рецепты | C#, ShaderLab, HLSL | Большой учебный репозиторий |
+| [algorithms-data-structures-labs](https://github.com/pistaha/algorithms-data-structures-labs) | Консольные лабораторные по ADT, спискам, стеку, очереди, map, словарю, хешированию, топологической сортировке и multilist | C#, .NET | [Отдельный кейс](/my-portfolio/portfolio/algorithms-data-structures-labs/) |
+| [pistahas](https://github.com/pistaha/pistahas) | Иллюстрированный отчёт по Git: init, add, commit, branch и работа с историей | Markdown | Учебный отчёт |
 
 ## Приватные: математические и Python-проекты
 
@@ -80,7 +82,6 @@ tags: ["github", "портфолио", "разработка", "open-source"]
 
 | Репозиторий | Содержание | Стек | Статус |
 | --- | --- | --- | --- |
-| [pistahas](https://github.com/pistaha/pistahas) | Иллюстрированный отчёт по Git: init, add, commit, branch и работа с историей | Markdown | Учебный отчёт |
 | [pistaha.github.io](https://github.com/pistaha/pistaha.github.io) | Ранняя статическая версия персонального сайта | HTML | Архив |
 | [demo-repo](https://github.com/pistaha/demo-repo) | Минимальный репозиторий для screencast | Text | Демо |
 

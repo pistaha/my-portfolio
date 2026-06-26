@@ -9,7 +9,47 @@
     <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
     <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
     <copyright>© 2026 Pistaha</copyright>
-    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Algorithms</title>
+      <link>https://pistaha.github.io/my-portfolio/en/tags/algorithms/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/tags/algorithms/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C-Sharp</title>
+      <link>https://pistaha.github.io/my-portfolio/en/tags/c-sharp/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/tags/c-sharp/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Data-Structures</title>
+      <link>https://pistaha.github.io/my-portfolio/en/tags/data-structures/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/tags/data-structures/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Dotnet</title>
+      <link>https://pistaha.github.io/my-portfolio/en/tags/dotnet/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/tags/dotnet/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Figma</title>
@@ -127,16 +167,6 @@
       <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
       <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/en/tags/aspnet-core/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>C-Sharp</title>
-      <link>https://pistaha.github.io/my-portfolio/en/tags/c-sharp/</link>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <author>rybakovpista@gmail.com (Pistaha)</author>
-      <guid>https://pistaha.github.io/my-portfolio/en/tags/c-sharp/</guid>
       <description></description>
       
     </item>

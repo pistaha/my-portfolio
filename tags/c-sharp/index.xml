@@ -9,7 +9,7 @@
     <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
     <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
     <copyright>© 2026 Pistaha</copyright>
-    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spotifaychik — музыкальная платформа и production-инфраструктура</title>
@@ -18,6 +18,16 @@
       <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/spotifaychik/</guid>
       <description>Большая музыкальная backend-платформа: каталог, пользователи, плейлисты, поиск, безопасность, PostgreSQL, тесты и production-контур с балансировкой и наблюдаемостью.</description>
+      
+    </item>
+    
+    <item>
+      <title>Algorithms &amp; Data Structures Labs — лабораторные по структурам данных</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/algorithms-data-structures-labs/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/algorithms-data-structures-labs/</guid>
+      <description>C#/.NET консольные проекты: собственные ADT, списки, стек, очередь, map, словарь, хеширование, топологическая сортировка и multilist.</description>
       
     </item>
     

@@ -9,7 +9,7 @@
     <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
     <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
     <copyright>© 2026 Pistaha</copyright>
-    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ElectoLibrary — полнофункциональная электронная библиотека</title>
@@ -32,12 +32,22 @@
     </item>
     
     <item>
-      <title>GitHub — полный реестр 30 репозиториев</title>
+      <title>Algorithms &amp; Data Structures Labs — лабораторные по структурам данных</title>
+      <link>https://pistaha.github.io/my-portfolio/portfolio/algorithms-data-structures-labs/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/portfolio/algorithms-data-structures-labs/</guid>
+      <description>C#/.NET консольные проекты: собственные ADT, списки, стек, очередь, map, словарь, хеширование, топологическая сортировка и multilist.</description>
+      
+    </item>
+    
+    <item>
+      <title>GitHub — полный реестр 31 репозитория</title>
       <link>https://pistaha.github.io/my-portfolio/portfolio/github-catalog/</link>
-      <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
       <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/portfolio/github-catalog/</guid>
-      <description>Карта GitHub-профиля: два флагманских продукта, остальные направления, статусы и ссылки на все 30 репозиториев.</description>
+      <description>Карта GitHub-профиля: два флагманских продукта, отдельный проект по структурам данных, остальные направления, статусы и ссылки на все 31 репозиторий.</description>
       
     </item>
     

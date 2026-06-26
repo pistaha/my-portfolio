@@ -45,8 +45,29 @@
     />
   </url>
   <url>
+    <loc>https://pistaha.github.io/my-portfolio/portfolio/algorithms-data-structures-labs/</loc>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://pistaha.github.io/my-portfolio/en/portfolio/algorithms-data-structures-labs/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-CN"
+      href="https://pistaha.github.io/my-portfolio/zh/portfolio/algorithms-data-structures-labs/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="ru"
+      href="https://pistaha.github.io/my-portfolio/portfolio/algorithms-data-structures-labs/"
+    />
+  </url>
+  <url>
     <loc>https://pistaha.github.io/my-portfolio/portfolio/github-catalog/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
@@ -85,7 +106,7 @@
   </url>
   <url>
     <loc>https://pistaha.github.io/my-portfolio/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -106,7 +127,7 @@
   </url>
   <url>
     <loc>https://pistaha.github.io/my-portfolio/portfolio/</loc>
-    <lastmod>2026-06-22T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-26T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
     <xhtml:link
