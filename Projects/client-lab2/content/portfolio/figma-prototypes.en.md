@@ -1,13 +1,13 @@
 ---
-title: "Figma Projects"
+title: "Design Projects"
 date: 2026-06-22
 weight: -400
-summary: "Ten Figma projects: from a premium landing page with a 3D experience and a commissioned business card to urban campaigns, typography and web design."
+summary: "Client work and visual studies across identity, presentations, web design, typography and urban campaigns."
 tags: ["figma", "ui-ux", "typography", "prototyping", "visual design"]
 ---
 
 ## Collection
 
-A collection of visual work, from commissioned presentations and brand materials to typography studies, urban advertising, posters and e-commerce interfaces. Open any project directly on this page to view its fullscreen prototype with animation, transitions and clickable flows.
+A collection of client work and visual studies across identity, presentations, interfaces, typography and urban campaigns. Explore interactive Figma prototypes, slides and mockups directly on this page.
 
 {{< figma-prototypes >}}

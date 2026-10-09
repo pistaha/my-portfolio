@@ -2,54 +2,63 @@
 {{- $fileName := "Untitled" -}}
 {{- $lang := .Page.Site.Language.Lang -}}
 {{- $labels := dict
-  "ru" (dict "aria" "Проекты в Figma" "launch" "Запустить прототип" "open" "Открыть в Figma" "details" "О проекте" "desktop" "Десктоп" "mobile" "Мобильная" "close" "Закрыть прототип" "loading" "Загружаем интерактивный прототип" "frame" "Интерактивный Figma-прототип" "framePrefix" "Интерактивный прототип")
-  "en" (dict "aria" "Figma projects" "launch" "Launch prototype" "open" "Open in Figma" "details" "About the project" "desktop" "Desktop" "mobile" "Mobile" "close" "Close prototype" "loading" "Loading interactive prototype" "frame" "Interactive Figma prototype" "framePrefix" "Interactive prototype")
-  "zh" (dict "aria" "Figma 项目" "launch" "启动原型" "open" "在 Figma 中打开" "details" "项目介绍" "desktop" "桌面版" "mobile" "移动版" "close" "关闭原型" "loading" "正在加载交互式原型" "frame" "交互式 Figma 原型" "framePrefix" "交互式原型")
+  "ru" (dict "aria" "Дизайн-проекты" "back" "Все проекты" "launch" "Запустить прототип" "openProject" "Открыть проект" "open" "Открыть в Figma" "details" "О проекте" "desktop" "Десктоп" "mobile" "Мобильная" "close" "Закрыть прототип" "loading" "Загружаем интерактивный прототип" "loadingSlow" "Долго загружается? Откройте проект в Figma" "frame" "Интерактивный Figma-прототип" "framePrefix" "Интерактивный прототип")
+  "en" (dict "aria" "Design projects" "back" "All projects" "launch" "Launch prototype" "openProject" "View project" "open" "Open in Figma" "details" "About the project" "desktop" "Desktop" "mobile" "Mobile" "close" "Close prototype" "loading" "Loading interactive prototype" "loadingSlow" "Taking a while? Open this project in Figma" "frame" "Interactive Figma prototype" "framePrefix" "Interactive prototype")
+  "zh" (dict "aria" "设计项目" "back" "所有项目" "launch" "启动原型" "openProject" "查看项目" "open" "在 Figma 中打开" "details" "项目介绍" "desktop" "桌面版" "mobile" "移动版" "close" "关闭原型" "loading" "正在加载交互式原型" "loadingSlow" "加载时间较长？请在 Figma 中打开此项目" "frame" "交互式 Figma 原型" "framePrefix" "交互式原型")
 -}}
 {{- $l := index $labels $lang | default (index $labels "ru") -}}
 {{- $projectsRu := slice
-  (dict "id" "1480-24" "node" "1480%3A24" "title" "Mita Garden Hills — премиальный лендинг и 3D-опыт" "type" "Клиентский проект · 2026" "image" "mita-garden-hills.png" "description" "Премиальный адаптивный лендинг для жилого комплекса в Минато, Токио, с интерактивным 3D Masterplan." "details" "<p>Концепт передаёт архитектуру, сады, приватность и наследие Mita Garden Hills через спокойную эстетику японской тихой роскоши.</p><p><strong>Моя роль:</strong> UX/UI-дизайн, арт-дирекшн, desktop- и mobile-макеты, визуальная система, типографика, 3D-состояния интерфейса, UI-компоненты и презентация интерактивного прототипа.</p><p><strong>Объём работ:</strong> лендинг для desktop и mobile; Hero, Concept, Garden, Architecture, Facilities, Residences, Location и Contact; интерактивный 3D Masterplan с карточками зданий, фильтрами, зумом и режимами дня/ночи; UI kit, формы и адаптивные сценарии.</p><p>Design by pistaha. Название, логотип и бренд-материалы Mita Garden Hills принадлежат их правообладателям.</p>" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1480-24&viewport=-295%2C-2786%2C0.24&t=QcZtEplKMUOpZux2-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1480%3A24&page-id=0%3A1" "mobile" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1555-1282&viewport=-295%2C-2786%2C0.24&t=MBTiwhWuftuzjF6z-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1555%3A1282&page-id=0%3A1&show-proto-sidebar=1")
-  (dict "id" "1308-24" "node" "1308%3A24" "title" "Jennyhouse Salon — дизайн визитки" "type" "Клиентский проект · 2026" "image" "jennyhouse-salon.png" "description" "Двусторонняя визитка для Jennyhouse Salon — чистый премиальный носитель, отражающий визуальную идентичность бренда." "details" "<p>Задача — создать легко читаемую премиальную визитку, которая точно передаёт характер Jennyhouse Salon.</p><p><strong>Моя роль:</strong> дизайн визитки, вёрстка, типографика и презентационный мокап.</p><p><strong>Объём работ:</strong> лицевая сторона с логотипом, оборот с контактами и QR-кодом, подбор цветовой палитры и визуализация печатного мокапа.</p><p>Design by pistaha. Логотип и бренд-материалы принадлежат Jennyhouse Salon.</p>")
-  (dict "id" "44-99" "node" "44-99" "title" "IWEIYI.com — дизайн бренд-презентации" "type" "Клиентский проект · 2026" "image" "iweiyi-presentation.png" "description" "Презентация из 12 слайдов для сервиса доставки цветов и подарков IWEIYI.com." "details" "<p>Презентация последовательно раскрывает основные услуги сайта, товарные категории, доставку и заботу о клиентах в визуально цельном формате, соответствующем существующей айдентике бренда.</p><p><strong>Моя роль:</strong> дизайн презентации, визуальная система, вёрстка, иерархия информации и арт-дирекшн.</p><p><strong>Исходные материалы:</strong> контент официального сайта и изображения товаров.</p><p><strong>Объём работ:</strong> обзор бренда, категории товаров, поводы, доставка, путь заказа, платежи, клиентский сервис и контакты.</p><p>Design by pistaha. Дизайн сайта и бренд-материалы принадлежат IWEIYI.com.</p>" "external" "https://www.figma.com/deck/h3um4wNPDh9WVh9Z1jZGIu/IWEIYI.com-%E2%80%94-Flower-Delivery-in-Shanghai--China---1?node-id=44-99&viewport=-85%2C-18%2C0.42&t=Qwkyrs71ZXKPa523-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" "embed" "https://embed.figma.com/deck/h3um4wNPDh9WVh9Z1jZGIu/IWEIYI.com-%E2%80%94-Flower-Delivery-in-Shanghai--China---1?node-id=44-99&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1")
-  (dict "id" "4-3261" "node" "4%3A3261" "title" "Швейцарский стиль" "type" "Презентация" "image" "flow-5.png" "description" "Презентация о швейцарском стиле, оформленная по его принципам: строгая модульная сетка, геометрия, контраст и функциональная типографика.")
-  (dict "id" "249-26" "node" "249%3A26" "title" "Твой след" "type" "Социальный плакат" "image" "flow-6.png" "description" "Серия социальных плакатов о загрязнении планеты. Визуальная метафора следа показывает личную ответственность каждого за окружающую среду.")
-  (dict "id" "544-24" "node" "544%3A24" "title" "Выборг: круг времени" "type" "Городская рекламная кампания" "image" "flow-7.png" "description" "Лендинг для рекламной кампании Выборга и серия плакатов превращают городскую айдентику в цельное приглашение: через архитектурные детали, культурную память и атмосферу северного города раскрывается маршрут для путешественника.")
-  (dict "id" "4-37" "node" "4%3A37" "title" "Супрематизм Малевича" "type" "Типографическое исследование" "image" "flow-1.png" "description" "Работа о подборе шрифтов под фотографии и освоении чёрно-белых изображений, графики и контрастной композиции.")
-  (dict "id" "4-661" "node" "4%3A661" "title" "The Selena Gomez" "type" "Редакционный дизайн" "image" "flow-2.png" "description" "Четыре страницы в разных визуальных стилях, объединённые одной историей. Главный акцент проекта — выразительная работа со шрифтом.")
-  (dict "id" "4-317" "node" "4%3A317" "title" "Авторская кириллица" "type" "Шрифтовой проект" "image" "flow-3.png" "description" "Разработка собственного кириллического шрифта: конструкция букв, система знаков, цифры и проверка гарнитуры в наборе.")
-  (dict "id" "4-2814" "node" "4%3A2814" "title" "Velvet Music" "type" "Веб-дизайн" "image" "flow-5-alt.png" "description" "Дизайн музыкального интернет-магазина, созданный на основе сетки референсного сайта и адаптированный под собственный визуальный стиль.")
+  (dict "id" "1480-24" "node" "1480%3A24" "title" "Mita Garden Hills — премиальный лендинг и 3D-опыт" "type" "Клиентский проект · 2026" "image" "mita-garden-hills.jpg" "description" "Премиальный адаптивный лендинг для жилого комплекса в Минато, Токио, с интерактивным 3D Masterplan." "details" "<p>Концепт передаёт архитектуру, сады, приватность и наследие Mita Garden Hills через спокойную эстетику японской тихой роскоши.</p><p><strong>Моя роль:</strong> UX/UI-дизайн, арт-дирекшн, desktop- и mobile-макеты, визуальная система, типографика, 3D-состояния интерфейса, UI-компоненты и презентация интерактивного прототипа.</p><p><strong>Объём работ:</strong> лендинг для desktop и mobile; Hero, Concept, Garden, Architecture, Facilities, Residences, Location и Contact; интерактивный 3D Masterplan с карточками зданий, фильтрами, зумом и режимами дня/ночи; UI kit, формы и адаптивные сценарии.</p><p>Design by pistaha. Название, логотип и бренд-материалы Mita Garden Hills принадлежат их правообладателям.</p>" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1480-24&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1480%3A24&page-id=0%3A1" "mobile" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1555-1282&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1555%3A1282&page-id=0%3A1&show-proto-sidebar=1")
+  (dict "id" "1308-24" "node" "1308%3A24" "title" "Jennyhouse Salon — дизайн визитки" "type" "Клиентский проект · 2026" "image" "jennyhouse-salon.jpg" "gallery" (slice "jennyhouse-frame-29.webp" "jennyhouse-frame-31.webp") "description" "Двусторонняя визитка для Jennyhouse Salon — чистый премиальный носитель, отражающий визуальную идентичность бренда." "details" "<p>Задача — создать легко читаемую премиальную визитку, которая точно передаёт характер Jennyhouse Salon.</p><p><strong>Моя роль:</strong> дизайн визитки, вёрстка, типографика и презентационный мокап.</p><p><strong>Объём работ:</strong> лицевая сторона с логотипом, оборот с контактами и QR-кодом, подбор цветовой палитры и визуализация печатного мокапа.</p><p>Design by pistaha. Логотип и бренд-материалы принадлежат Jennyhouse Salon.</p>")
+  (dict "id" "energy-training-hall" "node" "0%3A1" "title" "Energy Training Hall — айдентика спортивного клуба" "type" "Клиентский проект · Айдентика" "image" "energy-training-hall-01.webp" "gallery" (slice "energy-training-hall-01.webp" "energy-training-hall-02.webp" "energy-training-hall-03.webp" "energy-training-hall-04.webp" "energy-training-hall-05.webp" "energy-training-hall-06.webp" "energy-training-hall-07.webp") "description" "Логотип Energy Training Hall: спортсмен встроен в иероглифическую форму, передающую силу и движение." "details" "<p>Для Energy Training Hall я разработал знак спортивного клуба. В брифе задали спортивную энергию, китайский визуальный мотив и контрастную палитру.</p><p>Сначала упростил форму, чтобы знак был цельным и легко читался. По пожеланию клиента интегрировал в неё спортсмена, проверил варианты позы и силуэта, а затем собрал финальную композицию в чёрном, белом и красном.</p><p><strong>Моя роль:</strong> разработка логотипа, поиск формы, итерации по обратной связи и презентация применения айдентики.</p><p>Знак показан на вывеске, спортивной одежде и аксессуарах. В презентации это концептуальные визуализации.</p>")
+  (dict "id" "44-99" "node" "44-99" "title" "IWEIYI.com — дизайн бренд-презентации" "type" "Клиентский проект · 2026" "image" "iweiyi-presentation.jpg" "description" "Презентация из 12 слайдов для сервиса доставки цветов и подарков IWEIYI.com." "details" "<p>Для IWEIYI.com я подготовил презентацию из 12 слайдов о доставке цветов и подарков в Шанхае. Сначала изучил сайт и выстроил содержание по пути клиента — от ассортимента и поводов до оформления заказа, доставки, оплаты и поддержки.</p><p>Затем собрал материалы в единую визуальную систему: сохранил фирменный характер, настроил типографику и иерархию. Каждый слайд раскрывает один этап сервиса и ведёт зрителя к следующему.</p><p><strong>Моя роль:</strong> структура, дизайн презентации, вёрстка и арт-дирекшн.</p>" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1069-22&t=lRxvBgwft3twNq56-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1069%3A22" "embed" "https://embed.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1069-22&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1069%3A22&embed-host=share&hide-ui=1")
+  (dict "id" "secret-garden-menu" "node" "0%3A0" "title" "Secret Garden — ботаническое меню" "type" "Клиентский проект · Дизайн меню" "image" "secret-garden-menu-43.jpg" "gallery" (slice "secret-garden-menu-43.jpg" "secret-garden-menu-44.jpg" "secret-garden-menu-45.jpg" "secret-garden-menu-46.jpg" "secret-garden-menu-47.jpg") "description" "Многостраничное меню в эстетике ботанической гравюры: тёплая бумажная палитра, винные акценты и ясная структура разделов." "details" "<p>Для Secret Garden я разработал меню целиком — от визуальной концепции до оформления всех страниц.</p><p>Тонкие ботанические иллюстрации, кремовый фон и глубокий винный цвет создают атмосферу сада и поддерживают характер заведения. Крупная антиквенная типографика выделяет разделы, а аккуратная сетка помогает быстро ориентироваться в блюдах, описаниях и ценах.</p><p><strong>Моя роль:</strong> концепция и полный дизайн меню, типографика, композиция и многостраничная вёрстка.</p>")
+  (dict "id" "4-2814" "node" "4%3A2814" "title" "Velvet Music" "type" "Веб-дизайн" "image" "flow-5-alt.jpg" "description" "Дизайн музыкального интернет-магазина, созданный на основе сетки референсного сайта и адаптированный под собственный визуальный стиль.")
+  (dict "id" "4-1887" "node" "4%3A1887" "title" "Три альбома — три настроения" "type" "Музыкальный эдиториал · типографика" "image" "selena-first-album.jpg" "description" "Revival, Rare и I Said I Love You First — три разные главы в визуальном дневнике. Ритм, цвет, шрифт и вёрстка под настроение каждого альбома." "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-1887&t=qIqCzkkP3Kd6gNfX-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A1887" "embed" "https://embed.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-1887&t=qIqCzkkP3Kd6gNfX-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A1887&embed-host=share&hide-ui=1")
+  (dict "id" "4-91" "node" "4%3A91" "title" "Шрифт и характер" "type" "Типографика · визуальное исследование" "image" "marvel-type-study.jpg" "description" "Герои MARVEL через выразительную типографику: рукописные заголовки, контраст цвета и композиция, собранные вокруг характера Чёрной Вдовы." "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-91&t=szOweJ2RbzBAyv2G-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A91" "embed" "https://embed.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-91&t=szOweJ2RbzBAyv2G-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A91&embed-host=share&hide-ui=1")
+  (dict "id" "544-24" "node" "544%3A24" "title" "Выборг: круг времени" "type" "Городская рекламная кампания" "image" "flow-7.jpg" "description" "Лендинг для рекламной кампании Выборга и серия плакатов превращают городскую айдентику в цельное приглашение: через архитектурные детали, культурную память и атмосферу северного города раскрывается маршрут для путешественника.")
+  (dict "id" "249-26" "node" "249%3A26" "title" "Твой след" "type" "Социальная кампания · серия плакатов" "image" "your-trace-27.webp" "gallery" (slice "your-trace-27.webp" "your-trace-28.webp" "your-trace-29.webp" "your-trace-30.webp" "your-trace-31.webp") "description" "Пять плакатов о том, как пластиковые отходы меняют природу: от загрязнённого океана до угрозы для животных." "details" "<p>«Твой след» — серия социальных плакатов о повседневном выборе и его последствиях для природы. Визуальные метафоры связывают пластиковые отходы с тем, что обычно остаётся за кадром: загрязнённым океаном, тающим льдом и животными, оказавшимися в ловушке.</p><p>Контрастные чёрно-белые образы, выразительная типографика и точечные красные акценты собирают серию в единый голос. Каждый плакат раскрывает отдельную сторону проблемы и завершает её коротким, прямым обращением к зрителю.</p><p><strong>Моя роль:</strong> концепция серии, визуальные метафоры, типографика, композиция и вёрстка пяти плакатов.</p>")
+  (dict "id" "4-317" "node" "4%3A317" "title" "Авторская кириллица" "type" "Шрифтовой проект" "image" "flow-3.jpg" "description" "Разработка собственного кириллического шрифта: конструкция букв, система знаков, цифры и проверка гарнитуры в наборе.")
+  (dict "id" "4-3261" "node" "4%3A3261" "title" "Швейцарский стиль" "type" "Презентация" "image" "flow-5.jpg" "description" "Презентация о швейцарском стиле, оформленная по его принципам: строгая модульная сетка, геометрия, контраст и функциональная типографика.")
 -}}
 {{- $projectsEn := slice
-  (dict "id" "1480-24" "node" "1480%3A24" "title" "Mita Garden Hills — Luxury Residential Landing Page & 3D Experience" "type" "Client project · 2026" "image" "mita-garden-hills.png" "description" "A premium responsive landing page for a residential development in Minato, Tokyo, featuring an interactive 3D Masterplan." "details" "<p>A concept that translates Mita Garden Hills’ architecture, gardens, privacy and heritage into a calm digital experience shaped by Japanese quiet luxury.</p><p><strong>My role:</strong> UX/UI design, art direction, desktop and mobile layouts, visual system, typography, 3D interface states, UI components and interactive prototype presentation.</p><p><strong>Scope:</strong> desktop and mobile landing pages; Hero, Concept, Garden, Architecture, Facilities, Residences, Location and Contact; an interactive 3D Masterplan with building cards, filters, zoom controls and day/night states; UI kit, forms and responsive interactions.</p><p>Design by pistaha. Mita Garden Hills name, logo and related brand assets belong to their respective owners.</p>" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1480-24&viewport=-295%2C-2786%2C0.24&t=QcZtEplKMUOpZux2-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1480%3A24&page-id=0%3A1" "mobile" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1555-1282&viewport=-295%2C-2786%2C0.24&t=MBTiwhWuftuzjF6z-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1555%3A1282&page-id=0%3A1&show-proto-sidebar=1")
-  (dict "id" "1308-24" "node" "1308%3A24" "title" "Jennyhouse Salon — Business Card Design" "type" "Client project · 2026" "image" "jennyhouse-salon.png" "description" "A double-sided business card for Jennyhouse Salon — a clean, premium print piece reflecting the brand’s visual identity." "details" "<p>Created to be easy to read while conveying the refined character of Jennyhouse Salon.</p><p><strong>My role:</strong> business card design, layout, typography and presentation mockup.</p><p><strong>Scope:</strong> front side with logo, reverse side with contact details and QR code, colour palette selection and print mockup visualisation.</p><p>Design by pistaha. Logo and brand assets belong to Jennyhouse Salon.</p>")
-  (dict "id" "44-99" "node" "44-99" "title" "IWEIYI.com — Brand Presentation Design" "type" "Client project · 2026" "image" "iweiyi-presentation.png" "description" "A 12-slide brand presentation for IWEIYI.com, an online flowers and gifts delivery platform." "details" "<p>The presentation introduces the website’s key services, product categories, delivery experience and customer care in a clear, visually consistent format aligned with the brand’s existing identity.</p><p><strong>My role:</strong> presentation design, visual system, layout, information hierarchy and art direction.</p><p><strong>Source materials:</strong> official website content and product imagery.</p><p><strong>Scope:</strong> brand overview, product categories, occasions, delivery, ordering flow, payments, customer care and contacts.</p><p>Design by pistaha. Website design and brand assets belong to IWEIYI.com.</p>" "external" "https://www.figma.com/deck/h3um4wNPDh9WVh9Z1jZGIu/IWEIYI.com-%E2%80%94-Flower-Delivery-in-Shanghai--China---1?node-id=44-99&viewport=-85%2C-18%2C0.42&t=Qwkyrs71ZXKPa523-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" "embed" "https://embed.figma.com/deck/h3um4wNPDh9WVh9Z1jZGIu/IWEIYI.com-%E2%80%94-Flower-Delivery-in-Shanghai--China---1?node-id=44-99&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1")
-  (dict "id" "4-3261" "node" "4%3A3261" "title" "Swiss Style" "type" "Presentation" "image" "flow-5.png" "description" "A presentation about Swiss graphic design, built with its own principles: modular grid, geometry, contrast and functional typography.")
-  (dict "id" "249-26" "node" "249%3A26" "title" "Your Trace" "type" "Social poster" "image" "flow-6.png" "description" "A series of social posters about pollution. The visual metaphor of a trace shows personal responsibility for the planet.")
-  (dict "id" "544-24" "node" "544%3A24" "title" "Vyborg: Circle of Time" "type" "Urban advertising campaign" "image" "flow-7.png" "description" "A landing page for Vyborg’s advertising campaign and a poster series turn the city’s identity into a cohesive invitation, revealing a visitor’s route through architecture, cultural memory and northern atmosphere.")
-  (dict "id" "4-37" "node" "4%3A37" "title" "Malevich Suprematism" "type" "Typography study" "image" "flow-1.png" "description" "A study of type selection for photography and work with black-and-white images, graphics and high-contrast composition.")
-  (dict "id" "4-661" "node" "4%3A661" "title" "The Selena Gomez" "type" "Editorial design" "image" "flow-2.png" "description" "Four pages in different visual styles connected by one story. The key focus is expressive typography.")
-  (dict "id" "4-317" "node" "4%3A317" "title" "Custom Cyrillic" "type" "Type design" "image" "flow-3.png" "description" "A custom Cyrillic typeface: letter construction, character system, numerals and testing the typeface in layout.")
-  (dict "id" "4-2814" "node" "4%3A2814" "title" "Velvet Music" "type" "Web design" "image" "flow-5-alt.png" "description" "A music store interface designed from another website’s grid and adapted into an original visual direction.")
+  (dict "id" "1480-24" "node" "1480%3A24" "title" "Mita Garden Hills — Luxury Residential Landing Page & 3D Experience" "type" "Client project · 2026" "image" "mita-garden-hills.jpg" "description" "A premium responsive landing page for a residential development in Minato, Tokyo, featuring an interactive 3D Masterplan." "details" "<p>A concept that translates Mita Garden Hills’ architecture, gardens, privacy and heritage into a calm digital experience shaped by Japanese quiet luxury.</p><p><strong>My role:</strong> UX/UI design, art direction, desktop and mobile layouts, visual system, typography, 3D interface states, UI components and interactive prototype presentation.</p><p><strong>Scope:</strong> desktop and mobile landing pages; Hero, Concept, Garden, Architecture, Facilities, Residences, Location and Contact; an interactive 3D Masterplan with building cards, filters, zoom controls and day/night states; UI kit, forms and responsive interactions.</p><p>Design by pistaha. Mita Garden Hills name, logo and related brand assets belong to their respective owners.</p>" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1480-24&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1480%3A24&page-id=0%3A1" "mobile" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1555-1282&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1555%3A1282&page-id=0%3A1&show-proto-sidebar=1")
+  (dict "id" "1308-24" "node" "1308%3A24" "title" "Jennyhouse Salon — Business Card Design" "type" "Client project · 2026" "image" "jennyhouse-salon.jpg" "gallery" (slice "jennyhouse-frame-29.webp" "jennyhouse-frame-31.webp") "description" "A double-sided business card for Jennyhouse Salon — a clean, premium print piece reflecting the brand’s visual identity." "details" "<p>Created to be easy to read while conveying the refined character of Jennyhouse Salon.</p><p><strong>My role:</strong> business card design, layout, typography and presentation mockup.</p><p><strong>Scope:</strong> front side with logo, reverse side with contact details and QR code, colour palette selection and print mockup visualisation.</p><p>Design by pistaha. Logo and brand assets belong to Jennyhouse Salon.</p>")
+  (dict "id" "energy-training-hall" "node" "0%3A1" "title" "Energy Training Hall — Sports Club Identity" "type" "Client project · Brand identity" "image" "energy-training-hall-01.webp" "gallery" (slice "energy-training-hall-01.webp" "energy-training-hall-02.webp" "energy-training-hall-03.webp" "energy-training-hall-04.webp" "energy-training-hall-05.webp" "energy-training-hall-06.webp" "energy-training-hall-07.webp") "description" "The Energy Training Hall logo brings an athlete into a Chinese-inspired character form to express strength and movement." "details" "<p>I developed a logo identity for Energy Training Hall. The brief called for athletic energy, Chinese-inspired visual language and a high-contrast palette.</p><p>I began by simplifying the shape for clarity. In response to the client’s request, I integrated an athlete into the character-like form, tested poses and silhouettes, then refined the final black, white and red composition.</p><p><strong>My role:</strong> logo design, form exploration, feedback-driven iterations and presentation of the identity in use.</p><p>The mark is shown on a storefront sign, sportswear and accessories. These are conceptual visualisations.</p>")
+  (dict "id" "44-99" "node" "44-99" "title" "IWEIYI.com — Brand Presentation Design" "type" "Client project · 2026" "image" "iweiyi-presentation.jpg" "description" "A 12-slide brand presentation for IWEIYI.com, an online flowers and gifts delivery platform." "details" "<p>I created a 12-slide presentation for IWEIYI.com, a flowers and gifts delivery service in Shanghai. I first reviewed the website and organised the story around the customer journey: products and occasions, ordering, delivery, payment and support.</p><p>Then I shaped the material into one visual system, carrying the brand through the typography, hierarchy and layouts. Each slide explains one step in the service and leads naturally to the next.</p><p><strong>My role:</strong> narrative structure, presentation design, layout and art direction.</p>" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1069-22&t=lRxvBgwft3twNq56-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1069%3A22" "embed" "https://embed.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1069-22&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1069%3A22&embed-host=share&hide-ui=1")
+  (dict "id" "secret-garden-menu" "node" "0%3A0" "title" "Secret Garden — Botanical Menu Design" "type" "Client project · Menu design" "image" "secret-garden-menu-43.jpg" "gallery" (slice "secret-garden-menu-43.jpg" "secret-garden-menu-44.jpg" "secret-garden-menu-45.jpg" "secret-garden-menu-46.jpg" "secret-garden-menu-47.jpg") "description" "A complete multi-page menu inspired by botanical engravings, with a warm paper palette, wine-red accents and clear section hierarchy." "details" "<p>I designed the Secret Garden menu from the initial visual concept through the complete set of pages.</p><p>Fine botanical illustrations, a warm ivory ground and deep wine-red accents bring a garden-like atmosphere to the identity. Refined serif headings distinguish each section, while a considered grid keeps dishes, descriptions and prices easy to scan.</p><p><strong>My role:</strong> full menu design, visual concept, typography, composition and multi-page layout.</p>")
+  (dict "id" "4-2814" "node" "4%3A2814" "title" "Velvet Music" "type" "Web design" "image" "flow-5-alt.jpg" "description" "A music store interface designed from another website’s grid and adapted into an original visual direction.")
+  (dict "id" "4-1887" "node" "4%3A1887" "title" "Three Albums, Three Moods" "type" "Music editorial · typography" "image" "selena-first-album.jpg" "description" "Revival, Rare and I Said I Love You First become three chapters in a visual diary. Rhythm, colour, type and layout shift to match each album’s mood." "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-1887&t=qIqCzkkP3Kd6gNfX-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A1887" "embed" "https://embed.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-1887&t=qIqCzkkP3Kd6gNfX-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A1887&embed-host=share&hide-ui=1")
+  (dict "id" "4-91" "node" "4%3A91" "title" "Type & Character" "type" "Typography · visual study" "image" "marvel-type-study.jpg" "description" "MARVEL heroes reimagined through expressive typography: hand-drawn headlines, sharp colour contrast and a composition built around Black Widow’s character." "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-91&t=szOweJ2RbzBAyv2G-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A91" "embed" "https://embed.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-91&t=szOweJ2RbzBAyv2G-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A91&embed-host=share&hide-ui=1")
+  (dict "id" "544-24" "node" "544%3A24" "title" "Vyborg: Circle of Time" "type" "Urban advertising campaign" "image" "flow-7.jpg" "description" "A landing page for Vyborg’s advertising campaign and a poster series turn the city’s identity into a cohesive invitation, revealing a visitor’s route through architecture, cultural memory and northern atmosphere.")
+  (dict "id" "249-26" "node" "249%3A26" "title" "Your Trace" "type" "Social campaign · poster series" "image" "your-trace-27.webp" "gallery" (slice "your-trace-27.webp" "your-trace-28.webp" "your-trace-29.webp" "your-trace-30.webp" "your-trace-31.webp") "description" "Five posters about how plastic waste reshapes the natural world, from polluted oceans to the danger facing wildlife." "details" "<p><em>Your Trace</em> is a social poster series about everyday choices and their consequences for the natural world. Visual metaphors connect plastic waste to what often stays out of sight: polluted oceans, melting ice and animals caught in the debris.</p><p>High-contrast imagery, expressive typography and restrained red accents give the series a consistent voice. Each poster focuses on one consequence and closes with a short, direct message to the viewer.</p><p><strong>My role:</strong> campaign concept, visual metaphors, typography, composition and layout for five posters.</p>")
+  (dict "id" "4-317" "node" "4%3A317" "title" "Custom Cyrillic" "type" "Type design" "image" "flow-3.jpg" "description" "A custom Cyrillic typeface: letter construction, character system, numerals and testing the typeface in layout.")
+  (dict "id" "4-3261" "node" "4%3A3261" "title" "Swiss Style" "type" "Presentation" "image" "flow-5.jpg" "description" "A presentation about Swiss graphic design, built with its own principles: modular grid, geometry, contrast and functional typography.")
 -}}
 {{- $projectsZh := slice
-  (dict "id" "1480-24" "node" "1480%3A24" "title" "Mita Garden Hills — 高端住宅落地页与 3D 体验" "type" "客户项目 · 2026" "image" "mita-garden-hills.png" "description" "为东京港区高端住宅项目打造的响应式落地页，包含互动式 3D 总平面体验。" "details" "<p>该概念将 Mita Garden Hills 的建筑、园林、私密感与历史底蕴转化为宁静优雅的数字体验，呈现日式低调奢华。</p><p><strong>我的职责：</strong>UX/UI 设计、艺术指导、桌面端与移动端版式、视觉系统、字体、3D 界面状态、UI 组件与交互原型展示。</p><p><strong>工作范围：</strong>桌面端和移动端落地页；Hero、Concept、Garden、Architecture、Facilities、Residences、Location 和 Contact 页面模块；带建筑卡片、筛选、缩放与昼夜模式的互动 3D 总平面；UI kit、表单与响应式交互。</p><p>Design by pistaha。Mita Garden Hills 名称、标志及相关品牌素材归其权利人所有。</p>" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1480-24&viewport=-295%2C-2786%2C0.24&t=QcZtEplKMUOpZux2-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1480%3A24&page-id=0%3A1" "mobile" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1555-1282&viewport=-295%2C-2786%2C0.24&t=MBTiwhWuftuzjF6z-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1555%3A1282&page-id=0%3A1&show-proto-sidebar=1")
-  (dict "id" "1308-24" "node" "1308%3A24" "title" "Jennyhouse Salon — 名片设计" "type" "客户项目 · 2026" "image" "jennyhouse-salon.png" "description" "为 Jennyhouse Salon 设计的双面名片：简洁、高级，并体现品牌视觉识别。" "details" "<p>设计目标是打造易于阅读的高级印刷品，并准确传达 Jennyhouse Salon 的品牌气质。</p><p><strong>我的职责：</strong>名片设计、版式、字体排印和展示效果图。</p><p><strong>工作范围：</strong>带标志的正面、包含联系方式和二维码的背面、色彩方案选择与印刷效果图可视化。</p><p>Design by pistaha。标志和品牌素材归 Jennyhouse Salon 所有。</p>")
-  (dict "id" "44-99" "node" "44-99" "title" "IWEIYI.com — 品牌演示文稿设计" "type" "客户项目 · 2026" "image" "iweiyi-presentation.png" "description" "为线上鲜花与礼品配送平台 IWEIYI.com 制作的 12 页品牌演示文稿。" "details" "<p>演示以清晰、统一的视觉形式介绍网站核心服务、商品类别、配送体验和客户关怀，并延续品牌现有的视觉识别。</p><p><strong>我的职责：</strong>演示文稿设计、视觉系统、版式、信息层级和艺术指导。</p><p><strong>素材来源：</strong>官方网站内容和产品图片。</p><p><strong>工作范围：</strong>品牌概览、商品类别、送礼场景、配送、订购流程、支付、客户服务和联系方式。</p><p>Design by pistaha。网站设计和品牌素材归 IWEIYI.com 所有。</p>" "external" "https://www.figma.com/deck/h3um4wNPDh9WVh9Z1jZGIu/IWEIYI.com-%E2%80%94-Flower-Delivery-in-Shanghai--China---1?node-id=44-99&viewport=-85%2C-18%2C0.42&t=Qwkyrs71ZXKPa523-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" "embed" "https://embed.figma.com/deck/h3um4wNPDh9WVh9Z1jZGIu/IWEIYI.com-%E2%80%94-Flower-Delivery-in-Shanghai--China---1?node-id=44-99&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1")
-  (dict "id" "4-3261" "node" "4%3A3261" "title" "瑞士风格" "type" "演示文稿" "image" "flow-5.png" "description" "一份关于瑞士平面设计风格的演示，使用模块网格、几何关系、对比和功能性字体排版。")
-  (dict "id" "249-26" "node" "249%3A26" "title" "你的足迹" "type" "社会海报" "image" "flow-6.png" "description" "关于地球污染的社会海报系列，用“足迹”这一视觉隐喻表达每个人对环境的责任。")
-  (dict "id" "544-24" "node" "544%3A24" "title" "维堡：时间之环" "type" "城市推广活动" "image" "flow-7.png" "description" "为维堡城市推广活动设计的落地页和海报系列，将城市形象转化为完整邀约：通过建筑细节、文化记忆与北方气质，呈现给旅行者的探索路线。")
-  (dict "id" "4-37" "node" "4%3A37" "title" "马列维奇至上主义" "type" "字体研究" "image" "flow-1.png" "description" "围绕照片选择合适字体，并练习黑白照片、图形与高对比构图的视觉研究。")
-  (dict "id" "4-661" "node" "4%3A661" "title" "The Selena Gomez" "type" "编辑设计" "image" "flow-2.png" "description" "四个风格不同但主题统一的页面，重点训练字体表达和版面节奏。")
-  (dict "id" "4-317" "node" "4%3A317" "title" "原创西里尔字体" "type" "字体设计" "image" "flow-3.png" "description" "设计自己的西里尔字体：字形结构、符号系统、数字，并在排版中验证可用性。")
-  (dict "id" "4-2814" "node" "4%3A2814" "title" "Velvet Music" "type" "网页设计" "image" "flow-5-alt.png" "description" "基于参考网站网格制作的音乐商店界面，并发展出自己的视觉风格。")
+  (dict "id" "1480-24" "node" "1480%3A24" "title" "Mita Garden Hills — 高端住宅落地页与 3D 体验" "type" "客户项目 · 2026" "image" "mita-garden-hills.jpg" "description" "为东京港区高端住宅项目打造的响应式落地页，包含互动式 3D 总平面体验。" "details" "<p>该概念将 Mita Garden Hills 的建筑、园林、私密感与历史底蕴转化为宁静优雅的数字体验，呈现日式低调奢华。</p><p><strong>我的职责：</strong>UX/UI 设计、艺术指导、桌面端与移动端版式、视觉系统、字体、3D 界面状态、UI 组件与交互原型展示。</p><p><strong>工作范围：</strong>桌面端和移动端落地页；Hero、Concept、Garden、Architecture、Facilities、Residences、Location 和 Contact 页面模块；带建筑卡片、筛选、缩放与昼夜模式的互动 3D 总平面；UI kit、表单与响应式交互。</p><p>Design by pistaha。Mita Garden Hills 名称、标志及相关品牌素材归其权利人所有。</p>" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1480-24&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1480%3A24&page-id=0%3A1" "mobile" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1555-1282&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1555%3A1282&page-id=0%3A1&show-proto-sidebar=1")
+  (dict "id" "1308-24" "node" "1308%3A24" "title" "Jennyhouse Salon — 名片设计" "type" "客户项目 · 2026" "image" "jennyhouse-salon.jpg" "gallery" (slice "jennyhouse-frame-29.webp" "jennyhouse-frame-31.webp") "description" "为 Jennyhouse Salon 设计的双面名片：简洁、高级，并体现品牌视觉识别。" "details" "<p>设计目标是打造易于阅读的高级印刷品，并准确传达 Jennyhouse Salon 的品牌气质。</p><p><strong>我的职责：</strong>名片设计、版式、字体排印和展示效果图。</p><p><strong>工作范围：</strong>带标志的正面、包含联系方式和二维码的背面、色彩方案选择与印刷效果图可视化。</p><p>Design by pistaha。标志和品牌素材归 Jennyhouse Salon 所有。</p>")
+  (dict "id" "energy-training-hall" "node" "0%3A1" "title" "Energy Training Hall — 健身俱乐部品牌识别" "type" "客户项目 · 品牌识别" "image" "energy-training-hall-01.webp" "gallery" (slice "energy-training-hall-01.webp" "energy-training-hall-02.webp" "energy-training-hall-03.webp" "energy-training-hall-04.webp" "energy-training-hall-05.webp" "energy-training-hall-06.webp" "energy-training-hall-07.webp") "description" "为 Energy Training Hall 设计的标志，将运动员融入汉字风格的图形，呈现力量与动感。" "details" "<p>我为 Energy Training Hall 设计了健身俱乐部标志。项目简报要求体现运动活力、中国风格和鲜明的色彩对比。</p><p>我先简化图形，让标志更加完整、易于识别。根据客户的意见，我将运动员融入汉字风格的造型中，测试不同姿势与轮廓，最后确定黑、白、红配色。</p><p><strong>我的职责：</strong>标志设计、图形探索、根据反馈迭代，以及展示品牌应用效果。</p><p>标志应用于门店招牌、运动服和配件。演示中的效果图为概念可视化。</p>")
+  (dict "id" "44-99" "node" "44-99" "title" "IWEIYI.com — 品牌演示文稿设计" "type" "客户项目 · 2026" "image" "iweiyi-presentation.jpg" "description" "为线上鲜花与礼品配送平台 IWEIYI.com 制作的 12 页品牌演示文稿。" "details" "<p>我为上海鲜花与礼品配送平台 IWEIYI.com 制作了 12 页演示文稿。首先梳理网站内容，并按用户体验路径组织信息：从商品和送礼场景，到下单、配送、支付与客户支持。</p><p>随后将素材整理为统一的视觉系统，通过字体、信息层级和版式延续品牌风格。每一页聚焦服务中的一个环节，并自然引出下一步。</p><p><strong>我的职责：</strong>内容结构、演示设计、版式和艺术指导。</p>" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1069-22&t=lRxvBgwft3twNq56-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1069%3A22" "embed" "https://embed.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=1069-22&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1069%3A22&embed-host=share&hide-ui=1")
+  (dict "id" "secret-garden-menu" "node" "0%3A0" "title" "Secret Garden — 植物风格菜单设计" "type" "客户项目 · 菜单设计" "image" "secret-garden-menu-43.jpg" "gallery" (slice "secret-garden-menu-43.jpg" "secret-garden-menu-44.jpg" "secret-garden-menu-45.jpg" "secret-garden-menu-46.jpg" "secret-garden-menu-47.jpg") "description" "以植物版画为灵感的多页菜单：温暖的纸张色调、酒红色点缀和清晰的分类层级。" "details" "<p>我为 Secret Garden 完成了整套餐厅菜单设计，从视觉概念到全部页面的版式呈现。</p><p>细腻的植物插画、温暖的象牙白底色与深酒红点缀营造出花园般的氛围。精致的衬线标题区分不同类别，清晰的网格则让菜品、说明和价格一目了然。</p><p><strong>我的职责：</strong>菜单整体设计、视觉概念、字体排印、构图与多页版式设计。</p>")
+  (dict "id" "4-2814" "node" "4%3A2814" "title" "Velvet Music" "type" "网页设计" "image" "flow-5-alt.jpg" "description" "基于参考网站网格制作的音乐商店界面，并发展出自己的视觉风格。")
+  (dict "id" "4-1887" "node" "4%3A1887" "title" "三张专辑，三种情绪" "type" "音乐编辑设计 · 字体" "image" "selena-first-album.jpg" "description" "Revival、Rare 与 I Said I Love You First 化作视觉日记中的三个篇章。字体、色彩和版式随每张专辑的情绪变化。" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-1887&t=qIqCzkkP3Kd6gNfX-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A1887" "embed" "https://embed.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-1887&t=qIqCzkkP3Kd6gNfX-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A1887&embed-host=share&hide-ui=1")
+  (dict "id" "4-91" "node" "4%3A91" "title" "字体与性格" "type" "字体设计 · 视觉研究" "image" "marvel-type-study.jpg" "description" "以鲜明字体呈现 MARVEL 英雄：手写标题、色彩对比与版式构图共同塑造黑寡妇的角色气质。" "external" "https://www.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-91&t=szOweJ2RbzBAyv2G-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A91" "embed" "https://embed.figma.com/proto/R1bwbjOo5jSadLVDZjphFw/Untitled?node-id=4-91&t=szOweJ2RbzBAyv2G-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A91&embed-host=share&hide-ui=1")
+  (dict "id" "544-24" "node" "544%3A24" "title" "维堡：时间之环" "type" "城市推广活动" "image" "flow-7.jpg" "description" "为维堡城市推广活动设计的落地页和海报系列，将城市形象转化为完整邀约：通过建筑细节、文化记忆与北方气质，呈现给旅行者的探索路线。")
+  (dict "id" "249-26" "node" "249%3A26" "title" "你的足迹" "type" "公益宣传 · 海报系列" "image" "your-trace-27.webp" "gallery" (slice "your-trace-27.webp" "your-trace-28.webp" "your-trace-29.webp" "your-trace-30.webp" "your-trace-31.webp") "description" "五张海报呈现塑料垃圾如何改变自然环境：从受污染的海洋到受到威胁的野生动物。" "details" "<p>《你的足迹》是一组关于日常选择及其自然环境后果的公益海报。视觉隐喻将塑料垃圾与那些常被忽略的现实联系起来：海洋污染、冰层融化，以及被废弃物困住的动物。</p><p>高反差影像、醒目的字体和克制的红色点缀构成统一的视觉语言。每张海报聚焦一个具体后果，并以简短直接的文字提醒观者。</p><p><strong>我的职责：</strong>系列概念、视觉隐喻、字体设计、构图与五张海报的版式设计。</p>")
+  (dict "id" "4-317" "node" "4%3A317" "title" "原创西里尔字体" "type" "字体设计" "image" "flow-3.jpg" "description" "设计自己的西里尔字体：字形结构、符号系统、数字，并在排版中验证可用性。")
+  (dict "id" "4-3261" "node" "4%3A3261" "title" "瑞士风格" "type" "演示文稿" "image" "flow-5.jpg" "description" "一份关于瑞士平面设计风格的演示，使用模块网格、几何关系、对比和功能性字体排版。")
 -}}
 {{- $projects := cond (eq $lang "en") $projectsEn (cond (eq $lang "zh") $projectsZh $projectsRu) -}}
+
+<link rel="preconnect" href="https://embed.figma.com" crossorigin>
+<link rel="dns-prefetch" href="https://www.figma.com">
 
 <section class="figma-showcase" aria-label="{{ index $l "aria" }}">
   <div class="figma-showcase__grid">
     {{- range $index, $project := $projects -}}
-      {{- $defaultProtoURL := printf "https://www.figma.com/proto/%s/%s?node-id=%s&scaling=contain&content-scaling=fixed&starting-point-node-id=%s&show-proto-sidebar=0" $fileKey $fileName $project.node $project.node -}}
-      {{- $defaultEmbedURL := printf "https://embed.figma.com/proto/%s/%s?node-id=%s&scaling=contain&content-scaling=fixed&starting-point-node-id=%s&embed-host=share&hide-ui=1" $fileKey $fileName $project.node $project.node -}}
+      {{- $defaultProtoURL := printf "https://www.figma.com/proto/%s/%s?node-id=%s&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=%s&show-proto-sidebar=0" $fileKey $fileName $project.node $project.node -}}
+      {{- $defaultEmbedURL := printf "https://embed.figma.com/proto/%s/%s?node-id=%s&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=%s&embed-host=share&hide-ui=1" $fileKey $fileName $project.node $project.node -}}
       {{- $protoURL := $project.external | default $defaultProtoURL -}}
       {{- $embedURL := $project.embed | default $defaultEmbedURL -}}
       {{- $mobileEmbedURL := replace ($project.mobile | default "") "https://www.figma.com/proto/" "https://embed.figma.com/proto/" -}}
@@ -58,13 +67,17 @@
           class="figma-card__launch"
           type="button"
           data-figma-open
+          data-project-id="{{ $project.id }}"
           data-title="{{ $project.title }}"
+          data-type="{{ $project.type }}"
+          data-description="{{ $project.description }}"
           data-embed="{{ $embedURL }}"
           data-external="{{ $protoURL }}"
           data-mobile-embed="{{ $mobileEmbedURL }}"
           data-mobile-external="{{ $project.mobile | default "" }}"
+          data-gallery="{{ with $project.gallery }}{{ range $i, $image := . }}{{ if $i }},{{ end }}{{ printf "portfolio/figma-prototypes/images/%s" $image | relURL }}{{ end }}{{ end }}"
           data-details="{{ $project.details | default "" }}"
-          aria-label="{{ index $l "launch" }}: {{ $project.title }}"
+          aria-label="{{ if $project.gallery }}{{ index $l "openProject" }}{{ else }}{{ index $l "launch" }}{{ end }}: {{ $project.title }}"
         >
           <span class="figma-card__visual">
             <img
@@ -77,7 +90,7 @@
               <span class="figma-card__play">
                 <svg viewBox="0 0 24 24" role="img" aria-label="Воспроизвести"><path d="M8 5.5v13l10-6.5z"/></svg>
               </span>
-              <span class="figma-card__action">{{ index $l "launch" }}</span>
+              <span class="figma-card__action">{{ if $project.gallery }}{{ index $l "openProject" }}{{ else }}{{ index $l "launch" }}{{ end }}</span>
             </span>
           </span>
           <span class="figma-card__content">
@@ -86,22 +99,28 @@
             <span class="figma-card__description">{{ $project.description }}</span>
           </span>
         </button>
-        <div class="figma-card__links">
-          <a class="figma-card__external" href="{{ $protoURL }}" target="_blank" rel="noopener noreferrer">
-            {{ index $l "open" }}
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
-          </a>
-        </div>
+        {{- if not $project.gallery -}}
+          <div class="figma-card__links">
+            <a class="figma-card__external" href="{{ $protoURL }}" target="_blank" rel="noopener noreferrer">
+              {{ index $l "open" }}
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+            </a>
+          </div>
+        {{- end -}}
       </article>
     {{- end -}}
   </div>
 </section>
 
 <div class="figma-modal" data-figma-modal hidden>
-  <div class="figma-modal__backdrop" data-figma-close></div>
   <section class="figma-modal__panel" role="dialog" aria-modal="true" aria-labelledby="figma-modal-title">
     <header class="figma-modal__header">
-      <div>
+      <div class="figma-modal__heading">
+        <button class="figma-modal__back" type="button" data-figma-close>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6M10 12h10"/></svg>
+          {{ index $l "back" }}
+        </button>
+        <span class="figma-modal__eyebrow" data-figma-type></span>
         <h2 class="figma-modal__title" id="figma-modal-title" data-figma-title>Figma</h2>
       </div>
       <div class="figma-modal__actions">
@@ -110,7 +129,10 @@
           <button type="button" data-figma-device="mobile">{{ index $l "mobile" }}</button>
         </div>
         <button class="figma-modal__details-toggle" type="button" data-figma-details-toggle>{{ index $l "details" }}</button>
-        <a class="figma-modal__figma-link" data-figma-external href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">{{ index $l "open" }}</a>
+        <a class="figma-modal__figma-link" data-figma-external href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+          {{ index $l "open" }}
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+        </a>
         <button class="figma-modal__close" type="button" data-figma-close aria-label="{{ index $l "close" }}">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
@@ -118,20 +140,24 @@
     </header>
     <div class="figma-modal__body">
       <div class="figma-modal__stage">
+        <div class="figma-modal__gallery" data-figma-gallery hidden></div>
         <div class="figma-modal__loader" data-figma-loader>
           <span></span><span></span><span></span>
-          <strong>{{ index $l "loading" }}</strong>
+          <strong data-figma-loader-label>{{ index $l "loading" }}</strong>
         </div>
         <iframe
           data-figma-frame
           title="{{ index $l "frame" }}"
           allowfullscreen
           allow="fullscreen"
-          loading="lazy"
+          loading="eager"
         ></iframe>
       </div>
       <aside class="figma-modal__details" data-figma-details hidden>
-        <div class="figma-modal__details-content" data-figma-details-content></div>
+        <div class="figma-modal__details-content">
+          <p class="figma-modal__details-kicker">{{ index $l "details" }}</p>
+          <div data-figma-details-content></div>
+        </div>
       </aside>
     </div>
   </section>
@@ -167,54 +193,90 @@
   .figma-card__external svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
 
   .figma-modal[hidden] { display: none; }
-  .figma-modal { position: fixed; z-index: 9999; inset: 0; display: grid; padding: clamp(.5rem, 2vw, 1.5rem); place-items: center; }
-  .figma-modal__backdrop { position: absolute; inset: 0; background: rgba(3,3,10,.84); backdrop-filter: blur(14px); animation: figmaFade .25s ease both; }
-  .figma-modal__panel { position: relative; display: flex; width: min(96vw, 1680px); height: min(94vh, 1050px); flex-direction: column; overflow: hidden; border: 1px solid rgba(255,255,255,.15); border-radius: .5rem; background: #111118; box-shadow: 0 2rem 8rem rgba(0,0,0,.55); animation: figmaRise .35s cubic-bezier(.2,.8,.2,1) both; }
-  .figma-modal__header { display: flex; min-height: 4.5rem; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 1rem .75rem 1.25rem; color: #fff; background: #111118; }
-  .figma-modal__title { margin: 0; font-size: 1.12rem; line-height: 1.2; }
-  .figma-modal__actions { display: flex; align-items: center; gap: .65rem; }
-  .figma-modal__devices { display: inline-flex; overflow: hidden; border: 1px solid rgba(255,255,255,.2); border-radius: .35rem; }
-  .figma-modal__devices button, .figma-modal__details-toggle { min-height: 2.45rem; padding: 0 .8rem; border: 0; color: #fff; font: inherit; font-size: .78rem; font-weight: 650; background: transparent; cursor: pointer; }
+  .figma-modal { position: fixed; z-index: 9999; inset: 0; color: #f8f8fa; background: #08080c; color-scheme: dark; }
+  .figma-modal__panel { position: absolute; inset: 0; display: flex; width: 100%; height: 100%; flex-direction: column; overflow: hidden; background: #08080c; animation: figmaFade .25s ease both; }
+  .figma-modal__header { position: relative; z-index: 4; display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 1rem; min-height: 6.25rem; padding: .8rem clamp(1rem,2.4vw,2.5rem); border-bottom: 1px solid rgba(255,255,255,.09); background: linear-gradient(115deg,#17171e,#101015 65%,#14141a); }
+  .figma-modal__heading { display: grid; min-width: 0; grid-template-columns: auto minmax(0,1fr); grid-template-rows: auto auto; align-items: center; column-gap: .9rem; row-gap: .15rem; }
+  .figma-modal__back { grid-column: 1; grid-row: 1 / 3; display: inline-flex; align-items: center; gap: .5rem; padding: 0; border: 0; color: rgba(255,255,255,.66); font: inherit; font-size: .77rem; font-weight: 650; white-space: nowrap; background: transparent; cursor: pointer; transition: color .2s ease; }
+  .figma-modal__back:hover { color: #fff; }
+  .figma-modal__back svg { width: 1rem; height: 1rem; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+  .figma-modal__eyebrow { grid-column: 2; grid-row: 1; display: block; color: #a5a5ff; font-size: .61rem; font-weight: 750; letter-spacing: .11em; line-height: 1.2; text-transform: uppercase; }
+  .figma-modal__title { grid-column: 2; grid-row: 2; margin: 0; color: #fafafd !important; font-size: clamp(1.08rem,1.7vw,1.55rem); font-weight: 750; letter-spacing: -.035em; line-height: 1.08; }
+  .figma-modal__actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .55rem; }
+  .figma-modal__devices { display: inline-flex; overflow: hidden; border: 1px solid rgba(255,255,255,.2); border-radius: .4rem; }
+  .figma-modal__devices button, .figma-modal__details-toggle { min-height: 2.65rem; padding: 0 .9rem; border: 0; color: #f8f8fa; font: inherit; font-size: .78rem; font-weight: 650; background: transparent; cursor: pointer; }
   .figma-modal__devices button + button { border-left: 1px solid rgba(255,255,255,.2); }
   .figma-modal__devices button.is-active, .figma-modal__details-toggle.is-active, .figma-modal__details-toggle:hover { background: rgba(255,255,255,.12); }
-  .figma-modal__details-toggle { border: 1px solid rgba(255,255,255,.2); border-radius: .35rem; }
-  .figma-modal__figma-link { display: inline-flex; align-items: center; min-height: 2.45rem; padding: 0 .9rem; border: 1px solid rgba(255,255,255,.2); border-radius: .35rem; color: #fff; font-size: .78rem; font-weight: 650; text-decoration: none; transition: background .2s ease; }
-  .figma-modal__figma-link:hover { background: rgba(255,255,255,.1); }
-  .figma-modal__close { display: grid; width: 2.55rem; height: 2.55rem; padding: 0; place-items: center; border: 1px solid rgba(255,255,255,.2); border-radius: .35rem; color: #fff; background: transparent; cursor: pointer; }
+  .figma-modal__details-toggle { border: 1px solid rgba(255,255,255,.2); border-radius: .4rem; }
+  .figma-modal__figma-link { display: inline-flex; align-items: center; gap: .55rem; min-height: 2.65rem; padding: 0 1rem; border: 1px solid rgba(255,255,255,.2); border-radius: .4rem; color: #fff; font-size: .78rem; font-weight: 650; text-decoration: none; transition: background .2s ease,border-color .2s ease; }
+  .figma-modal__figma-link:hover { border-color: rgba(255,255,255,.36); background: rgba(255,255,255,.1); }
+  .figma-modal__figma-link svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
+  .figma-modal__close { display: grid; width: 2.7rem; height: 2.7rem; flex: 0 0 auto; padding: 0; place-items: center; border: 1px solid rgba(255,255,255,.2); border-radius: .4rem; color: #fff; background: transparent; cursor: pointer; transition: background .2s ease; }
   .figma-modal__close:hover { background: rgba(255,255,255,.1); }
   .figma-modal__close svg { width: 1.2rem; height: 1.2rem; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 2; }
-  .figma-modal__body { display: flex; min-height: 0; flex: 1; background: #08080c; }
-  .figma-modal__stage { position: relative; min-width: 0; min-height: 0; flex: 1; background: #08080c; }
+  .figma-modal__body { position: relative; display: flex; min-height: 0; flex: 1; background: #050506; }
+  .figma-modal__stage { position: relative; min-width: 0; min-height: 0; flex: 1 1 0; background: #050506; }
   .figma-modal__stage iframe { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; border: 0; background: transparent; opacity: 0; transition: opacity .25s ease; }
   .figma-modal__stage iframe.is-loaded { opacity: 1; }
+  .figma-modal__stage.is-gallery iframe { display: none; }
+  .figma-modal__figma-link[hidden] { display: none; }
+  .figma-modal__gallery { position: absolute; inset: 0; overflow: auto; overscroll-behavior: contain; padding: clamp(.75rem,2vw,1.5rem); scrollbar-gutter: stable; }
+  .figma-modal__gallery[hidden] { display: none; }
+  .figma-modal__gallery img { display: block; width: min(100%, 82rem); height: auto; margin: 0 auto clamp(1.25rem,3vw,2.5rem); border-radius: 0; object-fit: contain; }
   .figma-modal__loader { position: absolute; z-index: 1; inset: 0; display: flex; align-items: center; justify-content: center; gap: .5rem; color: #fff; }
   .figma-modal__loader strong { margin-left: .65rem; font-size: .8rem; font-weight: 600; opacity: .7; }
-  .figma-modal__loader span { width: .48rem; height: .48rem; border-radius: 999px; background: #818cf8; animation: figmaPulse 1s ease-in-out infinite; }
+  .figma-modal__loader span { width: .48rem; height: .48rem; border-radius: 999px; background: #9292ff; animation: figmaPulse 1s ease-in-out infinite; }
   .figma-modal__loader span:nth-child(2) { animation-delay: .13s; }
   .figma-modal__loader span:nth-child(3) { animation-delay: .26s; }
-  .figma-modal__details { width: min(30vw, 28rem); overflow-y: auto; border-left: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.78); background: #14141d; }
-  .figma-modal__details-content { padding: 1.5rem; font-size: .92rem; line-height: 1.65; }
+  .figma-modal__details { position: relative; z-index: 3; display: flex; width: clamp(19rem,27vw,31rem); min-width: 0; flex: 0 0 auto; overflow: auto; border-left: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.78); background: #14141d; }
+  .figma-modal__details[hidden] { display: none; }
+  .figma-modal__details-content { width: 100%; padding: clamp(1.15rem,2.2vw,2rem); font-size: clamp(.8rem,.9vw,.92rem); line-height: 1.65; }
+  .figma-modal__details-kicker { margin: 0 0 1.1rem !important; color: #a5a5ff; font-size: .66rem; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
   .figma-modal__details-content p { margin: 0 0 1rem; }
   .figma-modal__details-content strong { color: #fff; }
   body.figma-modal-open { overflow: hidden; }
   @keyframes figmaFade { from { opacity: 0 } }
-  @keyframes figmaRise { from { opacity: 0; transform: translateY(18px) scale(.985) } }
   @keyframes figmaPulse { 0%, 100% { opacity: .3; transform: translateY(0) } 50% { opacity: 1; transform: translateY(-5px) } }
 
-  @media (max-width: 760px) {
+  @media (max-width: 980px) {
+    .figma-modal__header { grid-template-columns: minmax(0,1fr); gap: .6rem; min-height: 5.6rem; }
+    .figma-modal__actions { justify-content: flex-start; }
+    .figma-modal__details { width: clamp(17rem,34vw,24rem); }
+  }
+  @media (max-width: 600px) {
     .figma-card { flex-basis: 100%; max-width: 100%; }
     .figma-card__content { min-height: 10.5rem; }
-    .figma-modal { padding: 0; }
-    .figma-modal__panel { width: 100vw; height: 100dvh; border: 0; border-radius: 0; }
-    .figma-modal__header { min-height: 4rem; padding: .6rem .7rem .6rem 1rem; }
-    .figma-modal__figma-link { display: none; }
-    .figma-modal__details { position: absolute; z-index: 4; top: 0; right: 0; width: min(88vw, 28rem); height: 100%; box-shadow: -1rem 0 2rem rgba(0,0,0,.3); }
-    .figma-modal__devices button, .figma-modal__details-toggle { padding: 0 .6rem; }
-    .figma-modal__title { max-width: 58vw; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .figma-modal__header { grid-template-columns: minmax(0,1fr); gap: .55rem; min-height: auto; padding: .6rem .8rem; }
+    .figma-modal__heading { grid-template-columns: auto minmax(0,1fr); grid-template-rows: auto auto; row-gap: .1rem; column-gap: .6rem; }
+    .figma-modal__back { grid-column: 1; grid-row: 1 / 3; font-size: .65rem; }
+    .figma-modal__back svg { display: none; }
+    .figma-modal__eyebrow { grid-column: 2; grid-row: 1; font-size: .53rem; }
+    .figma-modal__title { grid-column: 2; grid-row: 2; max-width: 100%; overflow: hidden; font-size: clamp(.96rem,4.3vw,1.2rem); text-overflow: ellipsis; white-space: nowrap; }
+    .figma-modal__actions { width: 100%; max-width: none; justify-content: flex-start; gap: .3rem; }
+    .figma-modal__devices button, .figma-modal__details-toggle { min-height: 2.1rem; padding: 0 .48rem; font-size: .64rem; }
+    .figma-modal__figma-link { min-height: 2.1rem; gap: .25rem; padding: 0 .5rem; font-size: .64rem; }
+    .figma-modal__close { width: 2.1rem; height: 2.1rem; }
+    .figma-modal__details { position: absolute; inset: 0 0 0 auto; width: min(84vw,25rem); box-shadow: -1rem 0 2rem rgba(0,0,0,.35); }
   }
+  html:not(.dark) .figma-modal { color: #1c1c20; background: #f5f5f7; color-scheme: light; }
+  html:not(.dark) .figma-modal__panel { background: #f5f5f7; }
+  html:not(.dark) .figma-modal__header { border-bottom-color: rgba(25,25,35,.1); background: linear-gradient(115deg,#fff,#f5f5f8 70%,#f0f0f4); }
+  html:not(.dark) .figma-modal__back { color: rgba(25,25,35,.62); }
+  html:not(.dark) .figma-modal__back:hover { color: #17171c; }
+  html:not(.dark) .figma-modal__eyebrow, html:not(.dark) .figma-modal__details-kicker { color: #5554ad; }
+  html:not(.dark) .figma-modal__title { color: #19191f !important; }
+  html:not(.dark) .figma-modal__devices, html:not(.dark) .figma-modal__details-toggle, html:not(.dark) .figma-modal__figma-link, html:not(.dark) .figma-modal__close { border-color: rgba(25,25,35,.18); color: #24242b; }
+  html:not(.dark) .figma-modal__devices button { color: #24242b; }
+  html:not(.dark) .figma-modal__devices button + button { border-left-color: rgba(25,25,35,.18); }
+  html:not(.dark) .figma-modal__devices button.is-active, html:not(.dark) .figma-modal__details-toggle.is-active, html:not(.dark) .figma-modal__details-toggle:hover, html:not(.dark) .figma-modal__figma-link:hover, html:not(.dark) .figma-modal__close:hover { background: rgba(25,25,35,.08); }
+  html:not(.dark) .figma-modal__body, html:not(.dark) .figma-modal__stage { background: #e9e9ed; }
+  html:not(.dark) .figma-modal__details { border-left-color: rgba(25,25,35,.12); color: #494952; background: #fff; }
+  html:not(.dark) .figma-modal__details-content strong { color: #19191f; }
+  html:not(.dark) .figma-modal__loader { color: #24242b; }
+  html:not(.dark) .figma-modal__loader span { background: #6261c5; }
   @media (prefers-reduced-motion: reduce) {
     .figma-card, .figma-card__visual img, .figma-card__overlay, .figma-card__play,
-    .figma-modal__backdrop, .figma-modal__panel, .figma-modal__loader span { animation: none; transition: none; }
+    .figma-modal__panel, .figma-modal__loader span { animation: none; transition: none; }
   }
 </style>
 
@@ -225,9 +287,13 @@
     modal.dataset.ready = 'true';
 
     const frame = modal.querySelector('[data-figma-frame]');
+    const gallery = modal.querySelector('[data-figma-gallery]');
+    const stage = modal.querySelector('.figma-modal__stage');
     const title = modal.querySelector('[data-figma-title]');
+    const type = modal.querySelector('[data-figma-type]');
     const external = modal.querySelector('[data-figma-external]');
     const loader = modal.querySelector('[data-figma-loader]');
+    const loaderLabel = modal.querySelector('[data-figma-loader-label]');
     const closeButton = modal.querySelector('.figma-modal__close');
     const detailsToggle = modal.querySelector('[data-figma-details-toggle]');
     const detailsPanel = modal.querySelector('[data-figma-details]');
@@ -235,72 +301,154 @@
     const devices = modal.querySelector('[data-figma-devices]');
     const deviceButtons = modal.querySelectorAll('[data-figma-device]');
     const framePrefix = {{ index $l "framePrefix" | jsonify }};
+    const loadingLabel = {{ index $l "loading" | jsonify }};
+    const loadingSlowLabel = {{ index $l "loadingSlow" | jsonify }};
+    const projectButtons = [...document.querySelectorAll('[data-figma-open]')];
     let opener = null;
     let project = null;
+    let loadingTimer = null;
+
+    const projectUrl = (id) => {
+      const url = new URL(window.location.href);
+      url.searchParams.set('prototype', id);
+      return url;
+    };
 
     const setDevice = (device) => {
       if (!project) return;
       const isMobile = device === 'mobile';
       const src = isMobile ? project.mobileEmbed : project.embed;
       if (!src) return;
+      window.clearTimeout(loadingTimer);
       frame.classList.remove('is-loaded');
       loader.hidden = false;
+      loaderLabel.textContent = loadingLabel;
+      frame.removeAttribute('src');
       frame.src = src;
+      loadingTimer = window.setTimeout(() => {
+        if (!frame.classList.contains('is-loaded')) loaderLabel.textContent = loadingSlowLabel;
+      }, 12000);
       external.href = isMobile ? project.mobileExternal : project.external;
       deviceButtons.forEach((button) => button.classList.toggle('is-active', button.dataset.figmaDevice === device));
     };
 
-    const close = () => {
+    const showProject = (button) => {
+      opener = button;
+      project = {
+        id: button.dataset.projectId,
+        embed: button.dataset.embed,
+        external: button.dataset.external,
+        mobileEmbed: button.dataset.mobileEmbed,
+        mobileExternal: button.dataset.mobileExternal,
+        gallery: button.dataset.gallery ? button.dataset.gallery.split(',').filter(Boolean) : [],
+      };
+      title.textContent = button.dataset.title;
+      type.textContent = button.dataset.type || '';
+      external.href = project.external;
+      if (button.dataset.details) {
+        detailsContent.innerHTML = button.dataset.details;
+      } else {
+        detailsContent.textContent = button.dataset.description || '';
+      }
+      detailsToggle.hidden = !button.dataset.description && !button.dataset.details;
+      detailsPanel.hidden = window.matchMedia('(max-width: 600px)').matches;
+      detailsToggle.classList.toggle('is-active', !detailsPanel.hidden);
+      devices.hidden = !project.mobileEmbed;
+      frame.title = `${framePrefix}: ${button.dataset.title}`;
+      modal.hidden = false;
+      document.body.classList.add('figma-modal-open');
+      gallery.replaceChildren();
+      gallery.hidden = project.gallery.length === 0;
+      external.hidden = project.gallery.length > 0;
+      stage.classList.toggle('is-gallery', project.gallery.length > 0);
+      if (project.gallery.length) {
+        window.clearTimeout(loadingTimer);
+        frame.removeAttribute('src');
+        frame.classList.remove('is-loaded');
+        loader.hidden = true;
+        project.gallery.forEach((src, index) => {
+          const image = document.createElement('img');
+          image.src = src;
+          image.alt = `${button.dataset.title} — ${index + 1}`;
+          image.decoding = 'async';
+          image.loading = index === 0 ? 'eager' : 'lazy';
+          if (index === 0) image.fetchPriority = 'high';
+          gallery.append(image);
+        });
+      } else {
+        loader.hidden = false;
+        setDevice('desktop');
+      }
+    };
+
+    const hideProject = (restoreFocus = true) => {
       if (modal.hidden) return;
       modal.hidden = true;
       document.body.classList.remove('figma-modal-open');
       frame.removeAttribute('src');
+      gallery.replaceChildren();
+      gallery.hidden = true;
+      stage.classList.remove('is-gallery');
+      window.clearTimeout(loadingTimer);
       frame.classList.remove('is-loaded');
       loader.hidden = false;
+      loaderLabel.textContent = loadingLabel;
       detailsPanel.hidden = true;
       detailsToggle.classList.remove('is-active');
       project = null;
-      opener?.focus();
+      if (restoreFocus) opener?.focus();
     };
 
-    document.querySelectorAll('[data-figma-open]').forEach((button) => {
-      button.addEventListener('click', () => {
-        opener = button;
-        project = {
-          embed: button.dataset.embed,
-          external: button.dataset.external,
-          mobileEmbed: button.dataset.mobileEmbed,
-          mobileExternal: button.dataset.mobileExternal,
-        };
-        title.textContent = button.dataset.title;
-        external.href = project.external;
-        detailsContent.innerHTML = button.dataset.details || '';
-        detailsToggle.hidden = !button.dataset.details;
-        detailsPanel.hidden = true;
-        detailsToggle.classList.remove('is-active');
-        devices.hidden = !project.mobileEmbed;
-        modal.hidden = false;
-        document.body.classList.add('figma-modal-open');
-        frame.title = `${framePrefix}: ${button.dataset.title}`;
-        setDevice('desktop');
-        closeButton.focus();
-      });
-    });
+    const openFromCard = (button) => {
+      const url = projectUrl(button.dataset.projectId);
+      window.history.pushState({ figmaViewer: true, projectId: button.dataset.projectId }, '', url);
+      showProject(button);
+      closeButton.focus();
+    };
 
+    const syncFromUrl = () => {
+      const id = new URL(window.location.href).searchParams.get('prototype');
+      if (!id) {
+        hideProject();
+        return;
+      }
+      const button = projectButtons.find((item) => item.dataset.projectId === id);
+      if (button) showProject(button);
+      else hideProject(false);
+    };
+
+    const close = () => {
+      if (modal.hidden) return;
+      const url = new URL(window.location.href);
+      if (url.searchParams.has('prototype')) {
+        url.searchParams.delete('prototype');
+        const state = { ...(window.history.state || {}) };
+        delete state.figmaViewer;
+        delete state.projectId;
+        window.history.replaceState(state, '', url);
+      }
+      hideProject();
+    };
+
+    projectButtons.forEach((button) => button.addEventListener('click', () => openFromCard(button)));
     frame.addEventListener('load', () => {
+      window.clearTimeout(loadingTimer);
       frame.classList.add('is-loaded');
       loader.hidden = true;
     });
-
     detailsToggle.addEventListener('click', () => {
       detailsPanel.hidden = !detailsPanel.hidden;
       detailsToggle.classList.toggle('is-active', !detailsPanel.hidden);
     });
     deviceButtons.forEach((button) => button.addEventListener('click', () => setDevice(button.dataset.figmaDevice)));
-
-    modal.querySelectorAll('[data-figma-close]').forEach((button) => button.addEventListener('click', close));
+    modal.querySelectorAll('[data-figma-close]').forEach((button) => button.addEventListener('click', (event) => {
+      event.preventDefault();
+      close();
+    }));
+    window.addEventListener('popstate', syncFromUrl);
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape' && !modal.hidden) close();
     });
+    syncFromUrl();
   })();
 </script>
