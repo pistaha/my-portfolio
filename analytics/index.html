@@ -31,6 +31,7 @@
     <a href="/my-portfolio/">← На сайт</a>
     <h1>Статистика портфолио</h1>
     <p>Счётчик переходов по страницам и открытия карточек дизайн-проектов.</p>
+    <p id="report-day">Данные только за сегодня по московскому времени. Сброс в 00:00.</p>
     <form id="auth-form">
       <input id="token" type="password" autocomplete="current-password" placeholder="Токен просмотра статистики" required>
       <button type="submit">Показать</button>
@@ -48,7 +49,7 @@
         <thead><tr><th>Проект</th><th>Открытия</th></tr></thead>
         <tbody id="design-items"></tbody>
       </table>
-      <p class="muted">Учитываются нажатия на карточку проекта и ссылку на Figma. Цифры накопительные.</p>
+      <p class="muted">Учитываются нажатия на карточку проекта и ссылку на Figma. В 00:00 по Москве счётчики обнуляются.</p>
     </section>
   </main>
   <script>
@@ -86,6 +87,7 @@
         if (response.status === 401) throw new Error('Неверный токен.');
         if (!response.ok) throw new Error(`API вернул ошибку ${response.status}.`);
         const data = await response.json();
+        document.querySelector('#report-day').textContent = `Статистика за ${data.date} (МСК). Счётчики обнуляются в 00:00.`;
         document.querySelector('#home').textContent = data.totals.home;
         document.querySelector('#projects').textContent = data.totals.projects;
         document.querySelector('#design').textContent = data.totals.design_collection;

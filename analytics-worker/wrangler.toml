@@ -4,6 +4,9 @@ compatibility_date = "2026-10-11"
 workers_dev = true
 preview_urls = false
 
+[triggers]
+crons = ["0 21 * * *"]
+
 [[d1_databases]]
 binding = "DB"
 database_name = "pistaha-portfolio-analytics"

@@ -1,5 +1,10 @@
 const EVENTS = new Set(["home", "projects", "design_collection", "design_item"]);
 const ITEM_ID = /^[a-zA-Z0-9][a-zA-Z0-9_-]{0,79}$/;
+const MOSCOW_DAY_START = "strftime('%Y-%m-%dT%H:%M:%fZ', 'now', '+3 hours', 'start of day', '-3 hours')";
+
+async function removeOlderEvents(db) {
+  await db.prepare(`DELETE FROM analytics_events WHERE created_at < ${MOSCOW_DAY_START}`).run();
+}
 
 function json(body, status, origin) {
   return new Response(JSON.stringify(body), {
@@ -52,6 +57,7 @@ export default {
         return json({ error: "invalid_item_id" }, 400, origin);
       }
 
+      await removeOlderEvents(env.DB);
       await env.DB.prepare(
         "INSERT INTO analytics_events (event, item_id) VALUES (?, ?)",
       ).bind(event, itemId).run();
@@ -64,9 +70,13 @@ export default {
         return json({ error: "unauthorized" }, 401, origin);
       }
 
+      await removeOlderEvents(env.DB);
       const result = await env.DB.prepare(
-        "SELECT event, item_id, COUNT(*) AS count FROM analytics_events GROUP BY event, item_id ORDER BY event, item_id",
+        `SELECT event, item_id, COUNT(*) AS count FROM analytics_events
+         WHERE created_at >= ${MOSCOW_DAY_START}
+         GROUP BY event, item_id ORDER BY event, item_id`,
       ).all();
+      const today = await env.DB.prepare("SELECT date('now', '+3 hours') AS date").first();
       const totals = { home: 0, projects: 0, design_collection: 0 };
       const designItems = [];
       for (const row of result.results || []) {
@@ -74,9 +84,13 @@ export default {
         else totals[row.event] = row.count;
       }
 
-      return json({ totals, designItems, totalEvents: (result.results || []).reduce((sum, row) => sum + row.count, 0) }, 200, origin);
+      return json({ date: today.date, timezone: "Europe/Moscow", totals, designItems, totalEvents: (result.results || []).reduce((sum, row) => sum + row.count, 0) }, 200, origin);
     }
 
     return json({ error: "not_found" }, 404, origin);
+  },
+
+  async scheduled(_event, env) {
+    await removeOlderEvents(env.DB);
   },
 };
