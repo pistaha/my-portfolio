@@ -9,7 +9,7 @@
     <managingEditor>rybakovpista@gmail.com (Pistaha)</managingEditor>
     <webMaster>rybakovpista@gmail.com (Pistaha)</webMaster>
     <copyright>© 2026 Pistaha</copyright>
-    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/en/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://pistaha.github.io/my-portfolio/en/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ElectoLibrary — full-featured digital library</title>
@@ -48,6 +48,16 @@
       <author>rybakovpista@gmail.com (Pistaha)</author>
       <guid>https://pistaha.github.io/my-portfolio/en/portfolio/figma-prototypes/</guid>
       <description>Client work and visual studies across identity, presentations, web design, typography and urban campaigns.</description>
+      
+    </item>
+    
+    <item>
+      <title>Energy Training Hall</title>
+      <link>https://pistaha.github.io/my-portfolio/en/portfolio/energy-training-hall/</link>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <author>rybakovpista@gmail.com (Pistaha)</author>
+      <guid>https://pistaha.github.io/my-portfolio/en/portfolio/energy-training-hall/</guid>
+      <description>Logo design for a training hall in China</description>
       
     </item>
     
