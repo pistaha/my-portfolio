@@ -1,0 +1,120 @@
+body .figma-card--article { overflow: hidden; }
+body .figma-card--article .figma-card__visual img { object-fit: contain; }
+body .figma-card__article-link { display: block; color: inherit; text-decoration: none; }
+body .figma-card__article-cta { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 1rem; color: var(--site-muted); font-size: .8rem; font-weight: 650; }
+body .figma-card--article .figma-card__overlay { background: rgb(0 0 0 / .45); }
+body .figma-card__article-link:hover .figma-card__overlay,
+body .figma-card__article-link:focus-visible .figma-card__overlay { opacity: 1; }
+body .figma-card__article-link:focus-visible { outline: 2px solid currentColor; outline-offset: -3px; }
+
+/* Energy Training Hall — editorial case study */
+.energy-case {
+  width: min(100%, 74rem);
+  margin: 1.5rem auto 4rem;
+}
+.energy-case__hero {
+  max-width: 58rem;
+  margin: 0 auto;
+  padding: .5rem 0 3.25rem;
+  border-bottom: 1px solid var(--site-border);
+}
+.energy-case__back {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  color: var(--site-muted);
+  font-size: .82rem;
+  text-decoration: none;
+}
+.energy-case__back:hover { color: inherit; }
+.energy-case__eyebrow {
+  margin: 3.25rem 0 .85rem;
+  color: var(--site-muted);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+.energy-case__hero h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 8vw, 6rem);
+  font-weight: 760;
+  letter-spacing: -.065em;
+  line-height: .98;
+}
+.energy-case__subtitle {
+  margin: 1rem 0 0;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  line-height: 1.45;
+}
+.energy-case__intro {
+  max-width: 46rem;
+  margin: 2rem 0 0;
+  color: var(--site-muted);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+.energy-case__body { padding-top: 1rem; }
+.energy-case__step {
+  display: grid;
+  grid-template-columns: minmax(15rem, .72fr) minmax(0, 1.65fr);
+  align-items: center;
+  gap: clamp(2rem, 6vw, 6rem);
+  padding: clamp(2.75rem, 7vw, 5.75rem) 0;
+  border-bottom: 1px solid var(--site-border);
+}
+.energy-case__step:nth-child(even) { grid-template-columns: minmax(0, 1.65fr) minmax(15rem, .72fr); }
+.energy-case__step:nth-child(even) .energy-case__step-copy { order: 2; }
+.energy-case__number {
+  margin: 0 0 1rem;
+  color: var(--site-muted);
+  font-size: .75rem;
+  font-weight: 650;
+  letter-spacing: .14em;
+}
+.energy-case__step h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.5rem, 3vw, 2.15rem);
+  font-weight: 700;
+  letter-spacing: -.035em;
+  line-height: 1.15;
+}
+.energy-case__step-description {
+  max-width: 31rem;
+  color: var(--site-muted);
+  font-size: .98rem;
+  line-height: 1.75;
+}
+.energy-case__step-description p { margin: 0; color: inherit; }
+.energy-case__figure { min-width: 0; margin: 0; }
+.energy-case__figure a { display: block; overflow: hidden; background: #111; }
+.energy-case__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transition: opacity .2s ease;
+}
+.energy-case__figure a:hover img { opacity: .92; }
+.energy-case__figure a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+.energy-case__figure figcaption {
+  margin-top: .75rem;
+  color: var(--site-muted);
+  font-size: .78rem;
+  line-height: 1.5;
+}
+.energy-case__footer { padding-top: 2rem; }
+
+
+@media (max-width: 760px) {
+  .energy-case { margin-top: 1rem; }
+  .energy-case__hero { padding-bottom: 2.25rem; }
+  .energy-case__eyebrow { margin-top: 2.5rem; }
+  .energy-case__intro { margin-top: 1.5rem; font-size: .96rem; }
+  .energy-case__step,
+  .energy-case__step:nth-child(even) { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding: 2.5rem 0; }
+  .energy-case__step:nth-child(even) .energy-case__step-copy { order: 0; }
+  .energy-case__step h2 { margin-bottom: .75rem; }
+}

@@ -1,0 +1,15 @@
+{{- $number := .Get "number" -}}
+{{- $image := printf "portfolio/figma-prototypes/images/%s" (.Get "image") | relURL -}}
+<section class="energy-case__step" aria-labelledby="energy-step-{{ $number }}">
+  <div class="energy-case__step-copy">
+    <p class="energy-case__number">{{ $number }}</p>
+    <h2 id="energy-step-{{ $number }}">{{ .Get "title" }}</h2>
+    <div class="energy-case__step-description">{{ .Inner | markdownify }}</div>
+  </div>
+  <figure class="energy-case__figure">
+    <a href="{{ $image }}" target="_blank" rel="noopener" aria-label="{{ .Get "zoomLabel" }}: {{ .Get "alt" }}">
+      <img src="{{ $image }}" alt="{{ .Get "alt" }}" loading="lazy" decoding="async">
+    </a>
+    <figcaption>{{ .Get "caption" }}</figcaption>
+  </figure>
+</section>

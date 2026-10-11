@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <article class="energy-case">
+    <header class="energy-case__hero">
+      <a class="energy-case__back" href="{{ "portfolio/figma-prototypes/" | relLangURL }}">
+        <span aria-hidden="true">←</span> {{ .Params.backLabel }}
+      </a>
+      <p class="energy-case__eyebrow">{{ .Params.category }}</p>
+      <h1>{{ .Title }}</h1>
+      <p class="energy-case__subtitle">{{ .Params.subtitle }}</p>
+      <p class="energy-case__intro">{{ .Params.intro }}</p>
+    </header>
+    <div class="energy-case__body">
+      {{ .Content }}
+    </div>
+    <footer class="energy-case__footer">
+      <a class="energy-case__back" href="{{ "portfolio/figma-prototypes/" | relLangURL }}">
+        <span aria-hidden="true">←</span> {{ .Params.backLabel }}
+      </a>
+    </footer>
+  </article>
+{{ end }}
