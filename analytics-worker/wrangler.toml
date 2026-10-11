@@ -1,0 +1,13 @@
+name = "pistaha-portfolio-analytics"
+main = "src/index.js"
+compatibility_date = "2026-10-11"
+workers_dev = true
+preview_urls = false
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pistaha-portfolio-analytics"
+database_id = "d0f7d7be-83db-4797-889f-b2d6d01cf5ca"
+
+[vars]
+ALLOWED_ORIGIN = "https://pistaha.github.io"

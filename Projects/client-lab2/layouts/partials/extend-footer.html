@@ -1,5 +1,1 @@
-{{- with site.Params.cloudflareWebAnalyticsToken -}}
-  <!-- Cloudflare Web Analytics -->
-  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ . }}"}'></script>
-  <!-- End Cloudflare Web Analytics -->
-{{- end -}}
+<script defer src="{{ "js/site-analytics.js" | relURL }}"></script>

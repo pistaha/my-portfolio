@@ -4,7 +4,7 @@ autoSwitchAppearance = true
 
 enableSearch = true
 enableCodeCopy = false
-cloudflareWebAnalyticsToken = "e6352ab82cca493f8eb61981f9b6725c"
+portfolioAnalyticsAPI = "https://pistaha-portfolio-analytics.pistaha-analytics.workers.dev"
 
 mainSections = ["portfolio"]
 

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="portfolio-analytics-api" content="https://pistaha-portfolio-analytics.pistaha-analytics.workers.dev">
+  <title>Статистика портфолио</title>
+  <style>
+    :root { color-scheme: light dark; font: 16px/1.5 system-ui, sans-serif; }
+    body { max-width: 880px; margin: 4rem auto; padding: 0 1.25rem; }
+    h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.05; }
+    p { color: #777; }
+    form { display: flex; gap: .75rem; flex-wrap: wrap; margin: 2rem 0; }
+    input, button { min-height: 2.8rem; padding: .5rem .8rem; border: 1px solid #8888; border-radius: .4rem; font: inherit; }
+    input { flex: 1 1 20rem; }
+    button { cursor: pointer; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+    .card { padding: 1rem; border: 1px solid #8885; border-radius: .65rem; }
+    .label { display: block; color: #777; font-size: .9rem; }
+    .value { display: block; margin-top: .35rem; font-size: 2rem; font-weight: 700; }
+    table { width: 100%; margin-top: 2rem; border-collapse: collapse; }
+    th, td { padding: .7rem .4rem; border-bottom: 1px solid #8885; text-align: left; }
+    td:last-child, th:last-child { text-align: right; }
+    #status { min-height: 1.5rem; }
+    .muted { color: #777; }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="/my-portfolio/">← На сайт</a>
+    <h1>Статистика портфолио</h1>
+    <p>Счётчик переходов по страницам и открытия карточек дизайн-проектов.</p>
+    <form id="auth-form">
+      <input id="token" type="password" autocomplete="current-password" placeholder="Токен просмотра статистики" required>
+      <button type="submit">Показать</button>
+    </form>
+    <p id="status" role="status"></p>
+    <section id="stats" hidden>
+      <div class="cards">
+        <div class="card"><span class="label">Переходы на главную</span><strong class="value" id="home">0</strong></div>
+        <div class="card"><span class="label">Переходы в проекты</span><strong class="value" id="projects">0</strong></div>
+        <div class="card"><span class="label">Открытия дизайн-проектов</span><strong class="value" id="design">0</strong></div>
+        <div class="card"><span class="label">Всего событий</span><strong class="value" id="total">0</strong></div>
+      </div>
+      <h2>Дизайн-проекты по отдельности</h2>
+      <table>
+        <thead><tr><th>Проект</th><th>Открытия</th></tr></thead>
+        <tbody id="design-items"></tbody>
+      </table>
+      <p class="muted">Учитываются нажатия на карточку проекта и ссылку на Figma. Цифры накопительные.</p>
+    </section>
+  </main>
+  <script>
+    const apiBase = document.querySelector('meta[name="portfolio-analytics-api"]').content.trim().replace(/\/+$/, "");
+    const form = document.querySelector('#auth-form');
+    const status = document.querySelector('#status');
+    const stats = document.querySelector('#stats');
+    const titles = {
+      "1480-24": "Mita Garden Hills — премиальный лендинг и 3D-опыт",
+      "1308-24": "Jennyhouse Salon — дизайн визитки",
+      "44-99": "IWEIYI.com — дизайн презентации",
+      "secret-garden-menu": "Secret Garden Place — дизайн меню",
+      "4-2814": "Velvet Music",
+      "4-1887": "Три альбома — три настроения",
+      "4-91": "Шрифт и характер",
+      "544-24": "Выборг: круг времени",
+      "249-26": "Твой след",
+      "4-317": "Авторская кириллица",
+      "4-3261": "Швейцарский стиль",
+      "energy-training-hall": "Energy Training Hall — айдентика",
+    };
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!apiBase) {
+        status.textContent = 'Сначала разверни API и укажи его адрес в portfolioAnalyticsAPI в Hugo config.';
+        return;
+      }
+      status.textContent = 'Загружаю…';
+      stats.hidden = true;
+      try {
+        const response = await fetch(`${apiBase}/stats`, {
+          headers: { Authorization: `Bearer ${document.querySelector('#token').value}` },
+        });
+        if (response.status === 401) throw new Error('Неверный токен.');
+        if (!response.ok) throw new Error(`API вернул ошибку ${response.status}.`);
+        const data = await response.json();
+        document.querySelector('#home').textContent = data.totals.home;
+        document.querySelector('#projects').textContent = data.totals.projects;
+        document.querySelector('#design').textContent = data.totals.design_collection;
+        document.querySelector('#total').textContent = data.totalEvents;
+        const tbody = document.querySelector('#design-items');
+        tbody.replaceChildren();
+        const itemCounts = new Map(Object.keys(titles).map((id) => [id, 0]));
+        for (const item of data.designItems) itemCounts.set(item.id, item.count);
+        const items = [...itemCounts].map(([id, count]) => ({ id, count }));
+        for (const item of items.sort((a, b) => (titles[a.id] || a.id).localeCompare(titles[b.id] || b.id, 'ru'))) {
+          const row = document.createElement('tr');
+          const title = document.createElement('td');
+          const count = document.createElement('td');
+          title.textContent = titles[item.id] || item.id;
+          count.textContent = item.count;
+          row.append(title, count);
+          tbody.append(row);
+        }
+        status.textContent = 'Статистика обновлена.';
+        stats.hidden = false;
+      } catch (error) {
+        status.textContent = error.message || 'Не удалось загрузить статистику.';
+      }
+    });
+  </script>
+  <script defer src="/my-portfolio/js/site-analytics.js"></script>
+</body>
+</html>
